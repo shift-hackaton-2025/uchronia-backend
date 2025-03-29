@@ -3,7 +3,9 @@ from typing import List, Optional
 import json
 import os
 from pydantic import BaseModel
+
 from services.generate_events import generate_future_events
+
 
 app = FastAPI()
 
