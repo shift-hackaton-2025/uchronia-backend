@@ -1,6 +1,22 @@
 {
   "events": [
     {
+      "id": "0",
+      "title": "Début de la Guerre Froide",
+      "image": "",
+      "date": "1947-03-12",
+      "options": [
+        {
+          "title": "Option A",
+          "consequence": "Consequence A"
+        },
+        {
+          "title": "Option B",
+          "consequence": "Consequence B"
+        }
+      ]
+    },
+    {
       "id": "1",
       "title": "Atterrissage sur la Lune : Un Bond de Géant",
       "image": "",
@@ -15,7 +31,25 @@
           "consequence": "Pendant la mission, l'équipage rencontre de manière inattendue des phénomènes lunaires mystérieux qui semblent presque vivants. Cet événement étrange conduit à des études scientifiques intensives et à une couverture médiatique prudente. La rencontre déclenche des débats sur l'existence de forces lunaires inconnues.\n\nCette révélation oblige les gouvernements à reconsidérer la véritable nature de l'espace et les risques potentiels liés à l'exploration. Des protocoles de sécurité renforcés et des initiatives de recherche interplanétaires sont lancés, transformant la manière dont l'humanité perçoit sa place dans l'univers."
         }
       ]
+    },
+    {
+      "id": "2",
+      "title": "Chute du mur de Berlin",
+      "image": "",
+      "date": "1989-11-09",
+      "options": [
+        {
+          "title": "Option A",
+          "consequence": "Consequence A"
+        },
+        {
+          "title": "Option B",
+          "consequence": "Consequence B"
+        }
+      ]
     }
   ],
-  "option_chosen": "1_1"
+  "option_chosen": "1_1",
+  "model": "mistral/mistral-large",
+  "temperature": 0.7
 }

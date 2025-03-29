@@ -104,8 +104,22 @@ def update_events(request: UpdateEventsRequest):
         "title": event.options[int(option_idx)].title,
         "consequence": event.options[int(option_idx)].consequence
     }
+
+    # filter events to remove, future events and remove options for past events
+    print("Original events:", [{"id": e.id, "date": e.date, "title": e.title} for e in request.events])
     
-    _, raw_events = generate_future_events(request.events, chosen_option, request.model, request.temperature)
+    # Sort events by date first
+    sorted_events = sorted(request.events, key=lambda x: x.date)
+    print("Sorted events:", [{"id": e.id, "date": e.date, "title": e.title} for e in sorted_events])
+    
+    chosen_event_index = next(i for i, e in enumerate(sorted_events) if e.id == event_id)
+    print(f"Chosen event index: {chosen_event_index}")
+    
+    # Keep all events up to and including the chosen event
+    filtered_events = sorted_events[:chosen_event_index + 1]
+    print("Filtered events:", [{"id": e.id, "date": e.date, "title": e.title} for e in filtered_events])
+    
+    _, raw_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
     
     # Transform raw events into Event model format
     new_events = []

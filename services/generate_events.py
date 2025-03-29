@@ -26,12 +26,14 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         - a title (10 words top)
         - a date (str, YYYY-MM-DD)
         - a description text (4/5 lines of text top)
-        - 2 impactful / full uchronic options. Each option should have up to 5 words as title and for each we need a consequence (2-3 paragraphs of 2-3 lines)
+        - 2 impactful / full uchronic options. Each option should have up to 5 words as title (start with verb) and for each we need a consequence (2-3 paragraphs of 2-3 lines)
 
         The output is constituted of : 
         - a think tag with your projection of the future:
         <think>
-        Explain how the course of history is changed by the decision.
+        - Imagine what the future could look like (The story must follow four phases — rise, peak, fall, and rebirth — but be told in a vivid and immersive tone suitable for a narrative game.)
+        - You must create an alternative narrative arc, unrelated to the main story, that runs in parallel
+        - extract 2 events from the main arc and 1 from the side arc (one kind of immediately, one some time after (year-decades) and one way later (decades - century)
         </think>
         - a events tag, where you output a json that contains the future cards :
         <events>
@@ -49,12 +51,85 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         """,
     }
     completion = litellm.completion(
-        model=model, temperature=temperature, messages=[system_message, user_message]
+        # model=model,
+        model="groq/llama-3.3-70b-versatile",
+        temperature=temperature,
+        messages=[system_message, user_message],
+        metadata={
+            "tags": ["generate_future_events"]
+        }
     )
     think = extract_tag_content(completion.choices[0].message.content, "think")
     events_str = extract_tag_content(completion.choices[0].message.content, "events")
     events = parse_json_markdown(events_str)
     return think, events
+
+
+def generate_narrative_arc(events):
+    user_message = {
+        "role": "user",
+        "content": f"""
+        We are working on uchronia, a game that displays a chronological timeline, with events and we allow our users to change the course of history.
+        Your mission is to imagine what the future could look like (The story must follow four phases — rise, peak, fall, and rebirth — but be told in a vivid and immersive tone suitable for a narrative game.)
+        There should be an alternative narrative arc, unrelated to the main topic, that runs in parallel starting from the same point / event.
+        - extract 3 events total from the two narrative arc (one kind of immediately, one some time after (year-decades) and one way later (decades - century).
+
+        Context:
+        {events}
+
+        Notes: 
+        - at least one event should be related to the main story
+        - at least one event should be related to the alternative story
+        """,
+    }
+    completion = litellm.completion(
+        model="groq/llama-3.3-70b-versatile",
+        temperature=0.7,
+        messages=[user_message],
+        metadata={"tags": ["generate_narrative_arc"]},
+    )
+
+    return completion.choices[0].message.content
+
+
+def format_narrative_arc(narrative_arc):
+    system_message = {
+        "role": "system",
+        "content": """
+        Your role is to transform the narrative arc into a JSON format with the following structure:
+        {
+            "events": [                           // Type: Array of event objects.
+                {
+                "title": "string",                // Type: String. Title of the event.
+                "date": "YYYY-MM-DD",             // Type: String. Date of the event in ISO format.
+                "description": "string",          // Type: String. Detailed description of the event.
+                "options": [                      // Type: Array of option objects.
+                    {
+                    "title": "string",            // Type: String. Title of the option. Should start with a verb.
+                    "consequence": "string"       // Type: String. Outcome or consequence if this option is selected.
+                    }
+                ]
+                }
+            ]
+        }
+        Don't output any text other than the JSON. Output should be in French
+        """,
+        }
+    user_message = {
+        "role": "user",
+        "content": f"""
+        Narrative Arc: {narrative_arc}
+        """,
+    }
+    completion = litellm.completion(
+        model="groq/llama-3.3-70b-versatile",
+        temperature=0.7,
+        messages=[system_message, user_message],
+        metadata={
+            "tags": ["format_narrative_arc"]
+        }
+    )
+    return completion.choices[0].message.content
 
 
 if __name__ == "__main__":
@@ -133,3 +208,12 @@ if __name__ == "__main__":
     think, events = generate_future_events(events, option_chosen)
     print(think)
     print(events)
+
+
+    narrative_arc = generate_narrative_arc(events)
+    print(narrative_arc)
+
+    formatted_narrative_arc = format_narrative_arc(narrative_arc)
+    print(formatted_narrative_arc)
+
+    narrative_arc_events = parse_json_markdown(formatted_narrative_arc)
