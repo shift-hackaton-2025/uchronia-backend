@@ -1,80 +1,80 @@
 {
-    "stories": [
-      {
-        "id": "2",
-        "title": "Moon Landing: A Giant Leap",
-        "date": "1969-07-20",
-        "description": "The first steps on the moon marked a historic achievement for humanity. This event celebrated scientific brilliance and expanded our view of what is possible. In an alternate timeline, small changes during the mission lead to surprising outcomes for space exploration.",
-        "img": "data/images/img_2.png",
-        "options": [
-          {
-            "title": "Military Moon Base",
-            "consequence": "Shortly after landing, strategic interests prompt governments to repurpose part of the lunar surface as a military outpost. The establishment of a military moon base ignites an intense international arms race in space. Tensions on Earth escalate as nations rush to secure their presence beyond our planet.\n\n The militarization of the moon triggers extensive debates in global politics, leading to the negotiation of new treaties and protocols. The shift transforms the lunar landscape into a symbol of both technological prowess and geopolitical rivalry, with lasting impacts on international security and space law.",
-            "img": "data/consequences/image2_1.png"
-          },
-          {
-            "title": "Unexpected Lunar Encounter",
-            "consequence": "During the mission, the crew unexpectedly encounters mysterious lunar phenomena that seem almost alive. The strange occurrence leads to intense scientific study and cautious media coverage. The encounter sparks debates over the existence of unknown lunar forces.\n\n This revelation forces governments to reconsider the true nature of space and the potential risks of exploration. Heightened security protocols and interplanetary research initiatives are launched, transforming how humanity views its place in the universe.",
-            "img": "data/consequences/image2_2.png"
-          }
-        ]
-      },
-      {
-        "id": "3",
-        "title": "The New World Unveiled",
-        "date": "1492-10-12",
-        "img": "data/images/img_3.png",
-        "description": "The discovery of America is a watershed moment that forever alters global history. Explorers encounter vast, diverse lands and indigenous cultures, opening up countless paths for change. In this alternate timeline, every twist not only redefines who holds power but also forges new cultural identities that ripple throughout the world.",
-        "options": [
-          {
-            "title": "Peaceful Native Alliance",
-            "consequence": "Early explorers engage in genuine dialogue with indigenous peoples, fostering mutual respect and understanding. Over time, intermarriage, trade, and cultural exchange create a unique society—a rich blend of European and native traditions.\n\nThis new identity reshapes the continent, fueling artistic, culinary, and linguistic innovations. The harmonious union becomes a beacon of multicultural coexistence, influencing social reforms and international diplomacy for generations.",
-            "img": "data/consequences/image3_1.png"
-          },
-          {
-            "title": "Native Empire Rises",
-            "consequence": "Inspired by ancient traditions and modern challenges, a coalition of indigenous tribes unites to forge a powerful empire. This indigenous state, blending traditional governance with adapted European technologies, rises to dominance in the region.\n\nThe Native Empire reshapes trade, warfare, and cultural norms, forcing European powers to negotiate on equal footing. Its influence sparks a global reassessment of colonization, ultimately redefining power balances and inspiring movements for indigenous rights worldwide.",
-            "img": "data/consequences/image3_2.png"
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "title": "Pandemic's Dark New Dawn",
-        "date": "2020-03-11",
-        "img": "data/images/img_4.png",
-        "description": "A devastating twist in the Covid crisis spawns a horrifying new threat. The virus mutates into a zombie contagion that reshapes society. In this altered reality, survival depends on adapting to a world where life and death blur. Humanity faces a brutal new normal that forces both fear and fierce resilience.",
-        "options": [
-          {
-            "img": "data/consequences/image4_1.png",
-            "title": "Zombie Covid Outbreak",
-            "consequence": "The virus takes an eerie turn as infected bodies reanimate, triggering a zombie outbreak. Traditional contagion now combines with necrotic spread, plunging cities into chaos. Panic and survival instincts replace routine life, as authorities struggle to contain this dual-threat disaster.\n\nCommunities and governments are forced to rethink public health and defense strategies. New alliances form amidst the terror, as people adapt to a reality where the undead walk among them."
-          },
-          {
-            "img": "data/consequences/image4_2.png",
-            "title": "New Normal, New Plague",
-            "consequence": "As the zombie plague becomes a permanent feature of everyday life, society reluctantly embraces the macabre as its new norm. Health systems and militaries recalibrate their approaches to address a threat that is part virus, part reanimation.\n\nThe grim adaptation fosters a culture of gritty survival, where economic systems, public policies, and social behaviors are reshaped by the constant presence of a relentless, evolving menace."
-          }
-        ]
-      },
-      {
-        "id": "6",
-        "title": "Empire Reborn: Revolutionary Shadows",
-        "date": "1799-11-09",
-        "description": "The historic revolution takes an unexpected turn, preserving the royal family and birthing a new empire. Ambitious leaders reminiscent of Napoleon rise to power, reshaping France’s destiny. A reimagined national identity emerges with a bold new anthem and emblem. History is rewritten in a clash of tradition and imperial ambition.",
-        "img": "data/images/img_6.png",
-        "options": [
-          {
-            "img": "data/consequences/image6_1.png",
-            "title": "Imperial Resurgence",
-            "consequence": "The royal family remains intact, steering France toward an imperial destiny. A strategic mastermind, echoing Napoleon’s brilliance, unites disparate factions under a singular, imperial banner.\n\nThe nation adopts a powerful new national anthem and emblem that celebrate martial pride and grandeur. This bold transformation forges a legacy of ambition and order that redefines French society."
-          },
-          {
-            "img": "data/consequences/image6_2.png",
-            "title": "Napoleonic Reclamation",
-            "consequence": "In a dramatic shift, a charismatic general emerges to reclaim and redefine France’s future. His military prowess and visionary leadership catalyze the transition from revolutionary chaos to imperial stability.\n\nA striking new anthem and symbolic crest are introduced, reflecting both historical pride and innovative ambition. The revolution morphs into a celebration of order, strength, and an enduring imperial legacy."
-          }
-        ]
-      }
-    ]
-  }
+  "stories": [
+    {
+      "id": "2",
+      "title": "Atterrissage sur la Lune : Un Bond de Géant",
+      "date": "1969-07-20",
+      "description": "Les premiers pas sur la Lune ont marqué une avancée historique pour l'humanité. Cet événement célébrait l'éclat scientifique et élargissait notre vision du possible.",
+      "img": "data/images/img_2.png",
+      "options": [
+        {
+          "title": "Base Militaire sur la lune",
+          "consequence": "Peu après l'atterrissage, des intérêts stratégiques poussent les gouvernements à convertir une partie de la surface lunaire en avant-poste militaire. L'établissement d'une base lunaire militaire déclenche une intense course aux armements internationale dans l'espace. Les tensions sur Terre s'intensifient alors que les nations se précipitent pour assurer leur présence au-delà de notre planète.\n\nLa militarisation de la Lune suscite de vastes débats en politique mondiale, menant à la négociation de nouveaux traités et protocoles. Ce changement transforme le paysage lunaire en un symbole à la fois de prouesse technologique et de rivalité géopolitique, avec des répercussions durables sur la sécurité internationale et le droit spatial.",
+          "img": "data/consequences/image2_1.png"
+        },
+        {
+          "title": "Rencontre Lunaire Inattendue",
+          "consequence": "Pendant la mission, l'équipage rencontre de manière inattendue des phénomènes lunaires mystérieux qui semblent presque vivants. Cet événement étrange conduit à des études scientifiques intensives et à une couverture médiatique prudente. La rencontre déclenche des débats sur l'existence de forces lunaires inconnues.\n\nCette révélation oblige les gouvernements à reconsidérer la véritable nature de l'espace et les risques potentiels liés à l'exploration. Des protocoles de sécurité renforcés et des initiatives de recherche interplanétaires sont lancés, transformant la manière dont l'humanité perçoit sa place dans l'univers.",
+          "img": "data/consequences/image2_2.png"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Naissance du nouveau monde",
+      "date": "1492-10-12",
+      "img": "data/images/img_3.png",
+      "description": "La découverte de l'Amérique est un tournant décisif qui change à jamais l'histoire mondiale. Les explorateurs découvrent des terres vastes et diversifiées ainsi que des cultures indigènes, ouvrant d'innombrables voies vers le changement. ",
+      "options": [
+        {
+          "title": "Alliance Paisible avec les Autochtones",
+          "consequence": "Les premiers explorateurs entament un dialogue sincère avec les peuples autochtones, favorisant un respect mutuel et une compréhension réciproque. Au fil du temps, les mariages mixtes, le commerce et les échanges culturels créent une société unique – un mélange riche de traditions européennes et autochtones.\n\nCette nouvelle identité redéfinit le continent, stimulant des innovations artistiques, culinaires et linguistiques. L'union harmonieuse devient un phare de coexistence multiculturelle, influençant les réformes sociales et la diplomatie internationale pendant des générations.",
+          "img": "data/consequences/image3_1.png"
+        },
+        {
+          "title": "L'Empire Autochtone Émerge",
+          "consequence": "Inspirée par des traditions ancestrales et des défis modernes, une coalition de tribus indigènes s'unit pour forger un empire puissant. Cet État autochtone, mêlant gouvernance traditionnelle et technologies européennes adaptées, s'impose comme puissance dominante dans la région.\n\nL'Empire Autochtone redéfinit le commerce, la guerre et les normes culturelles, obligeant les puissances européennes à négocier sur un pied d'égalité. Son influence déclenche une réévaluation mondiale de la colonisation, redéfinissant finalement les équilibres de pouvoir et inspirant des mouvements pour les droits des peuples autochtones dans le monde entier.",
+          "img": "data/consequences/image3_2.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Covid-19",
+      "date": "2020-03-11",
+      "img": "data/images/img_4.png",
+      "description": "Le Coronavirus apparaît et le monde entier se retrouve à l'arrêt. C'est le confinement !",
+      "options": [
+        {
+          "img": "data/consequences/image4_1.png",
+          "title": "Épidémie de Covid Zombie",
+          "consequence": "Le virus prend une tournure inquiétante lorsque les corps infectés se réaniment, déclenchant une épidémie de zombies. La contagion traditionnelle se mêle désormais à une propagation nécrotique, plongeant les villes dans le chaos. La panique et les instincts de survie remplacent la vie quotidienne, alors que les autorités peinent à contenir ce désastre à double menace.\n\nLes communautés et les gouvernements sont contraints de repenser les stratégies de santé publique et de défense. De nouvelles alliances se forment au cœur de la terreur, tandis que les gens s'adaptent à une réalité où les morts-vivants arpentent les rues."
+        },
+        {
+          "img": "data/consequences/image4_2.png",
+          "title": "L'épidémie de Covid n'a jamais eu lieu",
+          "consequence": "La pandémie de Covid s'est terminée en 1 semaine, à la grande surprise des scientifiques."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Révolution française",
+      "date": "1799-11-09",
+      "description": "La révolution française est un évènement marquant de l'histoire française. ",
+      "img": "data/images/img_6.png",
+      "options": [
+        {
+          "img": "data/consequences/image6_1.png",
+          "title": "Résurgence Impériale",
+          "consequence": "La famille royale reste intacte, guidant la France vers un destin impérial. Un stratège visionnaire, faisant écho à l'éclat de Napoléon, unit des factions disparates sous une bannière impériale unique.\n\nLa nation adopte un nouvel hymne puissant et un emblème qui célèbrent la fierté martiale et la grandeur. Cette transformation audacieuse forge un héritage d'ambition et d'ordre qui redéfinit la société française."
+        },
+        {
+          "img": "data/consequences/image6_2.png",
+          "title": "Reprise Napoléonienne",
+          "consequence": "Dans un tournant dramatique, un général charismatique émerge pour reconquérir et redéfinir l'avenir de la France. Sa prouesse militaire et son leadership visionnaire catalysent la transition du chaos révolutionnaire vers une stabilité impériale.\n\nUn nouvel hymne percutant et un blason symbolique sont instaurés, reflétant à la fois la fierté historique et une ambition novatrice. La révolution se transforme en une célébration de l'ordre, de la force et d'un héritage impérial durable."
+        }
+      ]
+    }
+  ]
+}

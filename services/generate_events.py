@@ -40,6 +40,7 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         Notes : 
         - We want diversified options : funny, artistic, violent, serious.
         - We want all options to have impactful outcomes in the timeline
+        - The language of the generated events should be in French
     """,
     }
     user_message = {
