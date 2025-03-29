@@ -66,8 +66,8 @@ async def get_initial_events():
         event = {
             "id": story["id"],
             "title": story["title"],
-            "image": "",  # No image links in the source data
-            "date": "",  # No dates in the source data
+            "image": story["img"],  # No image links in the source data
+            "date": story["date"],  # No dates in the source data
             "options": []
         }
 
@@ -75,7 +75,7 @@ async def get_initial_events():
         for option in story["options"]:
             event["options"].append({
                 "title": option["title"],
-                "option_img_link": "",
+                "option_img_link": option["img"],
                 "consequence": option["consequence"],
                 "consequence_img_link": ""
             })
@@ -108,15 +108,16 @@ def update_events(request: UpdateEventsRequest):
         event = {
             "id": raw_event["id"],
             "title": raw_event["title"],
-            "image": "",
+            "image": f"data/images/img_{raw_event['id']}.png" if raw_event["id"] else "",
             "date": raw_event["date"],
             "options": [
-                {
-                    "title": opt["title"],
-                    "option_img_link": "",
-                    "consequence": opt["consequence"],
-                    "consequence_img_link": ""
-                } for opt in raw_event["options"]
+            {
+                "title": opt["title"],
+                "option_img_link": f"data/consequences/image{raw_event['id']}_{idx}.png" if raw_event["id"] else "",
+                "consequence": opt["consequence"],
+                "consequence_img_link": f"data/consequences/image{raw_event['id']}_{idx}.png" if raw_event["id"] else ""
+            }
+            for idx, opt in enumerate(raw_event["options"], start=1)
             ]
         }
         new_events.append(event)
