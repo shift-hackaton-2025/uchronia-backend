@@ -7,7 +7,7 @@ name: Build and deploy Python app to Azure Web App - uchronianh
 on:
   push:
     branches:
-      - main
+      - prod
   workflow_dispatch:
 
 jobs:
