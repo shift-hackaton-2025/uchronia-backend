@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
 import json
 import os
@@ -6,6 +7,15 @@ from pydantic import BaseModel
 from services.generate_events import generate_future_events
 
 app = FastAPI()
+
+# Configure CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 class Option(BaseModel):
     title: str
@@ -42,7 +52,6 @@ async def get_initial_events():
     # Read the JSON file
     with open(json_path, "r") as f:
         data = json.load(f)
-    
 
     # Convert the data to match our API model
     events = []
@@ -94,7 +103,7 @@ def update_events(request: UpdateEventsRequest):
             "id": raw_event["id"],
             "title": raw_event["title"],
             "image": "",
-            "date": "",  # We might want to generate this in the future
+            "date": raw_event["date"],
             "options": [
                 {
                     "title": opt["title"],
