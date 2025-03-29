@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from typing import List, Optional
 import json
 import os
@@ -7,6 +8,10 @@ from pydantic import BaseModel
 from services.generate_events import generate_future_events
 
 app = FastAPI()
+
+# Mount the static files directory
+static_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+app.mount("/data", StaticFiles(directory=static_dir), name="data")
 
 # Configure CORS middleware
 app.add_middleware(
