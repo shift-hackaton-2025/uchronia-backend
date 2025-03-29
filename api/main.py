@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+
 from typing import List, Optional
 import json
 import os
@@ -57,7 +58,6 @@ async def get_initial_events():
     # Read the JSON file
     with open(json_path, "r") as f:
         data = json.load(f)
-    
 
     # Convert the data to match our API model
     events = []
@@ -109,7 +109,7 @@ def update_events(request: UpdateEventsRequest):
             "id": raw_event["id"],
             "title": raw_event["title"],
             "image": "",
-            "date": "",  # We might want to generate this in the future
+            "date": raw_event["date"],
             "options": [
                 {
                     "title": opt["title"],

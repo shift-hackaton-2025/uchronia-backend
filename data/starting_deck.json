@@ -3,6 +3,7 @@
       {
         "id": "2",
         "title": "Moon Landing: A Giant Leap",
+        "date": "1969-07-20",
         "description": "The first steps on the moon marked a historic achievement for humanity. This event celebrated scientific brilliance and expanded our view of what is possible. In an alternate timeline, small changes during the mission lead to surprising outcomes for space exploration.",
         "img": "data/images/img_2.png",
         "options": [
@@ -21,6 +22,7 @@
       {
         "id": "3",
         "title": "The New World Unveiled",
+        "date": "1492-10-12",
         "img": "data/images/img_3.png",
         "description": "The discovery of America is a watershed moment that forever alters global history. Explorers encounter vast, diverse lands and indigenous cultures, opening up countless paths for change. In this alternate timeline, every twist not only redefines who holds power but also forges new cultural identities that ripple throughout the world.",
         "options": [
@@ -39,6 +41,7 @@
       {
         "id": "4",
         "title": "Pandemic's Dark New Dawn",
+        "date": "2020-03-11",
         "img": "data/images/img_4.png",
         "description": "A devastating twist in the Covid crisis spawns a horrifying new threat. The virus mutates into a zombie contagion that reshapes society. In this altered reality, survival depends on adapting to a world where life and death blur. Humanity faces a brutal new normal that forces both fear and fierce resilience.",
         "options": [
@@ -55,8 +58,9 @@
         ]
       },
       {
-        "id": "6",        
+        "id": "6",
         "title": "Empire Reborn: Revolutionary Shadows",
+        "date": "1799-11-09",
         "description": "The historic revolution takes an unexpected turn, preserving the royal family and birthing a new empire. Ambitious leaders reminiscent of Napoleon rise to power, reshaping France’s destiny. A reimagined national identity emerges with a bold new anthem and emblem. History is rewritten in a clash of tradition and imperial ambition.",
         "img": "data/images/img_6.png",
         "options": [
@@ -66,7 +70,7 @@
             "consequence": "The royal family remains intact, steering France toward an imperial destiny. A strategic mastermind, echoing Napoleon’s brilliance, unites disparate factions under a singular, imperial banner.\n\nThe nation adopts a powerful new national anthem and emblem that celebrate martial pride and grandeur. This bold transformation forges a legacy of ambition and order that redefines French society."
           },
           {
-            "img": "data/consequences/image6_2.png",            
+            "img": "data/consequences/image6_2.png",
             "title": "Napoleonic Reclamation",
             "consequence": "In a dramatic shift, a charismatic general emerges to reclaim and redefine France’s future. His military prowess and visionary leadership catalyze the transition from revolutionary chaos to imperial stability.\n\nA striking new anthem and symbolic crest are introduced, reflecting both historical pride and innovative ambition. The revolution morphs into a celebration of order, strength, and an enduring imperial legacy."
           }
