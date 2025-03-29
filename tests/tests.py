@@ -8,17 +8,17 @@ def test_get_initial_events_structure():
     response = client.get("/get_initial_events")
     assert response.status_code == 200
     events = response.json()
-    
+
     assert isinstance(events, list)
     assert len(events) == 4
-    
+
     for event in events:
         # Check top-level fields
-        assert all(field in event for field in ["title", "event_image_link", "date", "options", "consequences"])
+        assert all(field in event for field in ["title", "image", "date", "options", "consequences"])
         assert isinstance(event["title"], str)
-        assert isinstance(event["event_image_link"], str)
+        assert isinstance(event["image"], str)
         assert isinstance(event["date"], str)
-        
+
         # Check options
         assert isinstance(event["options"], list)
         assert len(event["options"]) == 2
@@ -26,7 +26,7 @@ def test_get_initial_events_structure():
             assert all(field in option for field in ["text", "option_img_link"])
             assert isinstance(option["text"], str)
             assert isinstance(option["option_img_link"], str)
-        
+
         # Check consequences
         assert isinstance(event["consequences"], list)
         assert len(event["consequences"]) == 2
