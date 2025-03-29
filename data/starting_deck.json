@@ -3,18 +3,18 @@
       {
         "id": "1",
         "title": "Birth of the Nazi Party",
-        "img": "",
+        "img": "data/img_1.png",
         "description": "In 1920, a young leader began to shape a movement that would change history. His early steps built the foundation for a radical political force. In this alternate timeline, small personal twists lead to very different futures for Germany and beyond.",
         "options": [
           {
             "title": "Cake Toss Fumbley",
             "consequence": "At a pivotal rally, a clumsy mishap causes him to accidentally toss a cake into the crowd. The incident shatters his intended image of stern leadership and leaves supporters and detractors alike laughing at the absurdity. His credibility crumbles in that unforgettable moment.\n\n The fallout is swift: rival factions seize on the blunder to promote a more grounded and humorous political discourse. The deflated spectacle fragments his nascent movement, steering public sentiment away from dangerous fervor and toward a surprisingly light-hearted reform.",
-            "img": ""
+            "img": "data/consequences/image1_1.png"
           },
           {
             "title": "Childhood Accident Ends Life",
             "consequence": "A tragic accident in early childhood ends his life before any political following can form. Without his influence, the dangerous ideology never takes root. The void leaves space for moderate ideas to flourish.\n\nGermany’s political landscape shifts as alternative voices rise. The absence of his dark legacy allows peaceful and progressive reforms to take hold.",
-            "img": ""    
+            "img": "data/consequences/image1_1.png"
           }
         ]
       },
