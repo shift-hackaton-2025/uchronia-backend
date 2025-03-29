@@ -1,0 +1,21 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Moon Landing: A Giant Leap",
+      "image": "",
+      "date": "",
+      "options": [
+        {
+          "title": "Military Moon Base",
+          "consequence": "Shortly after landing, strategic interests prompt governments to repurpose part of the lunar surface as a military outpost. The establishment of a military moon base ignites an intense international arms race in space. Tensions on Earth escalate as nations rush to secure their presence beyond our planet.\n\n The militarization of the moon triggers extensive debates in global politics, leading to the negotiation of new treaties and protocols. The shift transforms the lunar landscape into a symbol of both technological prowess and geopolitical rivalry, with lasting impacts on international security and space law."
+        },
+        {
+          "title": "Unexpected Lunar Encounter",
+          "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon's mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination."
+        }
+      ]
+    }
+  ],
+  "option_chosen": "1_1"
+}
