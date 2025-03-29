@@ -108,14 +108,14 @@ def update_events(request: UpdateEventsRequest):
         event = {
             "id": raw_event["id"],
             "title": raw_event["title"],
-            "image": f"data/images/img_{raw_event['id']}.png" if raw_event["id"] else "",
+            "image": None,
             "date": raw_event["date"],
             "options": [
             {
                 "title": opt["title"],
-                "option_img_link": f"data/consequences/image{raw_event['id']}_{idx}.png" if raw_event["id"] else "",
+                "option_img_link": None,
                 "consequence": opt["consequence"],
-                "consequence_img_link": f"data/consequences/image{raw_event['id']}_{idx}.png" if raw_event["id"] else ""
+                "consequence_img_link": None
             }
             for idx, opt in enumerate(raw_event["options"], start=1)
             ]
