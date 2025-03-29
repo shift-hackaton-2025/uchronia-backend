@@ -2,17 +2,17 @@
   "events": [
     {
       "id": "1",
-      "title": "Moon Landing: A Giant Leap",
+      "title": "Atterrissage sur la Lune : Un Bond de Géant",
       "image": "",
-      "date": "",
+      "date": "1969-07-20",
       "options": [
         {
-          "title": "Military Moon Base",
-          "consequence": "Shortly after landing, strategic interests prompt governments to repurpose part of the lunar surface as a military outpost. The establishment of a military moon base ignites an intense international arms race in space. Tensions on Earth escalate as nations rush to secure their presence beyond our planet.\n\n The militarization of the moon triggers extensive debates in global politics, leading to the negotiation of new treaties and protocols. The shift transforms the lunar landscape into a symbol of both technological prowess and geopolitical rivalry, with lasting impacts on international security and space law."
+          "title": "Base Militaire sur la lune",
+          "consequence": "Peu après l'atterrissage, des intérêts stratégiques poussent les gouvernements à convertir une partie de la surface lunaire en avant-poste militaire. L'établissement d'une base lunaire militaire déclenche une intense course aux armements internationale dans l'espace. Les tensions sur Terre s'intensifient alors que les nations se précipitent pour assurer leur présence au-delà de notre planète.\n\nLa militarisation de la Lune suscite de vastes débats en politique mondiale, menant à la négociation de nouveaux traités et protocoles. Ce changement transforme le paysage lunaire en un symbole à la fois de prouesse technologique et de rivalité géopolitique, avec des répercussions durables sur la sécurité internationale et le droit spatial."
         },
         {
-          "title": "Unexpected Lunar Encounter",
-          "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon's mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination."
+          "title": "Rencontre Lunaire Inattendue",
+          "consequence": "Pendant la mission, l'équipage rencontre de manière inattendue des phénomènes lunaires mystérieux qui semblent presque vivants. Cet événement étrange conduit à des études scientifiques intensives et à une couverture médiatique prudente. La rencontre déclenche des débats sur l'existence de forces lunaires inconnues.\n\nCette révélation oblige les gouvernements à reconsidérer la véritable nature de l'espace et les risques potentiels liés à l'exploration. Des protocoles de sécurité renforcés et des initiatives de recherche interplanétaires sont lancés, transformant la manière dont l'humanité perçoit sa place dans l'univers."
         }
       ]
     }

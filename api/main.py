@@ -1,13 +1,27 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+
 from typing import List, Optional
 import json
 import os
 from pydantic import BaseModel
-
 from services.generate_events import generate_future_events
 
-
 app = FastAPI()
+
+# Mount the static files directory
+static_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+app.mount("/data", StaticFiles(directory=static_dir), name="data")
+
+# Configure CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 class Option(BaseModel):
     title: str
@@ -44,7 +58,6 @@ async def get_initial_events():
     # Read the JSON file
     with open(json_path, "r") as f:
         data = json.load(f)
-    
 
     # Convert the data to match our API model
     events = []
@@ -53,8 +66,8 @@ async def get_initial_events():
         event = {
             "id": story["id"],
             "title": story["title"],
-            "image": "",  # No image links in the source data
-            "date": "",  # No dates in the source data
+            "image": story["img"],  # No image links in the source data
+            "date": story["date"],  # No dates in the source data
             "options": []
         }
 
@@ -62,7 +75,7 @@ async def get_initial_events():
         for option in story["options"]:
             event["options"].append({
                 "title": option["title"],
-                "option_img_link": "",
+                "option_img_link": option["img"],
                 "consequence": option["consequence"],
                 "consequence_img_link": ""
             })
@@ -95,15 +108,16 @@ def update_events(request: UpdateEventsRequest):
         event = {
             "id": raw_event["id"],
             "title": raw_event["title"],
-            "image": "",
-            "date": "",  # We might want to generate this in the future
+            "image": None,
+            "date": raw_event["date"],
             "options": [
-                {
-                    "title": opt["title"],
-                    "option_img_link": "",
-                    "consequence": opt["consequence"],
-                    "consequence_img_link": ""
-                } for opt in raw_event["options"]
+            {
+                "title": opt["title"],
+                "option_img_link": None,
+                "consequence": opt["consequence"],
+                "consequence_img_link": None
+            }
+            for idx, opt in enumerate(raw_event["options"], start=1)
             ]
         }
         new_events.append(event)

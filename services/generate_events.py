@@ -24,6 +24,7 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         For each of these future events, we want to have :
         - an id (str, should increment from the highest id of the events)
         - a title (10 words top)
+        - a date (str, YYYY-MM-DD)
         - a description text (4/5 lines of text top)
         - 2 impactful / full uchronic options. Each option should have up to 5 words as title and for each we need a consequence (2-3 paragraphs of 2-3 lines)
 
@@ -39,6 +40,7 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         Notes : 
         - We want diversified options : funny, artistic, violent, serious.
         - We want all options to have impactful outcomes in the timeline
+        - The language of the generated events should be in French
     """,
     }
     user_message = {
@@ -65,23 +67,9 @@ if __name__ == "__main__":
 
     events = [
         {
-            "id": "0",
-            "title": "Birth of the Nazi Party",
-            "description": "In 1920, a young leader began to shape a movement that would change history. His early steps built the foundation for a radical political force. In this alternate timeline, small personal twists lead to very different futures for Germany and beyond.",
-            "options": [
-                {
-                    "title": "Cake Toss Fumbley",
-                    "consequence": "At a pivotal rally, a clumsy mishap causes him to accidentally toss a cake into the crowd. The incident shatters his intended image of stern leadership and leaves supporters and detractors alike laughing at the absurdity. His credibility crumbles in that unforgettable moment.\n\n The fallout is swift: rival factions seize on the blunder to promote a more grounded and humorous political discourse. The deflated spectacle fragments his nascent movement, steering public sentiment away from dangerous fervor and toward a surprisingly light-hearted reform.",
-                },
-                {
-                    "title": "Childhood Accident Ends Life",
-                    "consequence": "A tragic accident in early childhood ends his life before any political following can form. Without his influence, the dangerous ideology never takes root. The void leaves space for moderate ideas to flourish.\n\nGermany’s political landscape shifts as alternative voices rise. The absence of his dark legacy allows peaceful and progressive reforms to take hold.",
-                },
-            ],
-        },
-        {
             "id": "1",
             "title": "Moon Landing: A Giant Leap",
+            "date": "1969-07-20",
             "description": "The first steps on the moon marked a historic achievement for humanity. This event celebrated scientific brilliance and expanded our view of what is possible. In an alternate timeline, small changes during the mission lead to surprising outcomes for space exploration.",
             "options": [
                 {
@@ -97,6 +85,7 @@ if __name__ == "__main__":
         {
             "id": "2",
             "title": "The New World Unveiled",
+            "date": "1492-08-25",
             "description": "The discovery of America is a watershed moment that forever alters global history. Explorers encounter vast, diverse lands and indigenous cultures, opening up countless paths for change. In this alternate timeline, every twist not only redefines who holds power but also forges new cultural identities that ripple throughout the world.",
             "options": [
                 {
@@ -112,6 +101,7 @@ if __name__ == "__main__":
         {
             "id": "3",
             "title": "Pandemic's Dark New Dawn",
+            "date": "2020-03-11",
             "description": "A devastating twist in the Covid crisis spawns a horrifying new threat. The virus mutates into a zombie contagion that reshapes society. In this altered reality, survival depends on adapting to a world where life and death blur. Humanity faces a brutal new normal that forces both fear and fierce resilience.",
             "options": [
                 {
@@ -125,23 +115,9 @@ if __name__ == "__main__":
             ],
         },
         {
-            "id": "4",
-            "title": "Miraculous Birth: Dark Divine Twist",
-            "description": "In this reimagined origin, the sacred narrative takes a grim detour. Instead of a triumphant resurrection, the newborn's life is marked by darkness and incarceration. The story challenges traditional messages, presenting a messiah whose journey is steeped in hardship and mystery. Faith is reshaped by a somber, transformative force.",
-            "options": [
-                {
-                    "title": "Imprisoned Messiah",
-                    "consequence": "Rather than walking the path to crucifixion, Jesus is captured and confined by powerful religious authorities. His detention sparks shock and dissent among his followers, turning reverence into covert rebellion.\n\nThe imprisonment alters his teachings, infusing them with a stark, enigmatic tone. The once-celebrated message of unconditional love gives way to cryptic sermons that question moral absolutes and ignite fierce ideological debates.",
-                },
-                {
-                    "title": "Shadowed Sermon",
-                    "consequence": "Emerging from the darkness of confinement, Jesus adopts a hardened, austere persona. His doctrines shift from the familiar messages of compassion to a stark, uncompromising philosophy.\n\nThis transformation challenges established religious dogmas and inspires a movement defined by mystery and severity. His sermons, now laced with shadowy wisdom, provoke both fear and fervor among a disillusioned populace.",
-                },
-            ],
-        },
-        {
             "id": "5",
             "title": "Empire Reborn: Revolutionary Shadows",
+            "date": "1789-07-14",
             "description": "The historic revolution takes an unexpected turn, preserving the royal family and birthing a new empire. Ambitious leaders reminiscent of Napoleon rise to power, reshaping France’s destiny. A reimagined national identity emerges with a bold new anthem and emblem. History is rewritten in a clash of tradition and imperial ambition.",
             "options": [
                 {
