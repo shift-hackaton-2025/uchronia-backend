@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from datetime import date
 from typing import List
+import json
+import os
 from pydantic import BaseModel
 
 app = FastAPI()
@@ -22,106 +24,39 @@ class Event(BaseModel):
 
 @app.get("/get_initial_events", response_model=List[Event])
 async def get_initial_events():
-    """Return 4 sample events with options and consequences including image links"""
-    return [
-        {
-            "title": "Economic Crisis",
-            "event_image_link": "",
-            "date": "2026-03-29",
-            "options": [
-                {
-                    "text": "Increase taxes to fund social programs",
-                    "option_img_link": ""
-                },
-                {
-                    "text": "Cut government spending to reduce debt",
-                    "option_img_link": ""
-                }
-            ],
-            "consequences": [
-                {
-                    "text": "Public satisfaction improves but business growth slows",
-                    "consequence_img_link": ""
-                },
-                {
-                    "text": "Short-term economic relief but public services suffer",
-                    "consequence_img_link": ""
-                }
-            ]
-        },
-        {
-            "title": "Environmental Disaster",
-            "event_image_link": "",
-            "date": "2026-04-15",
-            "options": [
-                {
-                    "text": "Implement strict environmental regulations",
-                    "option_img_link": ""
-                },
-                {
-                    "text": "Offer subsidies for green technology adoption",
-                    "option_img_link": ""
-                }
-            ],
-            "consequences": [
-                {
-                    "text": "Immediate positive impact but business opposition grows",
-                    "consequence_img_link": ""
-                },
-                {
-                    "text": "Gradual improvement with better industry acceptance",
-                    "consequence_img_link": ""
-                }
-            ]
-        },
-        {
-            "title": "Healthcare System Overload",
-            "event_image_link": "",
-            "date": "2026-05-10",
-            "options": [
-                {
-                    "text": "Invest heavily in hospital infrastructure",
-                    "option_img_link": ""
-                },
-                {
-                    "text": "Launch preventive care public awareness campaign",
-                    "option_img_link": ""
-                }
-            ],
-            "consequences": [
-                {
-                    "text": "Long construction times but permanent capacity increase",
-                    "consequence_img_link": ""
-                },
-                {
-                    "text": "Slower results but more sustainable long-term benefits",
-                    "consequence_img_link": ""
-                }
-            ]
-        },
-        {
-            "title": "Education Reform",
-            "event_image_link": "",
-            "date": "2026-06-20",
-            "options": [
-                {
-                    "text": "Redesign curriculum to focus on STEM fields",
-                    "option_img_link": ""
-                },
-                {
-                    "text": "Increase teacher salaries and training programs",
-                    "option_img_link": ""
-                }
-            ],
-            "consequences": [
-                {
-                    "text": "Better technical workforce but arts suffer",
-                    "consequence_img_link": ""
-                },
-                {
-                    "text": "Improved teaching quality but higher costs",
-                    "consequence_img_link": ""
-                }
-            ]
+    """Return events from the starting deck JSON file with options and consequences"""
+    # Get the path to the JSON file
+    json_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "starting_deck.json")
+    
+    # Read the JSON file
+    with open(json_path, "r") as f:
+        data = json.load(f)
+    
+    # Convert the data to match our API model
+    events = []
+    for story in data["stories"]:
+        # For each story, create an event
+        event = {
+            "title": story["title"],
+            "event_image_link": "",  # No image links in the source data
+            "date": "",  # No dates in the source data
+            "options": [],
+            "consequences": []
         }
-    ]
+        
+        # For each option in the story, create an option and a consequence
+        for option in story["options"]:
+            event["options"].append({
+                "text": option["title"],
+                "option_img_link": ""
+            })
+            
+            event["consequences"].append({
+                "text": option["consequence"],
+                "consequence_img_link": ""
+            })
+        
+        events.append(event)
+    
+    return events[:4]  # Return only the first 4 events to match the expected response
+
