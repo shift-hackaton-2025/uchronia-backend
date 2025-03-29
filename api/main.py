@@ -64,3 +64,6 @@ async def get_initial_events():
     
     return events[:4]  # Return only the first 4 events to match the expected response
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
