@@ -6,7 +6,8 @@ from typing import List, Optional
 import json
 import os
 from pydantic import BaseModel
-from services.generate_events import generate_future_events
+from services.generate_events import generate_future_events 
+from services.generate_final_report import generate_final_report
 
 app = FastAPI()
 
@@ -44,6 +45,10 @@ class UpdateEventsRequest(BaseModel):
     model: str = "gpt-4o"
     temperature: float = 0.7
 
+class Summary(BaseModel):
+    description: str
+    # achievement: str
+    # chaos_level: str
 
 @app.get("/", status_code=200)
 async def healthcheck():
@@ -123,3 +128,21 @@ def update_events(request: UpdateEventsRequest):
         new_events.append(event)
     
     return new_events
+
+@app.post("/exit_game", response_model=Summary)
+def exit_game(request: List[Event]):
+    # Use the provided list of events
+    events = request
+    print("events", events)
+    if not events:
+        raise HTTPException(status_code=404, detail=f"Events not found")
+    
+    # Set default values for model and temperature as they are not provided in the input JSON
+    model = "gpt-4o"
+    temperature = 0.7
+    summary = generate_final_report(events, model, temperature)
+    
+    if summary:
+        return summary
+    else:
+        raise HTTPException(status_code=500, detail="Error generating final report")

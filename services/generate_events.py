@@ -35,8 +35,6 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         </think>
         - a events tag, where you output a json that contains the future cards :
         <events>
-        </events>
-
         Notes : 
         - We want diversified options : funny, artistic, violent, serious.
         - We want all options to have impactful outcomes in the timeline
