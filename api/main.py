@@ -77,6 +77,12 @@ class ImageStatus(BaseModel):
     status: str
     image_url: Optional[str] = None
 
+class ImageBatchStatusRequest(BaseModel):
+    task_ids: List[str]
+
+class ImageBatchStatusResponse(BaseModel):
+    statuses: dict
+
 @app.get("/", status_code=200)
 async def healthcheck():
     return {"status": "healthy"}
@@ -261,3 +267,36 @@ async def get_image_status(task_id: str, response: Response) -> ImageStatus:
     
     # For processing, error, or any other status
     return ImageStatus(status=status)
+
+@app.post("/batch-image-status")
+async def batch_get_image_status(request: ImageBatchStatusRequest) -> ImageBatchStatusResponse:
+    """
+    Check the status of multiple image generation tasks in a single request.
+    Returns immediately with the current status of all requested tasks.
+    """
+    results = {}
+    
+    # Process each task ID
+    for task_id in request.task_ids:
+        # Check in-memory status first (super fast)
+        status = image_task_status.get(task_id)
+        
+        # If task_id not in dictionary, mark as processing without file check
+        if status is None:
+            results[task_id] = {"status": "processing"}
+            continue
+            
+        # Only check file system if our in-memory status says it's completed
+        if status == "completed":
+            image_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
+            if os.path.exists(image_path):
+                results[task_id] = {
+                    "status": "completed", 
+                    "image_url": f"data/generated_images/{task_id}.png"
+                }
+                continue
+                
+        # For any other status
+        results[task_id] = {"status": status}
+    
+    return ImageBatchStatusResponse(statuses=results)
