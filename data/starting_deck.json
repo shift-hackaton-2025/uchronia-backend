@@ -6,6 +6,7 @@
       "date": "1969-07-20",
       "description": "Les premiers pas sur la Lune ont marqué une avancée historique pour l'humanité. Cet événement célébrait l'éclat scientifique et élargissait notre vision du possible.",
       "img": "data/images/img_2.png",
+      "music_file": "27.mp3",
       "options": [
         {
           "title": "Base Militaire sur la lune",
@@ -24,6 +25,7 @@
       "title": "Naissance du nouveau monde",
       "date": "1492-10-12",
       "img": "data/images/img_3.png",
+      "music_file": "3.mp3",
       "description": "La découverte de l'Amérique est un tournant décisif qui change à jamais l'histoire mondiale. Les explorateurs découvrent des terres vastes et diversifiées ainsi que des cultures indigènes, ouvrant d'innombrables voies vers le changement. ",
       "options": [
         {
@@ -43,6 +45,7 @@
       "title": "Covid-19",
       "date": "2020-03-11",
       "img": "data/images/img_4.png",
+      "music_file": "17.mp3",
       "description": "Le Coronavirus apparaît et le monde entier se retrouve à l'arrêt. C'est le confinement !",
       "options": [
         {
@@ -63,6 +66,7 @@
       "date": "1799-11-09",
       "description": "La révolution française est un évènement marquant de l'histoire française. ",
       "img": "data/images/img_6.png",
+      "music_file": "6.mp3",
       "options": [
         {
           "img": "data/consequences/image6_1.png",
