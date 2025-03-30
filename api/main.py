@@ -245,7 +245,15 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
         # Main event image
         task_id = str(uuid.uuid4())
         logger.info(f"Adding background task for event image: {event['title'][:30]}...")
-        image_generation_prompt = f"You have to generate an image of a historical event. {event['title']}. Here is the description of the event: {' '.join(event['description'])}."
+        
+        # Handle both string and array for description
+        description = event['description']
+        if isinstance(description, list):
+            description_text = ' '.join(description)
+        else:
+            description_text = str(description)
+            
+        image_generation_prompt = f"You have to generate an image of a historical event. {event['title']}. Here is the description of the event: {description_text}."
         background_tasks.add_task(generate_image_task, image_generation_prompt, task_id)
         image_tasks.append({
             "event_id": event["id"],
@@ -258,7 +266,15 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
             # Option image
             option_task_id = str(uuid.uuid4())
             logger.info(f"Adding background task for option image: {option['title'][:30]}...")
-            image_generation_prompt = f"You have to generate an image of a historical event. {option['title']}. Here is the description of the event: {' '.join(option['consequence'])}."
+            
+            # Handle both string and array for consequence
+            consequence = option['consequence']
+            if isinstance(consequence, list):
+                consequence_text = ' '.join(consequence)
+            else:
+                consequence_text = str(consequence)
+                
+            image_generation_prompt = f"You have to generate an image of a historical event. {option['title']}. Here is the description of the event: {consequence_text}."
             background_tasks.add_task(generate_image_task, image_generation_prompt, option_task_id)
             image_tasks.append({
                 "event_id": event["id"],
