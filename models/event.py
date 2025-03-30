@@ -13,4 +13,5 @@ class Event(BaseModel):
     description: Optional[str] = None
     image: Optional[str] = None
     date: str
+    music_file: Optional[str] = None
     options: List[Option]
