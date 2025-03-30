@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
@@ -36,6 +36,9 @@ app.add_middleware(
     allow_methods=["*"],  # Allows all methods
     allow_headers=["*"],  # Allows all headers
 )
+
+# In-memory task status tracker
+image_task_status = {}
 
 class UpdateEventsRequest(BaseModel):
     events: List[Event]
@@ -197,23 +200,45 @@ async def exit_game(request: List[Event]):
 async def generate_image_task(prompt: str, task_id: str):
     output_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
     try:
+        # Set task as processing in our in-memory tracker
+        image_task_status[task_id] = "processing"
         generate_image(prompt, output_path)
+        # Update status when completed
+        image_task_status[task_id] = "completed"
     except Exception as e:
-        # Log the error
+        # Log the error and update status
         print(f"Error generating image for task {task_id}: {str(e)}")
+        image_task_status[task_id] = "error"
 
 @app.post("/generate-image")
 async def request_image_generation(prompt: str, background_tasks: BackgroundTasks) -> ImageGenerationResponse:
     task_id = str(uuid.uuid4())
+    # Initialize task status
+    image_task_status[task_id] = "processing"
     background_tasks.add_task(generate_image_task, prompt, task_id)
     return ImageGenerationResponse(task_id=task_id, status="processing")
 
 @app.get("/image-status/{task_id}")
-async def get_image_status(task_id: str) -> ImageStatus:
-    image_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
-    if os.path.exists(image_path):
-        return ImageStatus(
-            status="completed",
-            image_url=f"/data/generated_images/{task_id}.png"
-        )
-    return ImageStatus(status="processing")
+async def get_image_status(task_id: str, response: Response) -> ImageStatus:
+    """
+    Check the status of an image generation task without waiting for completion.
+    Returns immediately with the current status.
+    Optimized for parallel requests.
+    """
+    # Set cache control headers to prevent browser caching
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    
+    # Check in-memory status first to avoid file system operations when possible
+    status = image_task_status.get(task_id, "unknown")
+    
+    if status == "completed":
+        # Only check file system if our in-memory status says it's completed
+        image_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
+        if os.path.exists(image_path):
+            return ImageStatus(
+                status="completed",
+                image_url=f"data/generated_images/{task_id}.png"
+            )
+        
+    # For processing, error, or unknown status
+    return ImageStatus(status=status)
