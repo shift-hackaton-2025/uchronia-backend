@@ -1,15 +1,23 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 from typing import List, Optional
 import json
 import os
 from pydantic import BaseModel
+import uuid
 from services.generate_events import generate_future_events 
 from services.generate_final_report import generate_final_report
+from services.create_rag.generate_image import generate_image
+from models.event import Event, Option
 
 app = FastAPI()
+
+# Create images directory if it doesn't exist
+IMAGES_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "generated_images")
+os.makedirs(IMAGES_DIR, exist_ok=True)
 
 # Mount the static files directory
 static_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
@@ -24,31 +32,28 @@ app.add_middleware(
     allow_headers=["*"],  # Allows all headers
 )
 
-class Option(BaseModel):
-    title: str
-    option_img_link: Optional[str] = None
-    consequence: str
-    consequence_img_link: Optional[str] = None
-
-
-class Event(BaseModel):
-    id: str
-    title: str
-    image: Optional[str] = None
-    date: str
-    options: List[Option]
-
-
 class UpdateEventsRequest(BaseModel):
     events: List[Event]
     option_chosen: str
     model: str = "gpt-4o"
     temperature: float = 0.7
 
+class UpdateEventsResponse(BaseModel):
+    events: List[Event]
+    image_tasks: List[dict]
+
 class Summary(BaseModel):
     description: str
     # achievement: str
     # chaos_level: str
+
+class ImageGenerationResponse(BaseModel):
+    task_id: str
+    status: str
+
+class ImageStatus(BaseModel):
+    status: str
+    image_url: Optional[str] = None
 
 @app.get("/", status_code=200)
 async def healthcheck():
@@ -90,8 +95,8 @@ async def get_initial_events():
     return events[:4]  # Return only the first 4 events to match the expected response
 
 
-@app.post("/update_events", response_model=List[Event])
-def update_events(request: UpdateEventsRequest):
+@app.post("/update_events", response_model=UpdateEventsResponse)
+async def update_events(request: UpdateEventsRequest, background_tasks: BackgroundTasks):
     # option_chosen format: "{event_id}_{option_idx}"
     event_id, option_idx = map(str, request.option_chosen.split("_"))
     
@@ -105,7 +110,7 @@ def update_events(request: UpdateEventsRequest):
         "consequence": event.options[int(option_idx)].consequence
     }
 
-    # filter events to remove, future events and remove options for past events
+    # filter events to remove future events and remove options for past events
     print("Original events:", [{"id": e.id, "date": e.date, "title": e.title} for e in request.events])
     
     # Sort events by date first
@@ -119,29 +124,20 @@ def update_events(request: UpdateEventsRequest):
     filtered_events = sorted_events[:chosen_event_index + 1]
     print("Filtered events:", [{"id": e.id, "date": e.date, "title": e.title} for e in filtered_events])
     
-    _, raw_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
+    # Generate new events
+    _, new_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
     
-    # Transform raw events into Event model format
-    new_events = []
-    for raw_event in raw_events:
-        event = {
-            "id": raw_event["id"],
-            "title": raw_event["title"],
-            "image": None,
-            "date": raw_event["date"],
-            "options": [
-            {
-                "title": opt["title"],
-                "option_img_link": None,
-                "consequence": opt["consequence"],
-                "consequence_img_link": None
-            }
-            for idx, opt in enumerate(raw_event["options"], start=1)
-            ]
-        }
-        new_events.append(event)
+    # Start image generation tasks for new events
+    image_tasks = []
+    for event in new_events:
+        task_id = str(uuid.uuid4())
+        background_tasks.add_task(generate_image_task, event["title"], task_id)
+        image_tasks.append({
+            "event_id": event["id"],
+            "task_id": task_id
+        })
     
-    return new_events
+    return UpdateEventsResponse(events=new_events, image_tasks=image_tasks)
 
 @app.post("/exit_game", response_model=Summary)
 def exit_game(request: List[Event]):
@@ -160,3 +156,27 @@ def exit_game(request: List[Event]):
         return summary
     else:
         raise HTTPException(status_code=500, detail="Error generating final report")
+
+async def generate_image_task(prompt: str, task_id: str):
+    output_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
+    try:
+        generate_image(prompt, output_path)
+    except Exception as e:
+        # Log the error
+        print(f"Error generating image for task {task_id}: {str(e)}")
+
+@app.post("/generate-image")
+async def request_image_generation(prompt: str, background_tasks: BackgroundTasks) -> ImageGenerationResponse:
+    task_id = str(uuid.uuid4())
+    background_tasks.add_task(generate_image_task, prompt, task_id)
+    return ImageGenerationResponse(task_id=task_id, status="processing")
+
+@app.get("/image-status/{task_id}")
+async def get_image_status(task_id: str) -> ImageStatus:
+    image_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
+    if os.path.exists(image_path):
+        return ImageStatus(
+            status="completed",
+            image_url=f"/data/generated_images/{task_id}.png"
+        )
+    return ImageStatus(status="processing")
