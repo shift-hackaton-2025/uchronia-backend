@@ -113,8 +113,8 @@ async def format_narrative_arc(narrative_arc):
                 }
             ]
         }
-        The 
         Don't output any text other than the JSON. Output should be in French
+        There should be exactly 3 events and 2 options for each event
         """,
     }
     user_message = {
