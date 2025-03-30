@@ -11,7 +11,8 @@ import uuid
 from services.generate_events import generate_future_events 
 from services.generate_final_report import generate_final_report
 from services.create_rag.generate_image import generate_image
-from models.event import Event, Option
+from models.event import Event
+from services.music.choose_music import choose_music
 
 app = FastAPI()
 
@@ -79,6 +80,7 @@ async def get_initial_events():
             "description": story["description"],
             "image": story["img"],  # No image links in the source data
             "date": story["date"],  # No dates in the source data
+            "music_file": story["music_file"],
             "options": []
         }
 
@@ -137,7 +139,8 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
             "event_id": event["id"],
             "task_id": task_id
         })
-    
+        # Choose music for the event
+        event["music_file"] = choose_music(event["title"])
     return UpdateEventsResponse(events=new_events, image_tasks=image_tasks)
 
 @app.post("/exit_game", response_model=Summary)
