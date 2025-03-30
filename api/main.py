@@ -64,6 +64,11 @@ class ImageStatus(BaseModel):
 async def healthcheck():
     return {"status": "healthy"}
 
+@app.get("/version", status_code=200)
+async def get_version():
+    """Return a hardcoded version to confirm deployment"""
+    return {"version": "1.0.0", "name": "uchronia-backend", "timestamp": "2025-03-30"}
+
 @app.get("/get_initial_events", response_model=List[Event])
 async def get_initial_events():
     """Return events from the starting deck JSON file with options and consequences"""
