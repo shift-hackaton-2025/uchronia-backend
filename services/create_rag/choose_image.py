@@ -85,8 +85,21 @@ def find_closest_event_ids(descriptions):
     # Compute similarities with the database for all at once
     similarities = cosine_similarity(query_vecs, embeddings)
     
-    # Get the best index for each query
-    best_indices = similarities.argmax(axis=1)
+    # Track already used indices to avoid duplicates
+    used_indices = set()
+    best_indices = []
+    
+    # For each query, find the best unused index
+    for i in range(len(descriptions)):
+        # Get indices sorted by similarity (highest to lowest)
+        sorted_indices = similarities[i].argsort()[::-1]
+        
+        # Find the first index that hasn't been used yet
+        for idx in sorted_indices:
+            if idx not in used_indices:
+                best_indices.append(idx)
+                used_indices.add(idx)
+                break
     
     # Convert to event IDs
     event_ids = [int(ids[idx]) for idx in best_indices]
