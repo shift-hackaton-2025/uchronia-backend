@@ -169,7 +169,7 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
             "type": "event"
         })
         image_id = find_closest_event_id(event["title"] + " - Year : " + event["date"])
-        event["img"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
+        event["image"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
 
         # Options images
         for idx, option in enumerate(event["options"]):
