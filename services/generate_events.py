@@ -51,8 +51,8 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         """,
     }
     completion = litellm.completion(
-        # model=model,
-        model="groq/llama-3.3-70b-versatile",
+        model=model,
+        # model="groq/llama-3.3-70b-versatile",
         temperature=temperature,
         messages=[system_message, user_message],
         metadata={
