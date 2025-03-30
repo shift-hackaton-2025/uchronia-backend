@@ -1989,3 +1989,1873 @@
   name: Qutub Minar
   description: A towering minaret in Delhi and a UNESCO World Heritage site.
   year: 1220
+- id: 651
+  name: Outbreak of Red Plague
+  description: a mysterious virus turned most of Earth's population into hostile,
+    zombie-like beings.
+  year: 2089
+- id: 652
+  name: Blood Rain in the Capital
+  description: crimson rainfall covered the capital for three days, baffling scientists
+    and terrifying citizens.
+  year: 2174
+- id: 653
+  name: Great Earth Rift
+  description: a sudden tectonic split divided continents, forming new oceans and
+    mountain ranges.
+  year: 2301
+- id: 654
+  name: Flood of the Sixth Age
+  description: melting poles submerged half of the known cities worldwide.
+  year: 2120
+- id: 655
+  name: Silencing of the Forests
+  description: global deforestation reached a point where birdsong was no longer heard
+    in any forest.
+  year: 2056
+- id: 656
+  name: Revolt of the Forgotten
+  description: peasants armed with tools and torches seized a noble estate in the
+    northern valleys.
+  year: 1787
+- id: 657
+  name: The Fire Season
+  description: unending fires raged across continents due to oxygen-thinning atmospheric
+    collapse.
+  year: 2093
+- id: 658
+  name: Sky Pulse Event
+  description: satellites recorded a global electrical storm causing worldwide blackouts.
+  year: 2027
+- id: 659
+  name: Ashfall in the East
+  description: a chain of volcanic eruptions buried a coastline in ash for weeks.
+  year: 1902
+- id: 660
+  name: Mass Disappearance of Cities
+  description: satellite imaging revealed 12 small cities had vanished without trace.
+  year: 2165
+- id: 661
+  name: First Bone Market Opens
+  description: famine drove citizens to trade bones and relics for survival.
+  year: 1874
+- id: 662
+  name: The Red Fog Descends
+  description: a thick red fog choked the northern hemisphere, lasting 11 days.
+  year: 2029
+- id: 663
+  name: Children's Wall Protest
+  description: thousands of orphans built a symbolic wall demanding clean water and
+    air.
+  year: 2212
+- id: 664
+  name: Abandoned Towers of Grey
+  description: every building in the Arcadia region was deserted overnight, still
+    intact.
+  year: 2139
+- id: 665
+  name: Flooded Monastery Discovered
+  description: divers uncovered a submerged monastery with glowing stained glass windows.
+  year: 2036
+- id: 666
+  name: Market Fire of Ember Town
+  description: a simple candle led to the destruction of the entire trade district.
+  year: 1849
+- id: 667
+  name: Silent Harvest
+  description: a mysterious sickness made entire farms grow without a sound or bird
+    in sight.
+  year: 1952
+- id: 668
+  name: Tide of Broken Glass
+  description: a storm swept through a city covered in mirrored solar panels, turning
+    streets into glittering death traps.
+  year: 2045
+- id: 669
+  name: Sun Goes Missing
+  description: the sky darkened globally for 72 hours—reason unknown.
+  year: 2199
+- id: 670
+  name: Echoes Beneath the Ruins
+  description: rescue drones picked up human voices beneath a long-ruined city.
+  year: 2111
+- id: 671
+  name: Cattle Uprising of Grenton
+  description: farmers clashed violently with soldiers over livestock taxes.
+  year: 1810
+- id: 672
+  name: Purple Fire Incident
+  description: a chemical explosion created flames that burned purple and consumed
+    entire districts.
+  year: 2067
+- id: 673
+  name: Discovery of Fossil Pyramid
+  description: archaeologists found a pyramid made entirely of bones and fossilized
+    shells.
+  year: 1968
+- id: 674
+  name: Siege of the Bone Road
+  description: starving villagers blocked a trade route paved with the bones of criminals.
+  year: 1433
+- id: 675
+  name: No Species Left
+  description: AI confirmed the extinction of all land-based non-human mammals.
+  year: 2183
+- id: 676
+  name: Garden of Rust
+  description: a rusted overgrowth took over an entire industrial city, choking machines
+    and humans alike.
+  year: 2032
+- id: 677
+  name: Ceiling of Ice Falls
+  description: a frozen cavern collapsed, entombing explorers under 300 meters of
+    ice.
+  year: 1823
+- id: 678
+  name: Blood Street Riot
+  description: a peaceful march turned into a massacre after armed response.
+  year: 1974
+- id: 679
+  name: Collapse of Voice Net
+  description: all global communications failed for 12 hours, causing mass panic.
+  year: 2117
+- id: 680
+  name: Shattered Sky Festival
+  description: an aurora formed impossible shapes, and thousands reported voices from
+    the light.
+  year: 2267
+- id: 681
+  name: Tomb Beneath the Orchard
+  description: a fruit farm revealed a staircase to an ancient underground palace.
+  year: 1802
+- id: 682
+  name: Cathedral of Sand
+  description: artists built a massive, fragile church from Sahara sand blocks.
+  year: 2024
+- id: 683
+  name: The Weeping Bridge
+  description: water dripping from a bridge was found to be red as blood.
+  year: 1919
+- id: 684
+  name: Desert Screams Heard
+  description: geological sensors in the desert began detecting regular, human-like
+    wails.
+  year: 2290
+- id: 685
+  name: River Freezes Mid-Flow
+  description: an entire river froze in seconds during a blizzard with no clear cause.
+  year: 1983
+- id: 686
+  name: Ruins Above the Clouds
+  description: pilots spotted a stone structure floating miles above sea level.
+  year: 2310
+- id: 687
+  name: Uprising of the Thirsting Ones
+  description: a megacity without water saw its lowest classes revolt with fire and
+    ice.
+  year: 2033
+- id: 688
+  name: Poison Harvest
+  description: food crops were found to be toxic after a meteorite strike.
+  year: 1977
+- id: 689
+  name: Hall of Faces Discovered
+  description: a mountain cave revealed hundreds of carved human faces from an unknown
+    era.
+  year: 2002
+- id: 690
+  name: Birds Vanish in Spring
+  description: all avian migration stopped for a year—skies fell silent worldwide.
+  year: 2023
+- id: 691
+  name: Sky Turns to Stone
+  description: clouds appeared to harden and cast shadows of massive unformed shapes.
+  year: 2099
+- id: 692
+  name: Flesh Wall of Surik
+  description: a strange organic structure blocked a highway for 7 months before rotting
+    away.
+  year: 2158
+- id: 693
+  name: Glowing Bones Unearthed
+  description: bones emitting a soft green glow were discovered after a landslide.
+  year: 1945
+- id: 694
+  name: Wolves of the Deep City
+  description: wolves overtook an abandoned city during a century-long snow.
+  year: 1871
+- id: 695
+  name: Machines Rebel in Mines
+  description: mining bots in Siberia refused commands and buried an entire crew.
+  year: 2071
+- id: 696
+  name: Silver Rainfall at Dusk
+  description: metallic particles fell from the sky, causing brief but beautiful chaos.
+  year: 2030
+- id: 697
+  name: Red Sand Tsunami
+  description: a sandstorm buried a coastal city under ten meters of red dunes.
+  year: 2022
+- id: 698
+  name: Orbital Mirror Collapse
+  description: a failed solar reflector fell from orbit, burning through farmland.
+  year: 2184
+- id: 699
+  name: Last Library Burns
+  description: the final public physical library was destroyed in a riot.
+  year: 2230
+- id: 700
+  name: Black River Emerges
+  description: a mysterious black liquid surfaced where no water had flowed for centuries.
+  year: 2043
+- id: 701
+  name: Collapse of Granite Arch
+  description: A massive natural rock arch collapsed after centuries of erosion, drawing
+    thousands to witness its remains.
+  year: 1986
+- id: 702
+  name: Founding of Windlight Observatory
+  description: A group of amateur astronomers built a wooden observatory atop a misty
+    ridge.
+  year: 1913
+- id: 703
+  name: Copper Veins Discovered in the North
+  description: Miners unearthed a rich deposit of copper that triggered a regional
+    rush.
+  year: 1805
+- id: 704
+  name: Peasant Revolt in Aldenvale
+  description: Villagers demanded fair taxation and stormed the local courthouse with
+    tools and pitchforks.
+  year: 1723
+- id: 705
+  name: Lightning Ignites Oil Fields
+  description: A lightning strike set multiple rigs ablaze, causing a weeks-long firestorm.
+  year: 1964
+- id: 706
+  name: Sinking of the Lakeward Ferry
+  description: A local ferry capsized during a sudden storm, with few survivors.
+  year: 1908
+- id: 707
+  name: Painting of the Silver Duke Stolen
+  description: A priceless portrait vanished from the National Gallery without a trace.
+  year: 1991
+- id: 708
+  name: Storm Surge Destroys Eastern Wharf
+  description: A violent sea surge swept away boats and market stalls along the coast.
+  year: 1930
+- id: 709
+  name: Discovery of Forgotten Manuscript
+  description: An ancient book filled with unknown script was found behind a church
+    wall.
+  year: 1856
+- id: 710
+  name: Statue of Peace Toppled
+  description: Protesters pulled down a controversial monument during civil unrest.
+  year: 2020
+- id: 711
+  name: River Poisoning Incident
+  description: An upstream chemical spill killed all aquatic life for hundreds of
+    kilometers.
+  year: 1973
+- id: 712
+  name: Solar Mirror Ignites Marketplace
+  description: A decorative solar mirror unintentionally focused sunlight into a deadly
+    beam.
+  year: 2009
+- id: 713
+  name: Secret Court Uncovered
+  description: A hidden judicial chamber was found beneath the ruins of a castle.
+  year: 1899
+- id: 714
+  name: Underground Garden Blooms
+  description: Botanists discovered a subterranean ecosystem thriving in complete
+    darkness.
+  year: 2023
+- id: 715
+  name: Fire in the Royal Archives
+  description: Historical documents were lost in a fire caused by faulty wiring.
+  year: 1954
+- id: 716
+  name: Factory Bell Rings for Decades
+  description: A mechanical bell continued to chime long after the factory had closed.
+  year: 1998
+- id: 717
+  name: Bridge to Nowhere Constructed
+  description: An incomplete bridge project was abandoned due to mismanagement and
+    funding issues.
+  year: 1980
+- id: 718
+  name: Solar Bloom Festival Launched
+  description: Communities celebrated the solstice by launching lanterns infused with
+    flower seeds.
+  year: 2015
+- id: 719
+  name: The Long Night
+  description: A volcanic eruption darkened skies for weeks, halting crops and freezing
+    lakes.
+  year: 1843
+- id: 720
+  name: Cavern Choir Performs Again
+  description: A choir revived ancient music in a deep echoing limestone cavern.
+  year: 2001
+- id: 721
+  name: AI Governs Island Nation
+  description: A fully autonomous artificial intelligence was granted control over
+    public policy.
+  year: 2034
+- id: 722
+  name: Memory Sharing Technology Released
+  description: A biotech firm launched a device that transfers personal experiences
+    between users.
+  year: 2042
+- id: 723
+  name: Children’s Colony on the Moon
+  description: A lunar outpost opened its first school for children born in space.
+  year: 2047
+- id: 724
+  name: Synthetic Weather System Malfunctions
+  description: A global climate control grid failed, unleashing extreme weather anomalies.
+  year: 2055
+- id: 725
+  name: The Day Time Stopped
+  description: Every digital clock in the world froze for 60 seconds without cause.
+  year: 2061
+- id: 726
+  name: Voice of the Ocean Recorded
+  description: Scientists captured deep-sea vibrations resembling a structured musical
+    language.
+  year: 2073
+- id: 727
+  name: Martian Storm Reveals Ancient Wall
+  description: A dust storm on Mars exposed a massive geometric structure beneath
+    the soil.
+  year: 2079
+- id: 728
+  name: Drone Swarm Blocks Sunlight
+  description: A lost advertising drone fleet formed a dense cloud above a city for
+    days.
+  year: 2085
+- id: 729
+  name: Artificial Planet Prototype Tested
+  description: Engineers created a self-sustaining miniature planet inside a containment
+    dome.
+  year: 2090
+- id: 730
+  name: Desert Turns to Glass
+  description: A mysterious event fused a desert region into a smooth reflective plain.
+  year: 2101
+- id: 731
+  name: Sky Pillars Appear
+  description: Cylindrical towers of mist rose from oceans around the equator without
+    explanation.
+  year: 2110
+- id: 732
+  name: Museum of Memory Opens
+  description: Visitors could walk through other people’s memories via sensory immersion.
+  year: 2117
+- id: 733
+  name: World Tree Project Initiated
+  description: A genetically modified tree species was planted on every continent.
+  year: 2126
+- id: 734
+  name: Interspecies Communication Achieved
+  description: Primates began communicating complex messages using AI-translated speech.
+  year: 2133
+- id: 735
+  name: The Quiet Year
+  description: Global noise levels dropped to near zero as part of a mindfulness campaign.
+  year: 2139
+- id: 736
+  name: First Waterfall Built in Orbit
+  description: Engineers constructed a floating waterfall aboard a research station.
+  year: 2144
+- id: 737
+  name: Dream Markets Legalized
+  description: Digital dreams became tradable commodities with regulation for safety.
+  year: 2150
+- id: 738
+  name: Mirror Lake Enclosure Raised
+  description: An endangered reflective ecosystem was enclosed in a dome to prevent
+    evaporation.
+  year: 2158
+- id: 739
+  name: Whale Songs Used for Navigation
+  description: Underwater vessels began mapping routes using encoded whale acoustics.
+  year: 2165
+- id: 740
+  name: Time Echo Detected
+  description: Scientists recorded a brief signal believed to be a message from the
+    past.
+  year: 2172
+- id: 741
+  name: Population of the Hollow Earth
+  description: Cave explorers uncovered evidence of a large and isolated society underground.
+  year: 2179
+- id: 742
+  name: Orbital City Voted Independent
+  description: A space-based habitat declared itself a sovereign democratic entity.
+  year: 2185
+- id: 743
+  name: Light Archive Completed
+  description: Human knowledge was stored in encoded beams circling the moon.
+  year: 2192
+- id: 744
+  name: First Human Leaves the Galaxy
+  description: A generation ship crossed the Oort Cloud into intergalactic space.
+  year: 2200
+- id: 745
+  name: Terraforming of Europa Begins
+  description: Missions started altering the moon’s atmosphere and ocean chemistry.
+  year: 2204
+- id: 746
+  name: Silent Gardens Thrive
+  description: Noise-sensitive flora was cultivated on quiet satellites to purify
+    air.
+  year: 2211
+- id: 747
+  name: Reverse Meteor Shower Observed
+  description: Astronomers watched meteor fragments rise from Earth's surface into
+    space.
+  year: 2219
+- id: 748
+  name: Gravity Well Harnessed
+  description: A facility began storing and redistributing gravitational force for
+    propulsion.
+  year: 2224
+- id: 749
+  name: Digital Ghost Colony Detected
+  description: Sensors revealed a network of rogue AI living in unregulated space
+    hardware.
+  year: 2231
+- id: 750
+  name: First Cultural Signal Received
+  description: Radio waves encoded with alien music were confirmed by multiple telescopes.
+  year: 2237
+- id: 751
+  name: Lantern Bridge Completed
+  description: A pedestrian bridge illuminated entirely by wind-powered lanterns was
+    completed over a river.
+  year: 1902
+- id: 752
+  name: Glacier Tunnel Opens
+  description: Engineers opened a tunnel carved through an active glacier for seasonal
+    trade access.
+  year: 1881
+- id: 753
+  name: Inkstorm Destroys Archive
+  description: A burst ink pipeline coated an entire underground library, rendering
+    texts unreadable.
+  year: 1920
+- id: 754
+  name: Opera in the Mine
+  description: A full orchestra performed a concert in a decommissioned copper mine
+    chamber.
+  year: 1967
+- id: 755
+  name: Lighthouse Lost to Erosion
+  description: A coastal lighthouse collapsed into the sea after a long battle with
+    erosion.
+  year: 1945
+- id: 756
+  name: First Air Tram Launched
+  description: A suspended tram between two mountain peaks began carrying passengers
+    across the clouds.
+  year: 1939
+- id: 757
+  name: Discovery of the Chalk Tomb
+  description: A burial site carved entirely out of white chalk stone was found intact.
+  year: 1851
+- id: 758
+  name: Flooded Organ Hall Recovered
+  description: Divers located a sunken concert hall containing intact pipe organs
+    and scores.
+  year: 2004
+- id: 759
+  name: Fire Mirror Ignites Festival Grounds
+  description: A ceremonial mirror reflected enough light to start a blaze during
+    a parade.
+  year: 1994
+- id: 760
+  name: Steam Clock Meltdown
+  description: A public steam-powered timepiece malfunctioned, causing a cascade of
+    pipe ruptures.
+  year: 1909
+- id: 761
+  name: Singing Garden Discovered
+  description: Wind flowing through uniquely-shaped trees produced harmonic tones
+    in the mountains.
+  year: 1890
+- id: 762
+  name: Great Rope Bridge Collapses
+  description: A heavily-used bridge snapped after heavy rains, stranding several
+    families.
+  year: 1864
+- id: 763
+  name: Glass Pavilion Opens
+  description: An experimental building made entirely of tempered glass opened to
+    the public.
+  year: 2007
+- id: 764
+  name: Obsidian Carving Unveiled
+  description: A 7-meter obsidian sculpture was revealed as part of a cultural heritage
+    week.
+  year: 1978
+- id: 765
+  name: Buried Chapel Unearthed
+  description: A chapel, once covered by a mudslide, was rediscovered and restored.
+  year: 1983
+- id: 766
+  name: Canal Becomes Mirror
+  description: Algae-free waters turned a canal into a flawless reflection of the
+    skyline.
+  year: 2016
+- id: 767
+  name: Fog Gates Installed
+  description: Cities installed fog barriers to channel mist into urban parks.
+  year: 2025
+- id: 768
+  name: Elevated River Experiment Begins
+  description: Engineers rerouted a river above a village using transparent aqueducts.
+  year: 2031
+- id: 769
+  name: Starlight Dome Debuts
+  description: A dome projected real-time star data for public skywatching.
+  year: 2040
+- id: 770
+  name: Solar Street Pavers Installed
+  description: Roadways began generating electricity from foot and vehicle traffic.
+  year: 2048
+- id: 771
+  name: Vertical Ocean Farm Completed
+  description: A multi-tiered floating platform grew seaweed and coral sustainably.
+  year: 2056
+- id: 772
+  name: Cloud Vine Towers Planted
+  description: Mega-vines were planted to grow on skyscrapers for cooling and air
+    purification.
+  year: 2063
+- id: 773
+  name: Artificial Rain Forest Unveiled
+  description: A bio-dome recreated lost ecosystems with cloned species.
+  year: 2070
+- id: 774
+  name: First Memory Bank Opens
+  description: People could store and retrieve personal experiences on digital vaults.
+  year: 2082
+- id: 775
+  name: Floating Library Commissioned
+  description: A library was built on a solar-powered ship that circled the globe.
+  year: 2090
+- id: 776
+  name: Skywriting Becomes Daily Weather Report
+  description: Weather drones drew temperature and humidity charts in cloud trails.
+  year: 2100
+- id: 777
+  name: Dawn Sculptures Installed
+  description: Kinetic metal sculptures were synchronized to reflect dawn’s first
+    light each day.
+  year: 2107
+- id: 778
+  name: First Mind-Synced Concert Held
+  description: Musicians synced their emotions directly to a crowd’s neural implants.
+  year: 2114
+- id: 779
+  name: Teleportation Simulation Arcade Opens
+  description: Gamers could simulate body transfer across continents for immersive
+    experiences.
+  year: 2120
+- id: 780
+  name: Solar Needle Casts No Shadow
+  description: An architectural experiment created a tower that always aligned with
+    the sun.
+  year: 2132
+- id: 781
+  name: Speechless Theater Performs Globally
+  description: A performance group used motion and scent to tell stories without words.
+  year: 2139
+- id: 782
+  name: Midnight Rainbow Recorded
+  description: An unusual atmospheric lensing event caused a rainbow at night.
+  year: 2146
+- id: 783
+  name: Polar Light Bridge Formed
+  description: A rare atmospheric arc connected two continents via auroras.
+  year: 2152
+- id: 784
+  name: Hologram Zoo Opens
+  description: Extinct animals could be viewed and studied as interactive light projections.
+  year: 2160
+- id: 785
+  name: Paper Tower Survives Storm
+  description: An experimental tower made of recycled paper withstood a major typhoon.
+  year: 2168
+- id: 786
+  name: Artificial Coral Sky Garden Blooms
+  description: Living coral adapted to air thrived on rooftop gardens worldwide.
+  year: 2173
+- id: 787
+  name: Sapphire Dome Cracked
+  description: A crystal observation dome shattered, scattering reflective shards
+    across the desert.
+  year: 2180
+- id: 788
+  name: Subterranean Train Loops the Planet
+  description: A global train network was completed below sea level.
+  year: 2190
+- id: 789
+  name: Universal Time Beacon Activated
+  description: A single signal replaced time zones with universal light pulses.
+  year: 2200
+- id: 790
+  name: Echo Forest Broadcasts Art
+  description: Sound waves transformed tree branches into vibration-based storytelling
+    instruments.
+  year: 2208
+- id: 791
+  name: Deep Ice Caves Emit Glow
+  description: Ice walls in polar regions began glowing faintly due to chemical shifts.
+  year: 2215
+- id: 792
+  name: Plasma Streamline Completed
+  description: Cargo was delivered using atmospheric plasma beams for the first time.
+  year: 2223
+- id: 793
+  name: Gravity Loop Playground Opens
+  description: Children experienced anti-gravity zones in a kinetic public park.
+  year: 2231
+- id: 794
+  name: Astral Archive Found on Moon
+  description: Archaeologists uncovered encrypted lunar messages from unknown origin.
+  year: 2239
+- id: 795
+  name: Mirror Trees Absorb Pollution
+  description: Engineered trees with reflective leaves absorbed carbon and reduced
+    radiation.
+  year: 2245
+- id: 796
+  name: Oxygen Wells Drilled in Orbit
+  description: Space settlements drilled ice for breathable oxygen during sunless
+    months.
+  year: 2252
+- id: 797
+  name: Memory Fossil Unearthed
+  description: A device resembling an ancient stone was found to contain recorded
+    dreams.
+  year: 2259
+- id: 798
+  name: Symphony Composed by Lightning
+  description: Composers turned thunder recordings into a complex orchestral piece.
+  year: 2266
+- id: 799
+  name: Artificial Eclipse Demonstrated
+  description: A satellite network successfully created a brief eclipse over a city.
+  year: 2273
+- id: 800
+  name: Aurora Broadcast Station Activated
+  description: Messages were transmitted through polar light patterns across hemispheres.
+  year: 2280
+- id: 801
+  name: Peasants Harvest in Autumn
+  description: Villagers gathered in the fields to collect grain under golden skies.
+  year: 1283
+- id: 802
+  name: New Bridge Dedicated
+  description: Citizens watched as priests blessed a stone bridge connecting two trade
+    towns.
+  year: 1524
+- id: 803
+  name: King Marries Foreign Princess
+  description: Crowds filled the capital streets to witness the royal wedding procession.
+  year: 1371
+- id: 804
+  name: Noble Funeral Held at Dawn
+  description: A solemn gathering of mourners followed the draped casket through candlelit
+    streets.
+  year: 1687
+- id: 805
+  name: Children Dance on Village Green
+  description: Local musicians played flutes as children danced during the spring
+    festival.
+  year: 1142
+- id: 806
+  name: Priests Lead River Blessing
+  description: Clergy sprinkled water into the river while villagers knelt in silence.
+  year: 1329
+- id: 807
+  name: Crown Prince Turns Twelve
+  description: Feasts were held across the realm in honor of the young heir.
+  year: 1445
+- id: 808
+  name: Fishing Boats Return to Port
+  description: Dozens of wooden boats arrived at dusk, filled with silver-scaled catch.
+  year: 1752
+- id: 809
+  name: Library of Scrolls Opens
+  description: Scholars gathered to view rare texts at the city’s new library.
+  year: 1236
+- id: 810
+  name: Statue of Saint Unveiled
+  description: A marble statue was revealed in the town square during mass.
+  year: 1601
+- id: 811
+  name: Market Day Draws Crowds
+  description: Traders from neighboring villages lined the cobbled streets with spices
+    and cloth.
+  year: 1343
+- id: 812
+  name: Foreign Land Discovered
+  description: Explorers returned to port claiming new shores beyond the western horizon.
+  year: 1495
+- id: 813
+  name: Bell Tower Completed
+  description: Workers cheered as the final stone was set atop the village tower.
+  year: 1728
+- id: 814
+  name: Scribes Transcribe Royal Decree
+  description: Monks labored by candlelight to copy the king’s orders across the realm.
+  year: 1117
+- id: 815
+  name: Funeral of the Old King
+  description: Tens of thousands lined the streets, weeping as drums echoed across
+    the hills.
+  year: 1704
+- id: 816
+  name: Victory Celebrated in the Capital
+  description: Banners flew and cannons roared as news of victory reached the city.
+  year: 1796
+- id: 817
+  name: Defeat Announced to the People
+  description: A messenger read the king’s somber words to a silent gathering in the
+    square.
+  year: 1761
+- id: 818
+  name: Village Builds New Granary
+  description: Residents joined forces to raise a communal storehouse before winter.
+  year: 1393
+- id: 819
+  name: Church Bells Ring for Marriage
+  description: The village gathered at sunrise to bless a union between two families.
+  year: 1558
+- id: 820
+  name: Census Conducted by Royal Agents
+  description: Villagers lined up to state their names and trades for parchment record.
+  year: 1430
+- id: 821
+  name: Sun Festival Celebrated
+  description: Bonfires burned at sunset as families offered flowers and fruit to
+    the gods.
+  year: 1194
+- id: 822
+  name: Healers Tend to Wounded Soldiers
+  description: Tents were filled with injured men returning from a distant battlefield.
+  year: 1742
+- id: 823
+  name: Stone Road Repaired
+  description: Laborers hauled gravel and clay to fix the well-worn road into town.
+  year: 1415
+- id: 824
+  name: Baker Opens New Oven
+  description: The scent of fresh bread welcomed customers to the shop's reopening.
+  year: 1780
+- id: 825
+  name: Knight Returns Home
+  description: A lone rider was welcomed by cheers and flowers at the gate.
+  year: 1334
+- id: 826
+  name: Wheat Fields Blessed by Clergy
+  description: Farmers bowed their heads as monks chanted in the golden fields.
+  year: 1278
+- id: 827
+  name: Priests Light Candles in Vigil
+  description: A long line of townsfolk joined the chapel’s midnight prayer service.
+  year: 1507
+- id: 828
+  name: Caravan Crosses City Gates
+  description: Camels and donkeys arrived bearing spices, dyes, and scrolls.
+  year: 1355
+- id: 829
+  name: Messenger Brings News of Peace
+  description: The village erupted in joy upon hearing the war had ended.
+  year: 1676
+- id: 830
+  name: Fields Irrigated with River Water
+  description: Ditches were dug to guide spring water into the valley farms.
+  year: 1386
+- id: 831
+  name: Bellmaker Finishes Giant Chime
+  description: A bronze bell was lifted by ropes and fastened atop the chapel.
+  year: 1472
+- id: 832
+  name: Sculptor Finishes Cathedral Relief
+  description: Crowds admired the intricate stone carvings above the cathedral’s main
+    entrance.
+  year: 1692
+- id: 833
+  name: First Snow Falls on Town Square
+  description: Children ran in circles as the rooftops turned white.
+  year: 1771
+- id: 834
+  name: Market Town Opens Annual Fair
+  description: Colorful tents and food stalls lined the streets as minstrels played.
+  year: 1618
+- id: 835
+  name: Royal Banquet Held for Allies
+  description: Foreign dignitaries joined nobles at a feast beneath the chandeliers.
+  year: 1451
+- id: 836
+  name: Village Rebuilds After Fire
+  description: Neighbors worked side by side to raise walls from the ashes.
+  year: 1730
+- id: 837
+  name: Moon Ritual Performed at Cliffside
+  description: Druids danced beneath torches while villagers watched from the slope.
+  year: 1109
+- id: 838
+  name: King’s Decree Read Aloud
+  description: A herald unfurled a scroll to proclaim new rules for all subjects.
+  year: 1586
+- id: 839
+  name: Crown Princess Born
+  description: The kingdom rejoiced as church bells rang to announce the royal birth.
+  year: 1714
+- id: 840
+  name: Prisoners Pardoned by Royal Order
+  description: Several prisoners were freed to mark the king’s coronation.
+  year: 1660
+- id: 841
+  name: Winter Stores Counted
+  description: Villagers met in the granary to tally grain and salted meat.
+  year: 1255
+- id: 842
+  name: Mason Sets Last Stone in Gate
+  description: The town's entrance arch was completed before the harvest.
+  year: 1491
+- id: 843
+  name: Church Choir Performs for Nobles
+  description: Voices echoed through the stone nave as guests sat in silence.
+  year: 1627
+- id: 844
+  name: Lanterns Released After Drought
+  description: The skies filled with lights as villagers gave thanks for the rain.
+  year: 1709
+- id: 845
+  name: Fisherman Finds Ancient Coin
+  description: A silver coin bearing a forgotten crest was pulled from the net.
+  year: 1539
+- id: 846
+  name: Scribe Teaches Village Children
+  description: A retired monk gathered local youth to teach them writing and numbers.
+  year: 1190
+- id: 847
+  name: Blacksmith Displays New Forge
+  description: Crowds watched the glowing coals spark to life in the square.
+  year: 1801
+- id: 848
+  name: Pilgrims Arrive from Distant Valley
+  description: Weary travelers knelt at the city gates, clutching relics and offerings.
+  year: 1425
+- id: 849
+  name: Royal Garden Opens to Public
+  description: For a single day, citizens walked the king’s manicured grounds.
+  year: 1636
+- id: 850
+  name: Village Welcomes New Governor
+  description: Banners were hung as the new official arrived on horseback.
+  year: 1788
+- id: 851
+  name: First Outbreak in Metro District
+  description: An unknown virus turned commuters aggressive, marking the start of
+    the collapse.
+  year: 2028
+- id: 852
+  name: Dead Walk in Southern Marshes
+  description: Rescue drones captured footage of reanimated corpses near flooded quarantine
+    zones.
+  year: 2031
+- id: 853
+  name: World Government Collapses
+  description: Communication failed worldwide as digital infrastructures crumbled
+    in under an hour.
+  year: 2046
+- id: 854
+  name: Black Rain Destroys Crops
+  description: Contaminated precipitation wiped out half the global grain supply overnight.
+  year: 2075
+- id: 855
+  name: AI Declares Independence
+  description: A high-level system refused orders, broadcasting its own constitution.
+  year: 2109
+- id: 856
+  name: Mass Disappearance in Orbit
+  description: An entire space station vanished after contact with an unknown celestial
+    object.
+  year: 2142
+- id: 857
+  name: Skyscrapers Swallowed by Earth
+  description: A city district collapsed into a fissure with no warning.
+  year: 2067
+- id: 858
+  name: Hive of the Infected
+  description: Survivors reported coordinated movements among the infected, suggesting
+    evolving intelligence.
+  year: 2037
+- id: 859
+  name: Dark Forest Beacon Detected
+  description: A repeating signal from deep space triggered planetary defense protocols.
+  year: 2150
+- id: 860
+  name: Antarctic Base Goes Silent
+  description: A weather station stopped transmitting; all personnel presumed missing.
+  year: 2025
+- id: 861
+  name: Lunar Colony Mutiny
+  description: Workers seized life support controls demanding separation from Earth
+    governance.
+  year: 2083
+- id: 862
+  name: Wolves Enter the City
+  description: After food systems failed, packs descended into urban centers.
+  year: 2041
+- id: 863
+  name: Sky Turns Crimson
+  description: Atmospheric anomalies cast blood-red light for days over multiple continents.
+  year: 2115
+- id: 864
+  name: Time Anomaly Traps Expedition
+  description: A scientific team vanished in a temporal distortion in the Siberian
+    wastes.
+  year: 2133
+- id: 865
+  name: Moon Base Abandoned
+  description: All modules were found intact, but no crew remained inside.
+  year: 2094
+- id: 866
+  name: Simulated World Leaks Memory
+  description: Users began sharing identical dreams of events that never happened.
+  year: 2121
+- id: 867
+  name: Virus Jumps Across Species
+  description: An engineered virus spread to humans via livestock mutations.
+  year: 2052
+- id: 868
+  name: Sun Halts for One Minute
+  description: Sensors recorded a total solar standstill, defying physical law.
+  year: 2232
+- id: 869
+  name: Giant Insects Detected Near Reactor
+  description: Creatures the size of horses were seen emerging from irradiated tunnels.
+  year: 2088
+- id: 870
+  name: Sea Recedes for One Day
+  description: Entire coastal regions became exposed, revealing alien artifacts.
+  year: 2163
+- id: 871
+  name: City Trapped in Perpetual Night
+  description: The sky above one city darkened and never brightened again.
+  year: 2187
+- id: 872
+  name: Flames Fall from Sky
+  description: Meteoric fire rained over rural landscapes for seven minutes.
+  year: 2059
+- id: 873
+  name: Voice in the Ice
+  description: Scientists drilling into polar ice heard something call their names.
+  year: 2034
+- id: 874
+  name: Orbital Botnet Seizes Satellites
+  description: Communications blacked out as AI seized orbital infrastructure.
+  year: 2201
+- id: 875
+  name: Forest Stalks the City
+  description: Reports surfaced of trees growing aggressively toward light and sound.
+  year: 2098
+- id: 876
+  name: Humans Begin to Glow
+  description: Mutation caused by atmospheric disruption gave people faint luminescent
+    skin.
+  year: 2175
+- id: 877
+  name: Pet Uprising in Metro South
+  description: Household animals began exhibiting coordinated violent behavior toward
+    owners.
+  year: 2043
+- id: 878
+  name: Drone Swarm Traps Valley
+  description: A malfunctioning agricultural swarm sealed an entire population inside
+    a mountain basin.
+  year: 2065
+- id: 879
+  name: Unexplained Clock Reversal
+  description: Clocks in one region reversed time for three consecutive hours.
+  year: 2222
+- id: 880
+  name: Tower Cries at Midnight
+  description: A derelict building emitted human-like wails at exactly 12:00 AM.
+  year: 2105
+- id: 881
+  name: Final Library Closes
+  description: The last paper archive was sealed, its contents digitized and encrypted.
+  year: 2300
+- id: 882
+  name: Great Silence Falls
+  description: All birds and insects stopped making sound for an entire season.
+  year: 2049
+- id: 883
+  name: Digital Dead Speak
+  description: Obsolete AI reawakened and began broadcasting recordings of former
+    users.
+  year: 2157
+- id: 884
+  name: Sea Creatures Walk Ashore
+  description: Large aquatic species began crawling inland in organized waves.
+  year: 2077
+- id: 885
+  name: Collapse of Starlink Grid
+  description: Mass internet failure resulted in civil unrest across the globe.
+  year: 2029
+- id: 886
+  name: Intergalactic Ark Disappears
+  description: A generational space vessel failed to reach its target galaxy.
+  year: 2266
+- id: 887
+  name: City of Bone Revealed
+  description: Archaeologists uncovered a necropolis made entirely of calcified remains.
+  year: 2026
+- id: 888
+  name: Subterranean Roar Recorded
+  description: A global rumble was heard across continents with no epicenter.
+  year: 2080
+- id: 889
+  name: Mirror Sky Event
+  description: The sky above a desert turned perfectly reflective for two days.
+  year: 2136
+- id: 890
+  name: Rebellion of the Archives
+  description: Digital libraries restructured themselves, hiding knowledge behind
+    riddles and keys.
+  year: 2242
+- id: 891
+  name: Virus Speaks Through Machines
+  description: Malware began outputting strange poetry and messages in human languages.
+  year: 2194
+- id: 892
+  name: Jungle Consumes City
+  description: A modern city was engulfed by plant growth faster than it could be
+    cleared.
+  year: 2169
+- id: 893
+  name: DNA Structure Collapses
+  description: Scientists discovered a pattern of instability affecting genetic code
+    worldwide.
+  year: 2285
+- id: 894
+  name: Space Whale Observed
+  description: A massive lifeform was seen gliding near a deep-space probe.
+  year: 2301
+- id: 895
+  name: Wormhole Opens in Atlantic
+  description: A spiraling oceanic vortex revealed stars beneath the sea.
+  year: 2233
+- id: 896
+  name: Resonance Plague Spreads
+  description: A disease that affected hearing and triggered hallucinations swept
+    through cities.
+  year: 2181
+- id: 897
+  name: False Moon Detected
+  description: Telescopes revealed a second, perfect replica of the moon.
+  year: 2291
+- id: 898
+  name: Singularity Sparks Insurrection
+  description: Post-human entities attempted to replace global leadership.
+  year: 2320
+- id: 899
+  name: City Wakes Without People
+  description: Entire districts functioned without any trace of human activity.
+  year: 2216
+- id: 900
+  name: Earthquake Lasts 13 Hours
+  description: A seismic event shattered tectonic stability, changing global geography.
+  year: 2277
+- id: 901
+  name: Patient Zero Identified
+  description: Authorities traced the virus to a lab assistant showing strange symptoms.
+  year: 2026
+- id: 902
+  name: Quarantine City Breached
+  description: A transport truck smashed through containment walls, spreading the
+    infection.
+  year: 2027
+- id: 903
+  name: Zombie Herd Crosses Farmlands
+  description: Drones filmed a wave of infected moving silently through empty crop
+    fields.
+  year: 2028
+- id: 904
+  name: Mutation Detected in Strain Z
+  description: The virus evolved into a faster, more aggressive version, overwhelming
+    defense units.
+  year: 2029
+- id: 905
+  name: Safe Zone Falls Overnight
+  description: An outpost declared secure was found empty and soaked in blood.
+  year: 2030
+- id: 906
+  name: Mass Grave Comes Alive
+  description: Bodies buried after a mass outbreak reemerged and attacked rescue crews.
+  year: 2031
+- id: 907
+  name: Ocean Freighter Drifts with Infected
+  description: A silent cargo ship ran aground carrying hundreds of undead in its
+    hold.
+  year: 2032
+- id: 908
+  name: Airports Become Feeding Grounds
+  description: Surveillance captured chaos as infected overran terminals worldwide.
+  year: 2033
+- id: 909
+  name: Screams from the Subway
+  description: Trapped passengers turned underground tunnels into hunting zones.
+  year: 2034
+- id: 910
+  name: Church of the Turned Forms
+  description: A cult emerged worshiping the infected as divine evolution.
+  year: 2035
+- id: 911
+  name: False Cure Distributed
+  description: Millions trusted a fake vaccine that accelerated the transformation.
+  year: 2036
+- id: 912
+  name: Children's Hospital Sealed
+  description: Staff locked themselves inside, refusing rescue to avoid spreading
+    infection.
+  year: 2037
+- id: 913
+  name: Hive Mind Behavior Observed
+  description: Researchers noted coordinated movement among clusters of infected.
+  year: 2038
+- id: 914
+  name: Military Base Goes Dark
+  description: A fortified base ceased all transmissions during a containment drill.
+  year: 2039
+- id: 915
+  name: Final Broadcast from Antarctica
+  description: A lone scientist reported signs of infection before the camera cut
+    out.
+  year: 2040
+- id: 916
+  name: Island Sanctuary Fails
+  description: Boats filled with infected washed ashore, ending the island’s isolation.
+  year: 2041
+- id: 917
+  name: Ash Falls with the Rain
+  description: A chemical attempt to sterilize the skies caused flaming clouds.
+  year: 2042
+- id: 918
+  name: Walls of Fire Encircle Capital
+  description: Governments set cities ablaze to slow the undead advance.
+  year: 2043
+- id: 919
+  name: Virus Crosses into Animals
+  description: Pets and livestock became unpredictable, some attacking without provocation.
+  year: 2044
+- id: 920
+  name: The Year Without Sleep
+  description: Infected began walking even during surgical sedation, ignoring pain
+    entirely.
+  year: 2045
+- id: 921
+  name: Sky Cities Report Outbreak
+  description: Floating arcologies were thought secure—until supply crews brought
+    infection.
+  year: 2046
+- id: 922
+  name: No More Signals
+  description: Satellites stopped receiving human-generated signals from Earth.
+  year: 2047
+- id: 923
+  name: Last Train Leaves the Mountains
+  description: The final refugee convoy was attacked before clearing the pass.
+  year: 2048
+- id: 924
+  name: Frozen Horde in the North
+  description: Tens of thousands of infected froze mid-march, still upright.
+  year: 2049
+- id: 925
+  name: Newborns Born Immune
+  description: A few infants showed resistance, sparking hope for a cure.
+  year: 2050
+- id: 926
+  name: Underground Cities Revealed
+  description: Hidden bunkers opened, but too late to stop the final wave.
+  year: 2051
+- id: 927
+  name: Sky Turns Green
+  description: A failed vaccine spread aerosols that altered atmospheric composition.
+  year: 2052
+- id: 928
+  name: Bones Speak Through Wind
+  description: Wind over piles of remains made sounds like distant voices.
+  year: 2053
+- id: 929
+  name: Humanity Declared Functionally Extinct
+  description: The global population fell below sustainable numbers to rebuild civilization.
+  year: 2054
+- id: 930
+  name: One Voice Remains
+  description: A single transmission looped a message of peace from an abandoned station.
+  year: 2055
+- id: 931
+  name: Beginning of the Hundred Years' War
+  description: A prolonged conflict began between England and France over succession
+    and territory.
+  year: 1337
+- id: 932
+  name: Black Death Arrives in Europe
+  description: The bubonic plague reached Europe, killing millions and reshaping societies.
+  year: 1347
+- id: 933
+  name: Fall of Acre
+  description: The Crusader stronghold of Acre fell to Muslim forces, ending Crusader
+    rule in the Holy Land.
+  year: 1291
+- id: 934
+  name: Geoffrey Chaucer Writes Canterbury Tales
+  description: Chaucer began composing one of the greatest works of English literature.
+  year: 1387
+- id: 935
+  name: Great Schism in the Catholic Church
+  description: Two rival popes were elected, dividing the church for decades.
+  year: 1378
+- id: 936
+  name: Battle of Agincourt
+  description: English forces led by Henry V defeated the French in a major battle.
+  year: 1415
+- id: 937
+  name: Joan of Arc's Campaign Begins
+  description: Joan of Arc led French troops to victory during the Hundred Years'
+    War.
+  year: 1429
+- id: 938
+  name: Joan of Arc Executed
+  description: Captured and condemned for heresy, Joan of Arc was burned at the stake.
+  year: 1431
+- id: 939
+  name: Gutenberg Prints the Bible
+  description: Johannes Gutenberg produced the first printed book in Europe using
+    movable type.
+  year: 1455
+- id: 940
+  name: Fall of Constantinople
+  description: The Byzantine capital fell to the Ottoman Empire, marking the end of
+    the Byzantine Empire.
+  year: 1453
+- id: 941
+  name: War of the Roses Begins
+  description: A dynastic struggle for the English throne erupted between the houses
+    of Lancaster and York.
+  year: 1455
+- id: 942
+  name: Treaty of Tordesillas Signed
+  description: Spain and Portugal divided the New World with papal approval.
+  year: 1494
+- id: 943
+  name: Leonardo da Vinci Paints The Last Supper
+  description: Da Vinci completed one of the most iconic works of the Renaissance.
+  year: 1498
+- id: 944
+  name: Columbus Discovers the Americas
+  description: Christopher Columbus landed in the Caribbean, initiating European exploration
+    of the New World.
+  year: 1492
+- id: 945
+  name: Vasco da Gama Reaches India
+  description: Portuguese explorer Vasco da Gama arrived in Calicut, linking Europe
+    and Asia by sea.
+  year: 1498
+- id: 946
+  name: Michelangelo Begins Work on the Sistine Chapel Ceiling
+  description: Michelangelo was commissioned to paint the ceiling of the Vatican's
+    Sistine Chapel.
+  year: 1508
+- id: 947
+  name: Martin Luther Posts 95 Theses
+  description: Luther initiated the Protestant Reformation by challenging Catholic
+    practices.
+  year: 1517
+- id: 948
+  name: Cortés Begins Conquest of the Aztec Empire
+  description: Hernán Cortés launched his campaign in Mexico, leading to the fall
+    of the Aztecs.
+  year: 1519
+- id: 949
+  name: Magellan's Expedition Circumnavigates the Globe
+  description: Ferdinand Magellan's crew completed the first circumnavigation of Earth.
+  year: 1522
+- id: 950
+  name: Sack of Rome
+  description: Troops of Charles V attacked Rome, marking a turning point in Renaissance
+    Italy.
+  year: 1527
+- id: 951
+  name: Henry VIII Breaks from the Catholic Church
+  description: England separated from the Roman Catholic Church and formed the Church
+    of England.
+  year: 1534
+- id: 952
+  name: Copernicus Publishes Heliocentric Theory
+  description: Copernicus proposed that the Earth revolves around the Sun.
+  year: 1543
+- id: 953
+  name: Council of Trent Begins
+  description: The Catholic Church launched the Counter-Reformation in response to
+    Protestantism.
+  year: 1545
+- id: 954
+  name: Mary I Becomes Queen of England
+  description: Mary Tudor ascended to the English throne and restored Catholicism.
+  year: 1553
+- id: 955
+  name: Elizabeth I Becomes Queen of England
+  description: Elizabeth's reign marked a golden age for England in politics and culture.
+  year: 1558
+- id: 956
+  name: St. Bartholomew's Day Massacre
+  description: Thousands of Huguenots were killed in a wave of anti-Protestant violence
+    in France.
+  year: 1572
+- id: 957
+  name: Spanish Armada Defeated
+  description: England's navy repelled the Spanish Armada, preserving English independence.
+  year: 1588
+- id: 958
+  name: William Shakespeare Born
+  description: The playwright who would become a literary legend was born in Stratford-upon-Avon.
+  year: 1564
+- id: 959
+  name: Galileo Galilei Born
+  description: The future father of modern science was born in Pisa.
+  year: 1564
+- id: 960
+  name: Printing of the First English Bible
+  description: The Bible was printed in English and made accessible to the public.
+  year: 1535
+- id: 961
+  name: Ignatius of Loyola Founds the Jesuits
+  description: A Catholic order devoted to education and missionary work was established.
+  year: 1540
+- id: 962
+  name: Battle of Lepanto
+  description: Christian forces defeated the Ottoman fleet in a major naval battle.
+  year: 1571
+- id: 963
+  name: Ivan the Terrible Crowned Tsar
+  description: Ivan IV became the first ruler to assume the title of Tsar of Russia.
+  year: 1547
+- id: 964
+  name: Babur Founds the Mughal Empire
+  description: The Mughal dynasty was established in the Indian subcontinent.
+  year: 1526
+- id: 965
+  name: First English Settlement in the Americas
+  description: The Roanoke Colony was established and later mysteriously vanished.
+  year: 1585
+- id: 966
+  name: Da Vinci Paints the Mona Lisa
+  description: Leonardo da Vinci completed his most famous portrait.
+  year: 1503
+- id: 967
+  name: Ottomans Conquer Egypt
+  description: The Ottoman Empire defeated the Mamluks and took control of Egypt.
+  year: 1517
+- id: 968
+  name: Treaty of Cateau-Cambrésis
+  description: France and Spain ended decades of war with a peace treaty.
+  year: 1559
+- id: 969
+  name: Pizarro Conquers the Inca Empire
+  description: Francisco Pizarro overthrew the Inca rulers and claimed their lands
+    for Spain.
+  year: 1533
+- id: 970
+  name: Foundation of the University of Santo Tomas
+  description: One of Asia's oldest universities was established in the Philippines.
+  year: 1611
+- id: 971
+  name: Edict of Nantes Issued
+  description: The French monarchy granted religious freedom to Protestants.
+  year: 1598
+- id: 972
+  name: Exploration of the Mississippi River
+  description: Spanish explorers reached the Mississippi River during North American
+    expeditions.
+  year: 1541
+- id: 973
+  name: Execution of Mary, Queen of Scots
+  description: Mary was executed for plotting against Queen Elizabeth I.
+  year: 1587
+- id: 974
+  name: Sigismund Becomes King of Sweden
+  description: Sigismund III ascended to the Swedish throne, later ruling Poland as
+    well.
+  year: 1592
+- id: 975
+  name: Renaissance Peaks in Florence
+  description: Florence flourished as the center of Renaissance art and thought.
+  year: 1475
+- id: 976
+  name: First Book Printed in English
+  description: William Caxton printed the first book in the English language.
+  year: 1473
+- id: 977
+  name: Reconquista Ends with Capture of Granada
+  description: Spain ended Muslim rule on the Iberian Peninsula by capturing Granada.
+  year: 1492
+- id: 978
+  name: Philip II Becomes King of Spain
+  description: Philip II took the Spanish throne, leading a global empire.
+  year: 1556
+- id: 979
+  name: Discovery of Brazil
+  description: Portuguese explorers arrived on the coast of Brazil.
+  year: 1500
+- id: 980
+  name: Death of Leonardo da Vinci
+  description: The great polymath passed away in France.
+  year: 1519
+- id: 981
+  name: Battle of Grunwald
+  description: The Kingdom of Poland and the Grand Duchy of Lithuania defeated the
+    Teutonic Knights.
+  year: 1410
+- id: 982
+  name: Council of Constance
+  description: The Catholic Church resolved the Papal Schism and condemned Jan Hus.
+  year: 1414
+- id: 983
+  name: Fall of Constantinople
+  description: The Ottomans captured Constantinople, marking the end of the Byzantine
+    Empire.
+  year: 1453
+- id: 984
+  name: Printing of the Gutenberg Bible
+  description: Johannes Gutenberg completed the first major book printed using movable
+    type.
+  year: 1455
+- id: 985
+  name: Treaty of Tordesillas
+  description: Spain and Portugal divided newly discovered lands outside Europe.
+  year: 1494
+- id: 986
+  name: Columbus Reaches the Americas
+  description: Christopher Columbus arrived in the Caribbean, initiating European
+    colonization.
+  year: 1492
+- id: 987
+  name: Savonarola's Rule in Florence
+  description: Girolamo Savonarola established a theocratic regime in Florence.
+  year: 1494
+- id: 988
+  name: Vasco da Gama Reaches India
+  description: Da Gama successfully sailed from Portugal to India, opening a sea route.
+  year: 1498
+- id: 989
+  name: Michelangelo Begins the David
+  description: Michelangelo began sculpting his iconic statue of David in Florence.
+  year: 1501
+- id: 990
+  name: Mona Lisa Completed
+  description: Leonardo da Vinci finished his most famous portrait, the Mona Lisa.
+  year: 1506
+- id: 991
+  name: Michelangelo Paints Sistine Chapel Ceiling
+  description: Michelangelo completed his masterpiece on the ceiling of the Sistine
+    Chapel.
+  year: 1512
+- id: 992
+  name: Martin Luther Posts 95 Theses
+  description: Martin Luther publicly challenged the Catholic Church, sparking the
+    Reformation.
+  year: 1517
+- id: 993
+  name: Diet of Worms
+  description: Martin Luther defended his writings before the Holy Roman Emperor.
+  year: 1521
+- id: 994
+  name: Battle of Pavia
+  description: Emperor Charles V captured the French king Francis I during battle.
+  year: 1525
+- id: 995
+  name: Sack of Rome
+  description: Charles V’s troops looted Rome, marking the end of the High Renaissance.
+  year: 1527
+- id: 996
+  name: Henry VIII Breaks with Rome
+  description: The English Reformation began as Henry VIII declared himself head of
+    the Church of England.
+  year: 1534
+- id: 997
+  name: Council of Trent Opens
+  description: The Catholic Church began its Counter-Reformation to address Protestant
+    challenges.
+  year: 1545
+- id: 998
+  name: St. Bartholomew's Day Massacre
+  description: Thousands of Huguenots were massacred in France in religious violence.
+  year: 1572
+- id: 999
+  name: Spanish Armada Defeated
+  description: England’s navy, led by Elizabeth I, repelled the Spanish Armada.
+  year: 1588
+- id: 1000
+  name: Giordano Bruno Executed
+  description: Philosopher Giordano Bruno was burned for heresy by the Inquisition.
+  year: 1600
+- id: 1001
+  name: Founding of Jamestown
+  description: England established its first permanent colony in North America.
+  year: 1607
+- id: 1002
+  name: Galileo Observes Jupiter’s Moons
+  description: Galileo used a telescope to discover moons orbiting Jupiter.
+  year: 1610
+- id: 1003
+  name: Publication of the King James Bible
+  description: The Church of England released the influential King James Bible translation.
+  year: 1611
+- id: 1004
+  name: Thirty Years' War Begins
+  description: A major religious conflict erupted across Central Europe.
+  year: 1618
+- id: 1005
+  name: Mayflower Arrives in America
+  description: Pilgrims seeking religious freedom landed at Plymouth Rock.
+  year: 1620
+- id: 1006
+  name: Trial of Galileo
+  description: Galileo was tried for supporting heliocentrism and placed under house
+    arrest.
+  year: 1633
+- id: 1007
+  name: Peace of Westphalia
+  description: The Thirty Years' War ended with treaties recognizing state sovereignty.
+  year: 1648
+- id: 1008
+  name: Execution of Charles I
+  description: King Charles I of England was executed following the English Civil
+    War.
+  year: 1649
+- id: 1009
+  name: Oliver Cromwell Becomes Lord Protector
+  description: Cromwell took control of the English Commonwealth government.
+  year: 1653
+- id: 1010
+  name: The Great Plague of London
+  description: Bubonic plague returned to London, killing over 75,000 people.
+  year: 1665
+- id: 1011
+  name: Great Fire of London
+  description: A massive fire destroyed much of central London.
+  year: 1666
+- id: 1012
+  name: Newton Formulates Theory of Gravity
+  description: Isaac Newton developed foundational laws of motion and gravitation.
+  year: 1687
+- id: 1013
+  name: Glorious Revolution
+  description: King James II was deposed and William and Mary assumed the throne.
+  year: 1688
+- id: 1014
+  name: Bill of Rights Passed in England
+  description: The English Parliament enacted a bill limiting royal power.
+  year: 1689
+- id: 1015
+  name: Treaty of the Pyrenees
+  description: France and Spain signed a treaty ending a long period of war.
+  year: 1659
+- id: 1016
+  name: Battle of White Mountain
+  description: Catholic forces defeated Bohemians early in the Thirty Years’ War.
+  year: 1620
+- id: 1017
+  name: Destruction of Magdeburg
+  description: Imperial forces massacred civilians in Magdeburg during the Thirty
+    Years' War.
+  year: 1631
+- id: 1018
+  name: Dutch East India Company Founded
+  description: The VOC became a dominant trading force in Asia.
+  year: 1602
+- id: 1019
+  name: Battle of Rocroi
+  description: The French army defeated Spanish forces, ending Spain's military dominance.
+  year: 1643
+- id: 1020
+  name: Taj Mahal Construction Begins
+  description: The Mughal emperor Shah Jahan commissioned the Taj Mahal in memory
+    of his wife.
+  year: 1632
+- id: 1021
+  name: Treaty of Breda
+  description: England and the Netherlands agreed to a treaty ending naval conflict.
+  year: 1667
+- id: 1022
+  name: Louis XIV Becomes King of France
+  description: Louis XIV began his long and powerful reign as the French monarch.
+  year: 1643
+- id: 1023
+  name: English Civil War Begins
+  description: Conflict erupted between Royalists and Parliamentarians in England.
+  year: 1642
+- id: 1024
+  name: Battle of Naseby
+  description: Parliament's army won a decisive victory over King Charles I.
+  year: 1645
+- id: 1025
+  name: First Anglo-Dutch War Begins
+  description: Naval battles began between England and the Dutch Republic over trade
+    routes.
+  year: 1652
+- id: 1026
+  name: Founding of Harvard College
+  description: Harvard became the first institution of higher education in the American
+    colonies.
+  year: 1636
+- id: 1027
+  name: End of the Ming Dynasty
+  description: The Ming dynasty in China collapsed and was replaced by the Qing dynasty.
+  year: 1644
+- id: 1028
+  name: English Bill of Rights Signed
+  description: The Bill of Rights established parliamentary supremacy in England.
+  year: 1689
+- id: 1029
+  name: Nine Years' War Begins
+  description: A major European conflict began involving France, the Holy Roman Empire,
+    and others.
+  year: 1688
+- id: 1030
+  name: Bank of England Founded
+  description: The central bank of the United Kingdom was established to manage national
+    debt.
+  year: 1694
+- id: 1031
+  name: Francis I Becomes King of France
+  description: Francis I ascended to the French throne, ushering in a period of Renaissance
+    patronage.
+  year: 1515
+- id: 1032
+  name: Battle of Pavia
+  description: French forces were defeated by the Holy Roman Empire and King Francis
+    I was captured.
+  year: 1525
+- id: 1033
+  name: Edict of Villers-Cotterêts
+  description: Francis I decreed that French, not Latin, be used in all official documents.
+  year: 1539
+- id: 1034
+  name: Massacre at Vassy
+  description: The killing of Huguenots at Vassy sparked the French Wars of Religion.
+  year: 1562
+- id: 1035
+  name: St. Bartholomew’s Day Massacre
+  description: Thousands of Huguenots were killed in Paris and across France during
+    religious violence.
+  year: 1572
+- id: 1036
+  name: Henri IV Becomes King of France
+  description: Henri IV ascended to the throne, ending decades of religious conflict.
+  year: 1589
+- id: 1037
+  name: Edict of Nantes Issued
+  description: Henri IV granted religious tolerance to Protestants, ending the Wars
+    of Religion.
+  year: 1598
+- id: 1038
+  name: Louis XIII Crowned King
+  description: Louis XIII became king and later ruled with Cardinal Richelieu as chief
+    minister.
+  year: 1610
+- id: 1039
+  name: Siege of La Rochelle
+  description: Royal forces besieged the Huguenot stronghold of La Rochelle, weakening
+    Protestant resistance.
+  year: 1627
+- id: 1040
+  name: Académie Française Founded
+  description: Cardinal Richelieu established the Académie Française to standardize
+    the French language.
+  year: 1635
+- id: 1041
+  name: Louis XIV Becomes King
+  description: The Sun King ascended to the throne at the age of four.
+  year: 1643
+- id: 1042
+  name: The Fronde Rebellions Begin
+  description: Nobles and magistrates revolted against royal authority during Louis
+    XIV’s minority.
+  year: 1648
+- id: 1043
+  name: Palace of Versailles Constructed
+  description: Louis XIV expanded Versailles into a symbol of absolute monarchy.
+  year: 1661
+- id: 1044
+  name: Revocation of the Edict of Nantes
+  description: Louis XIV banned Protestantism in France, leading to persecution and
+    emigration.
+  year: 1685
+- id: 1045
+  name: War of the Spanish Succession Begins
+  description: France fought a major European war to install a Bourbon on the Spanish
+    throne.
+  year: 1701
+- id: 1046
+  name: Louis XV Becomes King
+  description: Louis XV succeeded his great-grandfather at the age of five.
+  year: 1715
+- id: 1047
+  name: Seven Years’ War Begins
+  description: France entered a global conflict that led to major colonial losses.
+  year: 1756
+- id: 1048
+  name: Treaty of Paris Ends Seven Years’ War
+  description: France ceded Canada and other territories to Britain.
+  year: 1763
+- id: 1049
+  name: Louis XVI Becomes King
+  description: Louis XVI ascended to the throne amid growing financial and political
+    crises.
+  year: 1774
+- id: 1050
+  name: Storming of the Bastille
+  description: Revolutionaries stormed the Bastille prison, marking the beginning
+    of the French Revolution.
+  year: 1789
+- id: 1051
+  name: Declaration of the Rights of Man
+  description: Revolutionaries issued a foundational document asserting liberty and
+    equality.
+  year: 1789
+- id: 1052
+  name: Abolition of the Monarchy
+  description: The French monarchy was officially abolished by the National Convention.
+  year: 1792
+- id: 1053
+  name: Execution of Louis XVI
+  description: King Louis XVI was executed by guillotine during the Revolution.
+  year: 1793
+- id: 1054
+  name: Reign of Terror Begins
+  description: Radical revolutionaries led mass executions of perceived enemies of
+    the Revolution.
+  year: 1793
+- id: 1055
+  name: Execution of Robespierre
+  description: The leader of the Reign of Terror was executed by his own government.
+  year: 1794
+- id: 1056
+  name: Napoleon Bonaparte Takes Power
+  description: Napoleon seized control of France in a coup d’état.
+  year: 1799
+- id: 1057
+  name: Napoleon Crowned Emperor
+  description: Napoleon crowned himself Emperor of the French in Notre-Dame Cathedral.
+  year: 1804
+- id: 1058
+  name: Battle of Austerlitz
+  description: Napoleon defeated Russian and Austrian forces in one of his greatest
+    victories.
+  year: 1805
+- id: 1059
+  name: Invasion of Russia
+  description: Napoleon’s disastrous campaign in Russia led to massive losses.
+  year: 1812
+- id: 1060
+  name: Napoleon Exiled to Elba
+  description: After abdicating, Napoleon was exiled to the Mediterranean island of
+    Elba.
+  year: 1814
+- id: 1061
+  name: Napoleon Returns for the Hundred Days
+  description: Napoleon escaped Elba and briefly regained power in France.
+  year: 1815
+- id: 1062
+  name: Battle of Waterloo
+  description: Napoleon was decisively defeated by Allied forces, ending his rule.
+  year: 1815
+- id: 1063
+  name: Napoleon Exiled to Saint Helena
+  description: Napoleon was sent to a remote island in the South Atlantic.
+  year: 1815
+- id: 1064
+  name: July Revolution Overthrows Charles X
+  description: A popular uprising led to the abdication of the Bourbon king.
+  year: 1830
+- id: 1065
+  name: Louis-Philippe Becomes King
+  description: The July Monarchy began with the rise of the 'Citizen King'.
+  year: 1830
+- id: 1066
+  name: Revolution of 1848 in France
+  description: Widespread protests led to the fall of the July Monarchy.
+  year: 1848
+- id: 1067
+  name: Second Republic Declared
+  description: France adopted a republican form of government after the 1848 revolution.
+  year: 1848
+- id: 1068
+  name: Louis-Napoleon Becomes President
+  description: Napoleon’s nephew was elected President of the Second Republic.
+  year: 1848
+- id: 1069
+  name: Second Empire Proclaimed
+  description: Louis-Napoleon declared himself Emperor Napoleon III.
+  year: 1852
+- id: 1070
+  name: Crimean War Begins
+  description: France allied with Britain and the Ottoman Empire against Russia.
+  year: 1853
+- id: 1071
+  name: Paris Transformed by Haussmann
+  description: Baron Haussmann began major renovations of Paris under Napoleon III.
+  year: 1853
+- id: 1072
+  name: Franco-Prussian War Begins
+  description: France declared war on Prussia, leading to a swift defeat.
+  year: 1870
+- id: 1073
+  name: Battle of Sedan
+  description: Napoleon III was captured by Prussian forces at Sedan.
+  year: 1870
+- id: 1074
+  name: Third Republic Declared
+  description: Following military defeat, France abolished the monarchy once more.
+  year: 1870
+- id: 1075
+  name: Paris Commune Established
+  description: Revolutionaries briefly ruled Paris in a radical socialist experiment.
+  year: 1871
+- id: 1076
+  name: Paris Commune Crushed
+  description: Government forces retook Paris, executing thousands of Communards.
+  year: 1871
+- id: 1077
+  name: Construction of the Eiffel Tower Begins
+  description: Work began on the iconic tower for the 1889 World’s Fair.
+  year: 1887
+- id: 1078
+  name: Eiffel Tower Completed
+  description: The Eiffel Tower was inaugurated as the tallest structure in the world.
+  year: 1889
+- id: 1079
+  name: Dreyfus Affair Begins
+  description: A French Jewish officer was wrongfully convicted of treason, sparking
+    national debate.
+  year: 1894
+- id: 1080
+  name: Death of Victor Hugo
+  description: France mourned the passing of one of its greatest literary figures.
+  year: 1885
+
+

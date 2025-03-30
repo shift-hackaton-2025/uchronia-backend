@@ -1,0 +1,182 @@
+- id: 1
+  name: Battle of Hastings
+  description: In 1066, William the Conqueror defeated King Harold II of England,
+    beginning Norman rule in England.
+- id: 2
+  name: First Crusade Begins
+  description: Launched in 1096, Christian forces set out to reclaim Jerusalem from
+    Muslim control.
+- id: 3
+  name: University of Bologna Founded
+  description: Established in 1088, it became one of the first and most influential
+    medieval universities.
+- id: 4
+  name: Domesday Book Completed
+  description: In 1086, William I ordered a survey of England’s land and property
+    for taxation.
+- id: 5
+  name: Pope Urban II’s Speech
+  description: In 1095, he called for the First Crusade during the Council of Clermont.
+- id: 6
+  name: Construction of Chartres Cathedral
+  description: Begun in the 12th century, it became a masterpiece of French Gothic
+    architecture.
+- id: 7
+  name: Second Crusade Launched
+  description: In 1147, European forces attempted to regain territories lost to Muslim
+    conquests.
+- id: 8
+  name: Saladin Recaptures Jerusalem
+  description: In 1187, the Muslim leader Saladin retook Jerusalem, prompting the
+    Third Crusade.
+- id: 9
+  name: Third Crusade Begins
+  description: Started in 1189 and led by Richard the Lionheart, it aimed to reclaim
+    Jerusalem.
+- id: 10
+  name: Fourth Crusade Sacks Constantinople
+  description: In 1204, Crusaders diverted to Constantinople, leading to the city’s
+    brutal sack.
+- id: 11
+  name: Magna Carta Signed
+  description: In 1215, King John of England signed this charter, limiting royal authority.
+- id: 12
+  name: Genghis Khan Unites Mongols
+  description: Around 1206, he unified Mongol tribes, creating the foundation for
+    the Mongol Empire.
+- id: 13
+  name: Mongols Sack Baghdad
+  description: In 1258, the Mongol Empire under Hulagu Khan destroyed Baghdad, ending
+    the Abbasid Caliphate.
+- id: 14
+  name: Marco Polo Reaches China
+  description: In the 1270s, the Venetian merchant traveled along the Silk Road to
+    the Yuan court.
+- id: 15
+  name: Battle of Ain Jalut
+  description: In 1260, the Mamluks defeated the Mongols, halting their westward expansion.
+- id: 16
+  name: Hundred Years' War Begins
+  description: Started in 1337, this conflict between England and France lasted over
+    a century.
+- id: 17
+  name: Black Death Hits Europe
+  description: Between 1347 and 1351, the bubonic plague killed millions across Europe.
+- id: 18
+  name: Peasants' Revolt in England
+  description: In 1381, English peasants rose in protest against taxes and feudal
+    oppression.
+- id: 19
+  name: Battle of Agincourt
+  description: In 1415, Henry V’s outnumbered English army defeated the French during
+    the Hundred Years' War.
+- id: 20
+  name: Joan of Arc’s Campaign
+  description: In the 1420s, Joan of Arc led French forces against the English and
+    was later martyred.
+- id: 21
+  name: Fall of Constantinople
+  description: In 1453, the Ottoman Empire captured Constantinople, ending the Byzantine
+    Empire.
+- id: 22
+  name: Printing Press Invented
+  description: Around 1440, Johannes Gutenberg developed movable type, revolutionizing
+    access to information.
+- id: 23
+  name: War of the Roses Begins
+  description: In 1455, civil war erupted in England between the houses of Lancaster
+    and York.
+- id: 24
+  name: Treaty of Tordesillas
+  description: Signed in 1494, it divided newly discovered lands outside Europe between
+    Spain and Portugal.
+- id: 25
+  name: Columbus Reaches the Americas
+  description: In 1492, Christopher Columbus arrived in the New World, initiating
+    European colonization.
+- id: 26
+  name: Reconquista Ends
+  description: In 1492, Spain conquered Granada, ending Muslim rule on the Iberian
+    Peninsula.
+- id: 27
+  name: Vlad the Impaler Rules Wallachia
+  description: Known for his brutal methods, he inspired the Dracula legend in the
+    15th century.
+- id: 28
+  name: Council of Clermont
+  description: In 1095, Pope Urban II called for the First Crusade against Muslim
+    territories.
+- id: 29
+  name: University of Oxford Founded
+  description: Teaching began around 1096, making it one of the oldest universities
+    in the world.
+- id: 30
+  name: Scholasticism Flourishes
+  description: Between 1100 and 1300, philosophical and theological thought thrived
+    in European universities.
+- id: 31
+  name: Rise of the Hanseatic League
+  description: A powerful trade alliance of northern European cities emerged by the
+    13th century.
+- id: 32
+  name: Construction of Notre-Dame
+  description: Construction began in 1163 and became a symbol of Gothic architecture
+    in Paris.
+- id: 33
+  name: Thomas Aquinas Writes Summa
+  description: In the 13th century, he composed his influential theological work 'Summa
+    Theologica'.
+- id: 34
+  name: First Papal Inquisition
+  description: Launched in the 12th century to combat heresy, particularly in southern
+    France.
+- id: 35
+  name: Kingdom of Mali Established
+  description: Around 1235, Sundiata Keita founded the Mali Empire in West Africa.
+- id: 36
+  name: Great Zimbabwe Thrives
+  description: Between the 11th and 15th centuries, it became a major African trade
+    center.
+- id: 37
+  name: Teutonic Knights Invade Prussia
+  description: In the 13th century, the order expanded into Baltic regions to Christianize
+    them.
+- id: 38
+  name: Battle of Lake Peipus
+  description: In 1242, Russian forces defeated the Teutonic Knights on a frozen lake.
+- id: 39
+  name: Petrarch Coins 'Dark Ages'
+  description: In the 14th century, he described the post-Roman era as a cultural
+    decline.
+- id: 40
+  name: Council of Constance
+  description: From 1414 to 1418, it ended the Papal Schism and condemned Jan Hus.
+- id: 41
+  name: Rise of Florence Banking
+  description: Florence became a financial hub in the 14th and 15th centuries, led
+    by the Medici.
+- id: 42
+  name: Construction of Kremlin Walls
+  description: Ivan III rebuilt the Moscow Kremlin with Italian architects in the
+    late 15th century.
+- id: 43
+  name: Byzantine-Ottoman Wars
+  description: Ongoing battles in the 14th and 15th centuries led to the fall of Constantinople.
+- id: 44
+  name: Niccolò Machiavelli Born
+  description: Born in 1469, he later became a key Renaissance political thinker.
+- id: 45
+  name: Alhambra Decree Issued
+  description: In 1492, Spain expelled its Jewish population through royal edict.
+- id: 46
+  name: Henry the Navigator Dies
+  description: Died in 1460, he was instrumental in early Portuguese exploration along
+    Africa’s coast.
+- id: 47
+  name: Discovery of Cape Verde
+  description: Portuguese explorers discovered the islands around 1456 during Atlantic
+    expeditions.
+- id: 48
+  name: Papal Bull Inter Caetera
+  description: Issued in 1493, it granted Spain rights over newly discovered American
+    lands.
