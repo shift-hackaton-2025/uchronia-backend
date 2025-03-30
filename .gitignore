@@ -1,5 +1,6 @@
 # RAG database
 data/rag/
+services/create_rag/rag
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

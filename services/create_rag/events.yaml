@@ -1,0 +1,1991 @@
+- id: 1
+  name: Battle of Hastings
+  description: In 1066, William the Conqueror defeated King Harold II of England,
+    beginning Norman rule in England.
+  year: 1066
+- id: 2
+  name: First Crusade Begins
+  description: Launched in 1096, Christian forces set out to reclaim Jerusalem from
+    Muslim control.
+  year: 1096
+- id: 3
+  name: University of Bologna Founded
+  description: Established in 1088, it became one of the first and most influential
+    medieval universities.
+  year: 1088
+- id: 4
+  name: Domesday Book Completed
+  description: In 1086, William I ordered a survey of England’s land and property
+    for taxation.
+  year: 1086
+- id: 5
+  name: Pope Urban II’s Speech
+  description: In 1095, he called for the First Crusade during the Council of Clermont.
+  year: 1095
+- id: 6
+  name: Construction of Chartres Cathedral
+  description: Begun in the 12th century, it became a masterpiece of French Gothic
+    architecture.
+  year: 1194
+- id: 7
+  name: Second Crusade Launched
+  description: In 1147, European forces attempted to regain territories lost to Muslim
+    conquests.
+  year: 1147
+- id: 8
+  name: Saladin Recaptures Jerusalem
+  description: In 1187, the Muslim leader Saladin retook Jerusalem, prompting the
+    Third Crusade.
+  year: 1187
+- id: 9
+  name: Third Crusade Begins
+  description: Started in 1189 and led by Richard the Lionheart, it aimed to reclaim
+    Jerusalem.
+  year: 1189
+- id: 10
+  name: Fourth Crusade Sacks Constantinople
+  description: In 1204, Crusaders diverted to Constantinople, leading to the city’s
+    brutal sack.
+  year: 1204
+- id: 11
+  name: Magna Carta Signed
+  description: In 1215, King John of England signed this charter, limiting royal authority.
+  year: 1215
+- id: 12
+  name: Genghis Khan Unites Mongols
+  description: Around 1206, he unified Mongol tribes, creating the foundation for
+    the Mongol Empire.
+  year: 1206
+- id: 13
+  name: Mongols Sack Baghdad
+  description: In 1258, the Mongol Empire under Hulagu Khan destroyed Baghdad, ending
+    the Abbasid Caliphate.
+  year: 1258
+- id: 14
+  name: Marco Polo Reaches China
+  description: In the 1270s, the Venetian merchant traveled along the Silk Road to
+    the Yuan court.
+  year: 1275
+- id: 15
+  name: Battle of Ain Jalut
+  description: In 1260, the Mamluks defeated the Mongols, halting their westward expansion.
+  year: 1260
+- id: 16
+  name: Hundred Years' War Begins
+  description: Started in 1337, this conflict between England and France lasted over
+    a century.
+  year: 1337
+- id: 17
+  name: Black Death Hits Europe
+  description: Between 1347 and 1351, the bubonic plague killed millions across Europe.
+  year: 1347
+- id: 18
+  name: Peasants' Revolt in England
+  description: In 1381, English peasants rose in protest against taxes and feudal
+    oppression.
+  year: 1381
+- id: 19
+  name: Battle of Agincourt
+  description: In 1415, Henry V’s outnumbered English army defeated the French during
+    the Hundred Years' War.
+  year: 1415
+- id: 20
+  name: Joan of Arc’s Campaign
+  description: In the 1420s, Joan of Arc led French forces against the English and
+    was later martyred.
+  year: 1429
+- id: 21
+  name: Fall of Constantinople
+  description: In 1453, the Ottoman Empire captured Constantinople, ending the Byzantine
+    Empire.
+  year: 1453
+- id: 22
+  name: Printing Press Invented
+  description: Around 1440, Johannes Gutenberg developed movable type, revolutionizing
+    access to information.
+  year: 1440
+- id: 23
+  name: War of the Roses Begins
+  description: In 1455, civil war erupted in England between the houses of Lancaster
+    and York.
+  year: 1455
+- id: 24
+  name: Treaty of Tordesillas
+  description: Signed in 1494, it divided newly discovered lands outside Europe between
+    Spain and Portugal.
+  year: 1494
+- id: 25
+  name: Columbus Reaches the Americas
+  description: In 1492, Christopher Columbus arrived in the New World, initiating
+    European colonization.
+  year: 1492
+- id: 26
+  name: Reconquista Ends
+  description: In 1492, Spain conquered Granada, ending Muslim rule on the Iberian
+    Peninsula.
+  year: 1492
+- id: 27
+  name: Vlad the Impaler Rules Wallachia
+  description: Known for his brutal methods, he inspired the Dracula legend in the
+    15th century.
+  year: 1456
+- id: 28
+  name: Council of Clermont
+  description: In 1095, Pope Urban II called for the First Crusade against Muslim
+    territories.
+  year: 1095
+- id: 29
+  name: University of Oxford Founded
+  description: Teaching began around 1096, making it one of the oldest universities
+    in the world.
+  year: 1096
+- id: 30
+  name: Scholasticism Flourishes
+  description: Between 1100 and 1300, philosophical and theological thought thrived
+    in European universities.
+  year: 1200
+- id: 31
+  name: Rise of the Hanseatic League
+  description: A powerful trade alliance of northern European cities emerged by the
+    13th century.
+  year: 1250
+- id: 32
+  name: Construction of Notre-Dame
+  description: Construction began in 1163 and became a symbol of Gothic architecture
+    in Paris.
+  year: 1163
+- id: 33
+  name: Thomas Aquinas Writes Summa
+  description: In the 13th century, he composed his influential theological work 'Summa
+    Theologica'.
+  year: 1265
+- id: 34
+  name: First Papal Inquisition
+  description: Launched in the 12th century to combat heresy, particularly in southern
+    France.
+  year: 1184
+- id: 35
+  name: Kingdom of Mali Established
+  description: Around 1235, Sundiata Keita founded the Mali Empire in West Africa.
+  year: 1235
+- id: 36
+  name: Great Zimbabwe Thrives
+  description: Between the 11th and 15th centuries, it became a major African trade
+    center.
+  year: 1350
+- id: 37
+  name: Teutonic Knights Invade Prussia
+  description: In the 13th century, the order expanded into Baltic regions to Christianize
+    them.
+  year: 1230
+- id: 38
+  name: Battle of Lake Peipus
+  description: In 1242, Russian forces defeated the Teutonic Knights on a frozen lake.
+  year: 1242
+- id: 39
+  name: Petrarch Coins 'Dark Ages'
+  description: In the 14th century, he described the post-Roman era as a cultural
+    decline.
+  year: 1330
+- id: 40
+  name: Council of Constance
+  description: From 1414 to 1418, it ended the Papal Schism and condemned Jan Hus.
+  year: 1415
+- id: 41
+  name: Rise of Florence Banking
+  description: Florence became a financial hub in the 14th and 15th centuries, led
+    by the Medici.
+  year: 1420
+- id: 42
+  name: Construction of Kremlin Walls
+  description: Ivan III rebuilt the Moscow Kremlin with Italian architects in the
+    late 15th century.
+  year: 1490
+- id: 43
+  name: Byzantine-Ottoman Wars
+  description: Ongoing battles in the 14th and 15th centuries led to the fall of Constantinople.
+  year: 1450
+- id: 44
+  name: Niccolò Machiavelli Born
+  description: Born in 1469, he later became a key Renaissance political thinker.
+  year: 1469
+- id: 45
+  name: Alhambra Decree Issued
+  description: In 1492, Spain expelled its Jewish population through royal edict.
+  year: 1492
+- id: 46
+  name: Henry the Navigator Dies
+  description: Died in 1460, he was instrumental in early Portuguese exploration along
+    Africa’s coast.
+  year: 1460
+- id: 47
+  name: Discovery of Cape Verde
+  description: Portuguese explorers discovered the islands around 1456 during Atlantic
+    expeditions.
+  year: 1456
+- id: 48
+  name: Papal Bull Inter Caetera
+  description: Issued in 1493, it granted Spain rights over newly discovered American
+    lands.
+  year: 1493
+- id: 49
+  name: Leonardo da Vinci Dies
+  description: In 1519, the Renaissance master and polymath passed away in France.
+  year: 1519
+- id: 50
+  name: Copernicus Publishes Heliocentrism
+  description: In 1543, Nicolaus Copernicus proposed a sun-centered model of the universe.
+  year: 1543
+- id: 51
+  name: Martin Luther's 95 Theses
+  description: In 1517, Luther posted his theses challenging the Catholic Church,
+    starting the Reformation.
+  year: 1517
+- id: 52
+  name: Spanish Conquest of the Aztecs
+  description: Hernán Cortés defeated the Aztec Empire in 1521, marking the fall of
+    Tenochtitlán.
+  year: 1521
+- id: 53
+  name: First Circumnavigation Completed
+  description: In 1522, Magellan’s expedition returned to Spain, completing the first
+    circumnavigation of the globe.
+  year: 1522
+- id: 54
+  name: Henry VIII Breaks with Rome
+  description: In 1534, King Henry VIII established the Church of England, separating
+    from Catholic authority.
+  year: 1534
+- id: 55
+  name: Council of Trent Convenes
+  description: Beginning in 1545, this council addressed reforms during the Catholic
+    Counter-Reformation.
+  year: 1545
+- id: 56
+  name: Michelangelo Completes Last Judgment
+  description: In 1541, Michelangelo unveiled the massive fresco in the Sistine Chapel.
+  year: 1541
+- id: 57
+  name: Foundation of Jesuit Order
+  description: In 1540, the Society of Jesus was approved by Pope Paul III to counter
+    Protestantism.
+  year: 1540
+- id: 58
+  name: Spanish Conquest of the Incas
+  description: Francisco Pizarro captured Atahualpa in 1532, leading to Inca collapse.
+  year: 1532
+- id: 59
+  name: St. Bartholomew's Day Massacre
+  description: In 1572, thousands of Huguenots were killed during religious conflict
+    in France.
+  year: 1572
+- id: 60
+  name: Elizabeth I Becomes Queen
+  description: Elizabeth ascended the English throne in 1558 and ruled for over 40
+    years.
+  year: 1558
+- id: 61
+  name: Spanish Armada Defeated
+  description: In 1588, the English navy defeated the Spanish fleet, ensuring England's
+    naval supremacy.
+  year: 1588
+- id: 62
+  name: Shakespeare Writes Hamlet
+  description: Around 1600, William Shakespeare penned one of his greatest tragedies,
+    'Hamlet'.
+  year: 1600
+- id: 63
+  name: Galileo Builds Telescope
+  description: In 1609, Galileo constructed a telescope and observed the moons of
+    Jupiter.
+  year: 1609
+- id: 64
+  name: Kepler Publishes Laws of Motion
+  description: Johannes Kepler detailed planetary motion laws in the early 17th century.
+  year: 1609
+- id: 65
+  name: Jamestown Colony Founded
+  description: In 1607, English settlers established the first permanent American
+    colony in Virginia.
+  year: 1607
+- id: 66
+  name: Thirty Years' War Begins
+  description: In 1618, Europe plunged into a devastating religious and political
+    conflict.
+  year: 1618
+- id: 67
+  name: King James Bible Published
+  description: In 1611, the King James Version of the Bible was printed in England.
+  year: 1611
+- id: 68
+  name: Mayflower Reaches America
+  description: In 1620, Pilgrims seeking religious freedom landed at Plymouth Rock.
+  year: 1620
+- id: 69
+  name: Dutch East India Company Founded
+  description: Established in 1602, it became a powerful colonial trading enterprise.
+  year: 1602
+- id: 70
+  name: Trial of Galileo
+  description: In 1633, Galileo was tried for supporting heliocentrism and placed
+    under house arrest.
+  year: 1633
+- id: 71
+  name: Treaty of Westphalia
+  description: In 1648, this treaty ended the Thirty Years’ War and redrew Europe’s
+    map.
+  year: 1648
+- id: 72
+  name: Taj Mahal Construction Begins
+  description: Shah Jahan commissioned the Taj Mahal in 1632 as a mausoleum for his
+    wife.
+  year: 1632
+- id: 73
+  name: Gunpowder Plot Foiled
+  description: In 1605, Guy Fawkes and others failed to blow up the English Parliament.
+  year: 1605
+- id: 74
+  name: Edict of Nantes Issued
+  description: In 1598, France granted limited rights to Huguenots under Henry IV.
+  year: 1598
+- id: 75
+  name: Jesuits Reach China
+  description: By the early 1600s, Jesuit missionaries established cultural and scientific
+    exchanges in China.
+  year: 1600
+- id: 76
+  name: English Civil War Begins
+  description: In 1642, Royalists and Parliamentarians clashed over political power
+    and monarchy.
+  year: 1642
+- id: 77
+  name: Baroque Art Flourishes
+  description: From 1600 to 1650, dramatic and ornate art characterized Catholic Europe.
+  year: 1600
+- id: 78
+  name: Rembrandt Paints Night Watch
+  description: In 1642, Rembrandt completed one of his most famous works.
+  year: 1642
+- id: 79
+  name: Trial of Charles I
+  description: In 1649, the English king was tried and executed for treason.
+  year: 1649
+- id: 80
+  name: Portuguese Restore Independence
+  description: In 1640, Portugal ended 60 years of Spanish rule.
+  year: 1640
+- id: 81
+  name: Foundation of Harvard College
+  description: In 1636, Harvard was established as the first American institution
+    of higher learning.
+  year: 1636
+- id: 82
+  name: Battle of Lepanto
+  description: In 1571, a Holy League fleet defeated the Ottoman navy in a key Mediterranean
+    clash.
+  year: 1571
+- id: 83
+  name: Francis Drake Circumnavigates Globe
+  description: Drake completed his circumnavigation in 1580, boosting English maritime
+    prestige.
+  year: 1580
+- id: 84
+  name: Desiderius Erasmus Dies
+  description: The humanist scholar died in 1536, leaving a legacy of reformist writings.
+  year: 1536
+- id: 85
+  name: Council of Blood Begins
+  description: In 1567, Spain brutally suppressed rebellion in the Netherlands.
+  year: 1567
+- id: 86
+  name: Ivan the Terrible Dies
+  description: Russia's first Tsar died in 1584, ending a brutal reign.
+  year: 1584
+- id: 87
+  name: Tokugawa Ieyasu Unifies Japan
+  description: In 1600, he won the Battle of Sekigahara and established a shogunate.
+  year: 1600
+- id: 88
+  name: Michel de Montaigne Publishes Essays
+  description: In 1580, Montaigne's work laid foundations for modern skepticism and
+    personal writing.
+  year: 1580
+- id: 89
+  name: Plague Hits London
+  description: In 1603, the plague killed nearly a quarter of London’s population.
+  year: 1603
+- id: 90
+  name: Ivan IV Establishes Oprichnina
+  description: In the 1560s, Ivan the Terrible created a brutal political police force.
+  year: 1565
+- id: 91
+  name: First English Printing of Bible
+  description: In 1535, Miles Coverdale printed the first complete English Bible.
+  year: 1535
+- id: 92
+  name: Basilica of St. Peter Rebuilt
+  description: Reconstruction began in 1506, becoming a symbol of Renaissance architecture.
+  year: 1506
+- id: 93
+  name: Utopia by Thomas More
+  description: Published in 1516, it described an idealized society and sparked political
+    philosophy.
+  year: 1516
+- id: 94
+  name: Treaty of Cateau-Cambrésis
+  description: In 1559, this treaty ended decades of conflict between France and Spain.
+  year: 1559
+- id: 95
+  name: Ivan IV Crowned Tsar
+  description: In 1547, Ivan became the first ruler to officially hold the title of
+    Tsar in Russia.
+  year: 1547
+- id: 96
+  name: Tulip Mania in Netherlands
+  description: In the 1630s, tulip bulb prices soared and crashed in one of history’s
+    first financial bubbles.
+  year: 1637
+- id: 97
+  name: Ming Dynasty Declines
+  description: In the early 1600s, internal strife and famine weakened the Chinese
+    Ming rule.
+  year: 1600
+- id: 98
+  name: First Stock Exchange Opens
+  description: The Amsterdam Stock Exchange opened in 1602, enabling modern investment
+    trading.
+  year: 1602
+- id: 99
+  name: Treaty of the Pyrenees
+  description: Signed in 1659, it ended the war between France and Spain, reshaping
+    European borders.
+  year: 1659
+- id: 100
+  name: Great Plague of London
+  description: In 1665, a devastating bubonic plague outbreak killed thousands in
+    London.
+  year: 1665
+- id: 101
+  name: Great Fire of London
+  description: In 1666, a massive fire destroyed much of London, including many historical
+    buildings.
+  year: 1666
+- id: 102
+  name: Newton Publishes Principia
+  description: In 1687, Isaac Newton published his laws of motion and universal gravitation.
+  year: 1687
+- id: 103
+  name: Royal Society Founded
+  description: Established in 1660, the Royal Society advanced scientific study in
+    England.
+  year: 1660
+- id: 104
+  name: Glorious Revolution
+  description: In 1688, William of Orange overthrew King James II of England without
+    bloodshed.
+  year: 1688
+- id: 105
+  name: Louis XIV Builds Versailles
+  description: By the 1680s, King Louis XIV expanded Versailles into a symbol of absolute
+    monarchy.
+  year: 1682
+- id: 106
+  name: English Bill of Rights
+  description: Passed in 1689, it limited royal power and established parliamentary
+    supremacy.
+  year: 1689
+- id: 107
+  name: Founding of Pennsylvania
+  description: In 1681, William Penn established Pennsylvania as a colony promoting
+    religious freedom.
+  year: 1681
+- id: 108
+  name: Great Turkish War Ends
+  description: Concluded in 1699 with the Treaty of Karlowitz, weakening Ottoman influence
+    in Europe.
+  year: 1699
+- id: 109
+  name: Peter the Great Tours Europe
+  description: In 1697, the Russian tsar traveled through Europe to modernize Russia.
+  year: 1697
+- id: 110
+  name: Act of Union Signed
+  description: In 1707, England and Scotland united to form Great Britain.
+  year: 1707
+- id: 111
+  name: War of Spanish Succession
+  description: From 1701 to 1714, European powers fought over the Spanish throne.
+  year: 1701
+- id: 112
+  name: Treaty of Utrecht Signed
+  description: In 1713, it ended the War of Spanish Succession and redrew Europe's
+    map.
+  year: 1713
+- id: 113
+  name: Founding of Saint Petersburg
+  description: Peter the Great founded this Russian city in 1703 as a 'window to the
+    West.'
+  year: 1703
+- id: 114
+  name: Isaac Newton Knighted
+  description: In 1705, Newton was knighted for his contributions to science.
+  year: 1705
+- id: 115
+  name: First Daily Newspaper Printed
+  description: In 1702, the first daily newspaper, 'The Daily Courant,' was printed
+    in London.
+  year: 1702
+- id: 116
+  name: Foundation of Yale College
+  description: Founded in 1701, Yale became one of America's leading academic institutions.
+  year: 1701
+- id: 117
+  name: Reign of Louis XV Begins
+  description: In 1715, Louis XV ascended to the French throne after the death of
+    Louis XIV.
+  year: 1715
+- id: 118
+  name: South Sea Bubble Bursts
+  description: In 1720, the collapse of the South Sea Company led to financial ruin
+    in Britain.
+  year: 1720
+- id: 119
+  name: Catherine I Becomes Empress
+  description: In 1725, Catherine I succeeded Peter the Great as ruler of Russia.
+  year: 1725
+- id: 120
+  name: Handel's Messiah Premieres
+  description: In 1742, Handel's famous oratorio 'Messiah' debuted in Dublin.
+  year: 1742
+- id: 121
+  name: War of Austrian Succession
+  description: Starting in 1740, this conflict involved most European powers and Maria
+    Theresa's inheritance.
+  year: 1740
+- id: 122
+  name: Frederick the Great Becomes King
+  description: In 1740, Frederick II began his reign, modernizing and expanding Prussia.
+  year: 1740
+- id: 123
+  name: First Great Awakening Begins
+  description: In the 1730s, religious revival swept through American colonies and
+    Britain.
+  year: 1730
+- id: 124
+  name: Treaty of Aix-la-Chapelle
+  description: In 1748, it ended the War of Austrian Succession and restored status
+    quo ante.
+  year: 1748
+- id: 125
+  name: Voltaire Publishes 'Letters'
+  description: In 1734, Voltaire's work critiqued French institutions and praised
+    British liberties.
+  year: 1734
+- id: 126
+  name: George II Becomes King
+  description: In 1727, George II ascended the British throne.
+  year: 1727
+- id: 127
+  name: Benjamin Franklin Publishes Almanac
+  description: In 1732, Franklin released 'Poor Richard’s Almanack' full of wit and
+    wisdom.
+  year: 1732
+- id: 128
+  name: Foundation of Georgia Colony
+  description: In 1732, Georgia was founded as the last of the original 13 American
+    colonies.
+  year: 1732
+- id: 129
+  name: Scientific Revolution Spreads
+  description: Between 1650 and 1700, new scientific ideas transformed European knowledge
+    systems.
+  year: 1675
+- id: 130
+  name: Bach Composes Brandenburg Concertos
+  description: Johann Sebastian Bach composed these masterpieces in 1721.
+  year: 1721
+- id: 131
+  name: Baroque Architecture Thrives
+  description: In the late 17th century, ornate baroque architecture flourished across
+    Europe.
+  year: 1680
+- id: 132
+  name: Montesquieu Writes 'Persian Letters'
+  description: Published in 1721, it satirized French society through fictional correspondence.
+  year: 1721
+- id: 133
+  name: Rise of Coffeehouses
+  description: In the late 17th century, coffeehouses became centers of social and
+    intellectual life.
+  year: 1670
+- id: 134
+  name: England Adopts Gregorian Calendar
+  description: In 1752, Britain aligned with Europe by switching calendars.
+  year: 1752
+- id: 135
+  name: Sweden’s Age of Liberty Begins
+  description: In 1719, Sweden transitioned to parliamentary rule, reducing royal
+    power.
+  year: 1719
+- id: 136
+  name: Rise of Rococo Art
+  description: Rococo style flourished in early 18th-century Europe with decorative
+    elegance.
+  year: 1730
+- id: 137
+  name: Diderot Born
+  description: Denis Diderot, future editor of the Encyclopédie, was born in 1713.
+  year: 1713
+- id: 138
+  name: Treaty of Nystad
+  description: Signed in 1721, it ended the Great Northern War between Sweden and
+    Russia.
+  year: 1721
+- id: 139
+  name: Treaty of Passarowitz
+  description: In 1718, Austria gained territory from the Ottoman Empire.
+  year: 1718
+- id: 140
+  name: Rise of Cabinet Government
+  description: In early 18th-century Britain, ministers began managing government
+    decisions.
+  year: 1720
+- id: 141
+  name: Peter the Great Dies
+  description: The Russian emperor died in 1725 after modernizing his nation.
+  year: 1725
+- id: 142
+  name: Rise of the Enlightenment
+  description: During the 18th century, ideas of reason, liberty, and science flourished.
+  year: 1700
+- id: 143
+  name: Formation of the Whig Party
+  description: Emerging in late 1600s, the Whigs supported constitutional monarchy
+    in Britain.
+  year: 1678
+- id: 144
+  name: Founding of Bank of England
+  description: Established in 1694, it became central to British finance and stability.
+  year: 1694
+- id: 145
+  name: Locke Publishes 'Essay on Human Understanding'
+  description: John Locke’s 1690 work shaped modern philosophy and Enlightenment thought.
+  year: 1690
+- id: 146
+  name: Spinoza Publishes 'Ethics'
+  description: Published posthumously in 1677, Spinoza’s work laid groundwork for
+    secular ethics.
+  year: 1677
+- id: 147
+  name: First Steam Engine Patented
+  description: Thomas Savery patented a steam pump in 1698, a precursor to modern
+    engines.
+  year: 1698
+- id: 148
+  name: Foundation of British Museum
+  description: Though formally established in 1753, efforts to preserve national collections
+    began earlier.
+  year: 1753
+- id: 149
+  name: Seven Years' War Begins
+  description: In 1756, a global conflict started involving most major powers, including
+    Britain and France.
+  year: 1756
+- id: 150
+  name: British Conquest of Quebec
+  description: In 1759, British forces defeated the French at Quebec, shaping Canada's
+    future.
+  year: 1759
+- id: 151
+  name: Industrial Revolution Accelerates
+  description: In the late 18th century, mechanization transformed manufacturing,
+    especially in Britain.
+  year: 1760
+- id: 152
+  name: James Watt Improves Steam Engine
+  description: Around 1765, Watt's enhancements made steam engines more efficient
+    and widespread.
+  year: 1765
+- id: 153
+  name: American Revolution Begins
+  description: In 1775, American colonists rebelled against British rule, leading
+    to independence.
+  year: 1775
+- id: 154
+  name: Declaration of Independence
+  description: In 1776, the American colonies declared independence from Britain.
+  year: 1776
+- id: 155
+  name: First Flight of Montgolfier Balloon
+  description: In 1783, the Montgolfier brothers launched the first successful manned
+    hot air balloon.
+  year: 1783
+- id: 156
+  name: French Revolution Begins
+  description: In 1789, revolutionaries in France stormed the Bastille and overthrew
+    the monarchy.
+  year: 1789
+- id: 157
+  name: Storming of the Bastille
+  description: On July 14, 1789, revolutionaries seized a Paris prison, sparking the
+    French Revolution.
+  year: 1789
+- id: 158
+  name: Reign of Terror
+  description: From 1793 to 1794, the French Revolution entered a violent phase under
+    Robespierre.
+  year: 1793
+- id: 159
+  name: Execution of Louis XVI
+  description: In 1793, the French king was executed by guillotine during the Revolution.
+  year: 1793
+- id: 160
+  name: Napoleon Becomes Emperor
+  description: In 1804, Napoleon crowned himself Emperor of the French.
+  year: 1804
+- id: 161
+  name: Battle of Austerlitz
+  description: In 1805, Napoleon defeated Russian and Austrian forces in one of his
+    greatest victories.
+  year: 1805
+- id: 162
+  name: Abolition of Slave Trade Act
+  description: In 1807, Britain outlawed the transatlantic slave trade.
+  year: 1807
+- id: 163
+  name: Luddites Protest Industrialization
+  description: In the early 1810s, workers destroyed machinery that threatened their
+    jobs.
+  year: 1811
+- id: 164
+  name: Napoleon Invades Russia
+  description: In 1812, Napoleon launched a disastrous invasion of Russia.
+  year: 1812
+- id: 165
+  name: War of 1812 Begins
+  description: In 1812, conflict broke out between the United States and Great Britain.
+  year: 1812
+- id: 166
+  name: Congress of Vienna
+  description: Held in 1815, European powers redrew borders after the Napoleonic Wars.
+  year: 1815
+- id: 167
+  name: Battle of Waterloo
+  description: In 1815, Napoleon was defeated by British and Prussian forces, ending
+    his rule.
+  year: 1815
+- id: 168
+  name: Simon Bolívar Leads Liberation
+  description: In the 1810s-20s, Bolívar led independence movements across South America.
+  year: 1821
+- id: 169
+  name: Greek War of Independence
+  description: Beginning in 1821, Greeks fought for independence from the Ottoman
+    Empire.
+  year: 1821
+- id: 170
+  name: Brazil Declares Independence
+  description: In 1822, Brazil peacefully separated from Portugal under Dom Pedro
+    I.
+  year: 1822
+- id: 171
+  name: Monroe Doctrine Issued
+  description: In 1823, the US warned European powers not to colonize the Americas.
+  year: 1823
+- id: 172
+  name: First Railway Opens
+  description: In 1825, the Stockton and Darlington Railway opened in England.
+  year: 1825
+- id: 173
+  name: Decembrist Revolt in Russia
+  description: In 1825, Russian army officers protested autocratic rule after Tsar
+    Alexander’s death.
+  year: 1825
+- id: 174
+  name: Stephenson’s Rocket Demonstrated
+  description: In 1829, George Stephenson showcased a fast steam locomotive.
+  year: 1829
+- id: 175
+  name: Cholera Pandemic Spreads
+  description: In the 1830s, a major cholera outbreak affected Europe and the Americas.
+  year: 1832
+- id: 176
+  name: First Reform Act Passed
+  description: In 1832, Britain expanded voting rights and reformed Parliament.
+  year: 1832
+- id: 177
+  name: Slavery Abolished in Britain
+  description: In 1833, the UK passed a law to end slavery in its empire.
+  year: 1833
+- id: 178
+  name: Charles Darwin Embarks on Beagle
+  description: In 1831, Darwin set sail on HMS Beagle, inspiring his evolutionary
+    theory.
+  year: 1831
+- id: 179
+  name: Texas Revolution Begins
+  description: In 1835, settlers in Texas rebelled against Mexican rule.
+  year: 1835
+- id: 180
+  name: Battle of the Alamo
+  description: In 1836, Texan defenders fought a heroic last stand against Mexican
+    forces.
+  year: 1836
+- id: 181
+  name: Telegraph Invented
+  description: In 1837, Samuel Morse invented the electric telegraph and Morse code.
+  year: 1837
+- id: 182
+  name: Victoria Becomes Queen
+  description: In 1837, Queen Victoria began her long reign over the British Empire.
+  year: 1837
+- id: 183
+  name: Trail of Tears
+  description: In 1838, Native Americans were forcibly relocated westward by the US
+    government.
+  year: 1838
+- id: 184
+  name: Photography Invented
+  description: In 1839, Louis Daguerre introduced the daguerreotype, an early photographic
+    process.
+  year: 1839
+- id: 185
+  name: Opium War Begins
+  description: In 1839, Britain and China clashed over the opium trade.
+  year: 1839
+- id: 186
+  name: Penny Post Introduced
+  description: In 1840, Britain introduced a cheap and uniform postal system.
+  year: 1840
+- id: 187
+  name: First Postage Stamp Issued
+  description: In 1840, Britain issued the Penny Black, the first adhesive stamp.
+  year: 1840
+- id: 188
+  name: Harrison Dies in Office
+  description: In 1841, William Henry Harrison became the first US president to die
+    in office.
+  year: 1841
+- id: 189
+  name: Mines Act Passed
+  description: In 1842, Britain banned women and children from working in mines.
+  year: 1842
+- id: 190
+  name: Treaty of Nanking Signed
+  description: In 1842, this treaty ended the First Opium War and ceded Hong Kong
+    to Britain.
+  year: 1842
+- id: 191
+  name: Irish Potato Famine Begins
+  description: In 1845, crop failure led to mass starvation and emigration from Ireland.
+  year: 1845
+- id: 192
+  name: Annexation of Texas
+  description: In 1845, Texas was annexed by the United States, escalating tensions
+    with Mexico.
+  year: 1845
+- id: 193
+  name: Revolutions of 1848
+  description: In 1848, a wave of political uprisings swept across Europe.
+  year: 1848
+- id: 194
+  name: Communist Manifesto Published
+  description: In 1848, Karl Marx and Friedrich Engels published a foundational socialist
+    text.
+  year: 1848
+- id: 195
+  name: Seneca Falls Convention
+  description: In 1848, the first women's rights convention was held in the US.
+  year: 1848
+- id: 196
+  name: California Gold Rush
+  description: In 1848, gold was discovered in California, drawing thousands westward.
+  year: 1848
+- id: 197
+  name: Zachary Taylor Elected President
+  description: In 1848, the US elected war hero Zachary Taylor as president.
+  year: 1848
+- id: 198
+  name: End of Mexican-American War
+  description: In 1848, the Treaty of Guadalupe Hidalgo ended the war and expanded
+    US territory.
+  year: 1848
+- id: 199
+  name: Wisconsin Becomes a State
+  description: In 1848, Wisconsin became the 30th state of the United States.
+  year: 1848
+- id: 200
+  name: Compromise of 1850
+  description: A series of U.S. laws passed to ease tensions over slavery and territorial
+    expansion.
+  year: 1850
+- id: 201
+  name: Taiping Rebellion Peaks
+  description: By 1853, the Chinese civil war against the Qing dynasty reached massive
+    scale.
+  year: 1853
+- id: 202
+  name: Crimean War Begins
+  description: In 1853, Russia fought an alliance of the Ottoman Empire, Britain,
+    and France.
+  year: 1853
+- id: 203
+  name: Florence Nightingale in Crimea
+  description: In 1854, she revolutionized battlefield medical care during the Crimean
+    War.
+  year: 1854
+- id: 204
+  name: Indian Rebellion of 1857
+  description: A major uprising against British colonial rule in India began in 1857.
+  year: 1857
+- id: 205
+  name: Charles Darwin Publishes Origin
+  description: In 1859, Darwin's 'On the Origin of Species' introduced evolution by
+    natural selection.
+  year: 1859
+- id: 206
+  name: Italian Unification Begins
+  description: The movement to unify Italy gained momentum under Cavour and Garibaldi.
+  year: 1859
+- id: 207
+  name: American Civil War Begins
+  description: In 1861, tensions over slavery and states' rights sparked a civil war.
+  year: 1861
+- id: 208
+  name: Emancipation Proclamation
+  description: In 1863, President Lincoln declared slaves in Confederate states free.
+  year: 1863
+- id: 209
+  name: Gettysburg Address Delivered
+  description: In 1863, Lincoln honored fallen soldiers and reaffirmed democracy at
+    Gettysburg.
+  year: 1863
+- id: 210
+  name: End of American Civil War
+  description: In 1865, Confederate forces surrendered, ending the four-year conflict.
+  year: 1865
+- id: 211
+  name: Assassination of Lincoln
+  description: President Abraham Lincoln was assassinated in 1865 shortly after the
+    war's end.
+  year: 1865
+- id: 212
+  name: 13th Amendment Abolishes Slavery
+  description: Ratified in 1865, it outlawed slavery throughout the United States.
+  year: 1865
+- id: 213
+  name: Austro-Prussian War
+  description: In 1866, Prussia defeated Austria, asserting dominance over German
+    states.
+  year: 1866
+- id: 214
+  name: Alaska Purchased from Russia
+  description: In 1867, the U.S. bought Alaska from Russia for $7.2 million.
+  year: 1867
+- id: 215
+  name: Meiji Restoration Begins
+  description: In 1868, Japan restored imperial rule and began rapid modernization.
+  year: 1868
+- id: 216
+  name: Transcontinental Railroad Completed
+  description: In 1869, the U.S. linked east and west by rail at Promontory Summit.
+  year: 1869
+- id: 217
+  name: Suez Canal Opens
+  description: In 1869, the canal linked the Mediterranean and Red Seas, transforming
+    global trade.
+  year: 1869
+- id: 218
+  name: Franco-Prussian War
+  description: In 1870, Prussia defeated France, leading to German unification.
+  year: 1870
+- id: 219
+  name: German Empire Proclaimed
+  description: In 1871, Germany unified under Prussian leadership at Versailles.
+  year: 1871
+- id: 220
+  name: Paris Commune Established
+  description: In 1871, radical socialists briefly governed Paris after France's defeat.
+  year: 1871
+- id: 221
+  name: Darwin Publishes Descent of Man
+  description: In 1871, Darwin extended his theory to human evolution.
+  year: 1871
+- id: 222
+  name: Yellowstone Becomes First National Park
+  description: In 1872, the U.S. established the world's first national park.
+  year: 1872
+- id: 223
+  name: Battle of Little Bighorn
+  description: In 1876, Native Americans defeated U.S. forces in Montana.
+  year: 1876
+- id: 224
+  name: Telephone Invented
+  description: In 1876, Alexander Graham Bell patented the telephone.
+  year: 1876
+- id: 225
+  name: Queen Victoria Named Empress of India
+  description: In 1877, Britain formalized its imperial authority over India.
+  year: 1877
+- id: 226
+  name: Edison Invents Phonograph
+  description: In 1877, Thomas Edison created a device to record and play sound.
+  year: 1877
+- id: 227
+  name: Electric Light Bulb Demonstrated
+  description: In 1879, Edison publicly demonstrated the electric light bulb.
+  year: 1879
+- id: 228
+  name: Zulu War Begins
+  description: In 1879, British and Zulu forces clashed in South Africa.
+  year: 1879
+- id: 229
+  name: First Boer War
+  description: In 1880, Boer settlers rebelled against British rule in South Africa.
+  year: 1880
+- id: 230
+  name: Tuskegee Institute Founded
+  description: In 1881, Booker T. Washington established an educational institution
+    for African Americans.
+  year: 1881
+- id: 231
+  name: Assassination of Garfield
+  description: In 1881, U.S. President James Garfield was shot and later died.
+  year: 1881
+- id: 232
+  name: Triple Alliance Formed
+  description: In 1882, Germany, Austria-Hungary, and Italy formed a military alliance.
+  year: 1882
+- id: 233
+  name: Brooklyn Bridge Completed
+  description: In 1883, the iconic bridge connected Manhattan and Brooklyn.
+  year: 1883
+- id: 234
+  name: Berlin Conference Begins
+  description: In 1884, European powers met to divide Africa during colonial expansion.
+  year: 1884
+- id: 235
+  name: Statue of Liberty Arrives
+  description: In 1885, France gifted the statue to the U.S.
+  year: 1885
+- id: 236
+  name: Coca-Cola Invented
+  description: In 1886, John Pemberton created the formula for Coca-Cola.
+  year: 1886
+- id: 237
+  name: Haymarket Affair
+  description: In 1886, a labor protest in Chicago turned violent, impacting labor
+    rights.
+  year: 1886
+- id: 238
+  name: Jack the Ripper Murders
+  description: In 1888, a series of brutal killings shocked Victorian London.
+  year: 1888
+- id: 239
+  name: Eiffel Tower Completed
+  description: In 1889, the Eiffel Tower opened as part of the Paris Exposition.
+  year: 1889
+- id: 240
+  name: Second International Founded
+  description: In 1889, socialist groups formed an international workers' alliance.
+  year: 1889
+- id: 241
+  name: Wounded Knee Massacre
+  description: In 1890, U.S. forces killed hundreds of Lakota Sioux in South Dakota.
+  year: 1890
+- id: 242
+  name: Sherman Antitrust Act Passed
+  description: In 1890, the U.S. outlawed monopolistic business practices.
+  year: 1890
+- id: 243
+  name: Ellis Island Opens
+  description: In 1892, Ellis Island began processing immigrants arriving in New York.
+  year: 1892
+- id: 244
+  name: Chicago World's Fair
+  description: In 1893, the Columbian Exposition showcased American innovation and
+    culture.
+  year: 1893
+- id: 245
+  name: Dreyfus Affair Begins
+  description: In 1894, a French Jewish officer was wrongly convicted of treason.
+  year: 1894
+- id: 246
+  name: X-Rays Discovered
+  description: In 1895, Wilhelm Röntgen discovered X-rays, transforming medicine.
+  year: 1895
+- id: 247
+  name: First Modern Olympics
+  description: In 1896, Athens hosted the first modern Olympic Games.
+  year: 1896
+- id: 248
+  name: Klondike Gold Rush
+  description: In 1896, gold discoveries drew thousands to Alaska and the Yukon.
+  year: 1896
+- id: 249
+  name: Queen Victoria's Diamond Jubilee
+  description: In 1897, Britain celebrated 60 years of Victoria’s reign.
+  year: 1897
+- id: 250
+  name: Spanish-American War
+  description: In 1898, the U.S. defeated Spain and gained overseas territories.
+  year: 1898
+- id: 251
+  name: Boxer Rebellion Ends
+  description: In 1901, the Boxer Protocol was signed, ending anti-foreign violence
+    in China.
+  year: 1901
+- id: 252
+  name: First Nobel Prizes Awarded
+  description: In 1901, the Nobel Foundation gave its first prizes in sciences, peace,
+    and literature.
+  year: 1901
+- id: 253
+  name: Wright Brothers' First Flight
+  description: In 1903, the Wright brothers achieved the first powered flight in Kitty
+    Hawk.
+  year: 1903
+- id: 254
+  name: Russo-Japanese War Begins
+  description: In 1904, Japan and Russia went to war over influence in East Asia.
+  year: 1904
+- id: 255
+  name: Einstein Publishes Special Relativity
+  description: In 1905, Albert Einstein introduced the theory of special relativity.
+  year: 1905
+- id: 256
+  name: San Francisco Earthquake
+  description: In 1906, a major earthquake devastated San Francisco, killing thousands.
+  year: 1906
+- id: 257
+  name: Founding of the Boy Scouts
+  description: In 1908, the Boy Scouts movement was founded in Britain by Robert Baden-Powell.
+  year: 1908
+- id: 258
+  name: Model T Introduced
+  description: In 1908, Henry Ford launched the Model T, revolutionizing automobile
+    production.
+  year: 1908
+- id: 259
+  name: Titanic Sinks
+  description: In 1912, the Titanic struck an iceberg and sank, killing over 1,500
+    people.
+  year: 1912
+- id: 260
+  name: World War I Begins
+  description: In 1914, the assassination of Archduke Franz Ferdinand sparked global
+    conflict.
+  year: 1914
+- id: 261
+  name: Battle of Verdun
+  description: In 1916, one of World War I’s longest and bloodiest battles was fought
+    in France.
+  year: 1916
+- id: 262
+  name: Russian Revolution
+  description: In 1917, the Bolsheviks overthrew the Russian government and established
+    a communist state.
+  year: 1917
+- id: 263
+  name: United States Enters WWI
+  description: In 1917, the U.S. joined the Allies in World War I.
+  year: 1917
+- id: 264
+  name: Armistice Ends World War I
+  description: On November 11, 1918, World War I ended with the signing of an armistice.
+  year: 1918
+- id: 265
+  name: Spanish Flu Pandemic
+  description: In 1918, a deadly influenza pandemic swept the globe, killing millions.
+  year: 1918
+- id: 266
+  name: Treaty of Versailles Signed
+  description: In 1919, the treaty formally ended WWI and imposed terms on Germany.
+  year: 1919
+- id: 267
+  name: League of Nations Founded
+  description: In 1920, the League of Nations was established to promote peace.
+  year: 1920
+- id: 268
+  name: Women Gain Right to Vote in U.S.
+  description: In 1920, the 19th Amendment granted American women the right to vote.
+  year: 1920
+- id: 269
+  name: Communist Party of China Founded
+  description: In 1921, the Chinese Communist Party was formed in Shanghai.
+  year: 1921
+- id: 270
+  name: Mussolini's March on Rome
+  description: In 1922, Mussolini seized power in Italy and established a fascist
+    regime.
+  year: 1922
+- id: 271
+  name: Founding of the USSR
+  description: In 1922, the Soviet Union was officially established under Lenin.
+  year: 1922
+- id: 272
+  name: Discovery of King Tut's Tomb
+  description: In 1922, Howard Carter discovered the tomb of Pharaoh Tutankhamun in
+    Egypt.
+  year: 1922
+- id: 273
+  name: Atatürk Proclaims Republic of Turkey
+  description: In 1923, Mustafa Kemal Atatürk established Turkey as a secular republic.
+  year: 1923
+- id: 274
+  name: Mein Kampf Published
+  description: In 1925, Adolf Hitler’s political manifesto was published in Germany.
+  year: 1925
+- id: 275
+  name: General Strike in Britain
+  description: In 1926, British workers launched a massive strike across key industries.
+  year: 1926
+- id: 276
+  name: Charles Lindbergh's Solo Flight
+  description: In 1927, Lindbergh flew nonstop across the Atlantic from New York to
+    Paris.
+  year: 1927
+- id: 277
+  name: Stock Market Crash
+  description: In 1929, the U.S. stock market collapsed, triggering the Great Depression.
+  year: 1929
+- id: 278
+  name: Gandhi's Salt March
+  description: In 1930, Mahatma Gandhi led a nonviolent protest against British salt
+    taxes.
+  year: 1930
+- id: 279
+  name: Nazi Party Rises
+  description: In the early 1930s, Hitler's Nazi Party gained power in Germany.
+  year: 1932
+- id: 280
+  name: Franklin D. Roosevelt Elected
+  description: In 1932, FDR was elected U.S. president, launching the New Deal era.
+  year: 1932
+- id: 281
+  name: Hitler Appointed Chancellor
+  description: In 1933, Adolf Hitler became Chancellor of Germany.
+  year: 1933
+- id: 282
+  name: New Deal Introduced
+  description: In 1933, FDR launched programs to address the Great Depression.
+  year: 1933
+- id: 283
+  name: Night of the Long Knives
+  description: In 1934, Hitler purged rivals within the Nazi Party.
+  year: 1934
+- id: 284
+  name: Italian Invasion of Ethiopia
+  description: In 1935, Mussolini's forces invaded Ethiopia, defying international
+    condemnation.
+  year: 1935
+- id: 285
+  name: Spanish Civil War Begins
+  description: In 1936, conflict erupted between fascists and republicans in Spain.
+  year: 1936
+- id: 286
+  name: Hindenburg Disaster
+  description: In 1937, the airship Hindenburg exploded while landing in New Jersey.
+  year: 1937
+- id: 287
+  name: Japan Invades China
+  description: In 1937, Japan launched a full-scale invasion of China, starting the
+    Second Sino-Japanese War.
+  year: 1937
+- id: 288
+  name: Kristallnacht in Germany
+  description: In 1938, Nazis attacked Jewish homes, synagogues, and businesses across
+    Germany.
+  year: 1938
+- id: 289
+  name: Germany Invades Poland
+  description: In 1939, Germany's invasion of Poland triggered World War II.
+  year: 1939
+- id: 290
+  name: Battle of Britain
+  description: In 1940, the RAF defended the UK against massive German air raids.
+  year: 1940
+- id: 291
+  name: Pearl Harbor Attacked
+  description: In 1941, Japan bombed Pearl Harbor, prompting the U.S. to enter WWII.
+  year: 1941
+- id: 292
+  name: Battle of Stalingrad
+  description: From 1942 to 1943, Soviet forces repelled a major German offensive.
+  year: 1942
+- id: 293
+  name: D-Day Invasion
+  description: On June 6, 1944, Allied forces landed in Normandy to liberate Western
+    Europe.
+  year: 1944
+- id: 294
+  name: Yalta Conference
+  description: In 1945, Allied leaders met to plan postwar Europe and the final defeat
+    of Nazi Germany.
+  year: 1945
+- id: 295
+  name: Hitler Commits Suicide
+  description: In 1945, Adolf Hitler died by suicide in his Berlin bunker.
+  year: 1945
+- id: 296
+  name: Germany Surrenders
+  description: On May 7, 1945, Nazi Germany unconditionally surrendered to the Allies.
+  year: 1945
+- id: 297
+  name: Atomic Bomb Dropped on Hiroshima
+  description: In 1945, the U.S. dropped the first atomic bomb on Hiroshima, Japan.
+  year: 1945
+- id: 298
+  name: Atomic Bomb Dropped on Nagasaki
+  description: Three days later, a second atomic bomb devastated Nagasaki.
+  year: 1945
+- id: 299
+  name: Japan Surrenders
+  description: On September 2, 1945, Japan formally surrendered, ending World War
+    II.
+  year: 1945
+- id: 300
+  name: United Nations Founded
+  description: In 1945, the UN was created to promote peace and global cooperation.
+  year: 1945
+- id: 301
+  name: Korean War Begins
+  description: In 1950, North Korea invaded South Korea, sparking a major Cold War
+    conflict.
+  year: 1950
+- id: 302
+  name: Discovery of DNA Structure
+  description: In 1953, Watson and Crick described the double-helix structure of DNA.
+  year: 1953
+- id: 303
+  name: Brown v. Board Decision
+  description: In 1954, the U.S. Supreme Court ruled school segregation unconstitutional.
+  year: 1954
+- id: 304
+  name: Warsaw Pact Formed
+  description: In 1955, the Soviet Union and allies created a military alliance to
+    counter NATO.
+  year: 1955
+- id: 305
+  name: Suez Crisis
+  description: In 1956, Egypt nationalized the Suez Canal, prompting a military response
+    from Britain, France, and Israel.
+  year: 1956
+- id: 306
+  name: Sputnik Launched
+  description: In 1957, the Soviet Union launched the first artificial satellite into
+    orbit.
+  year: 1957
+- id: 307
+  name: Castro Takes Power in Cuba
+  description: In 1959, Fidel Castro overthrew the Batista regime and established
+    a communist government.
+  year: 1959
+- id: 308
+  name: Berlin Wall Constructed
+  description: In 1961, East Germany built the Berlin Wall to stop emigration to the
+    West.
+  year: 1961
+- id: 309
+  name: Cuban Missile Crisis
+  description: In 1962, a confrontation between the U.S. and USSR brought the world
+    close to nuclear war.
+  year: 1962
+- id: 310
+  name: Assassination of JFK
+  description: In 1963, U.S. President John F. Kennedy was assassinated in Dallas,
+    Texas.
+  year: 1963
+- id: 311
+  name: Civil Rights Act Passed
+  description: In 1964, U.S. legislation outlawed segregation and discrimination.
+  year: 1964
+- id: 312
+  name: Vietnam War Escalates
+  description: In 1965, the U.S. dramatically increased troop presence in Vietnam.
+  year: 1965
+- id: 313
+  name: Six-Day War
+  description: In 1967, Israel fought and defeated neighboring Arab countries in six
+    days.
+  year: 1967
+- id: 314
+  name: Assassination of Martin Luther King Jr.
+  description: In 1968, civil rights leader Martin Luther King Jr. was assassinated
+    in Memphis.
+  year: 1968
+- id: 315
+  name: Moon Landing
+  description: In 1969, Neil Armstrong became the first human to walk on the Moon.
+  year: 1969
+- id: 316
+  name: First Earth Day
+  description: In 1970, the first Earth Day marked a new era of environmental awareness.
+  year: 1970
+- id: 317
+  name: Bangladesh Gains Independence
+  description: In 1971, Bangladesh became an independent nation after a war with Pakistan.
+  year: 1971
+- id: 318
+  name: Watergate Scandal
+  description: In 1972, a break-in at the DNC led to Nixon’s resignation two years
+    later.
+  year: 1972
+- id: 319
+  name: Yom Kippur War
+  description: In 1973, Egypt and Syria launched a surprise attack on Israel.
+  year: 1973
+- id: 320
+  name: Vietnam War Ends
+  description: In 1975, the fall of Saigon marked the end of the Vietnam War.
+  year: 1975
+- id: 321
+  name: Apple Founded
+  description: In 1976, Steve Jobs and Steve Wozniak founded Apple Computer.
+  year: 1976
+- id: 322
+  name: Iranian Revolution
+  description: In 1979, the Shah of Iran was overthrown and replaced by an Islamic
+    republic.
+  year: 1979
+- id: 323
+  name: Soviet Invasion of Afghanistan
+  description: In 1979, the USSR invaded Afghanistan, prompting a long conflict.
+  year: 1979
+- id: 324
+  name: Mount St. Helens Erupts
+  description: In 1980, the volcano erupted in Washington State, causing major destruction.
+  year: 1980
+- id: 325
+  name: Assassination of John Lennon
+  description: In 1980, musician John Lennon was shot in New York City.
+  year: 1980
+- id: 326
+  name: Falklands War
+  description: In 1982, Britain and Argentina fought over the Falkland Islands.
+  year: 1982
+- id: 327
+  name: Internet Protocols Standardized
+  description: In 1983, the modern internet was born with the adoption of TCP/IP protocols.
+  year: 1983
+- id: 328
+  name: Chernobyl Disaster
+  description: In 1986, a nuclear reactor exploded in Ukraine, causing widespread
+    radiation release.
+  year: 1986
+- id: 329
+  name: Berlin Wall Falls
+  description: In 1989, East and West Berliners dismantled the Berlin Wall, signaling
+    the Cold War's end.
+  year: 1989
+- id: 330
+  name: Tiananmen Square Massacre
+  description: In 1989, Chinese troops violently suppressed pro-democracy protests
+    in Beijing.
+  year: 1989
+- id: 331
+  name: Nelson Mandela Freed
+  description: In 1990, South African anti-apartheid leader Nelson Mandela was released
+    from prison.
+  year: 1990
+- id: 332
+  name: Gulf War Begins
+  description: In 1991, a U.S.-led coalition launched Operation Desert Storm to liberate
+    Kuwait.
+  year: 1991
+- id: 333
+  name: Soviet Union Collapses
+  description: In 1991, the USSR dissolved, ending the Cold War era.
+  year: 1991
+- id: 334
+  name: World Wide Web Launched
+  description: In 1991, the web became publicly available, transforming global communication.
+  year: 1991
+- id: 335
+  name: Bosnian War Begins
+  description: In 1992, ethnic conflict broke out in Bosnia following the breakup
+    of Yugoslavia.
+  year: 1992
+- id: 336
+  name: Rwandan Genocide
+  description: In 1994, mass killings targeted Tutsis and moderate Hutus in Rwanda.
+  year: 1994
+- id: 337
+  name: Nelson Mandela Elected
+  description: In 1994, Mandela became South Africa's first Black president.
+  year: 1994
+- id: 338
+  name: Oklahoma City Bombing
+  description: In 1995, a domestic terrorist attack killed 168 people in Oklahoma.
+  year: 1995
+- id: 339
+  name: Hong Kong Returned to China
+  description: In 1997, Britain handed over Hong Kong to Chinese control.
+  year: 1997
+- id: 340
+  name: Google Founded
+  description: In 1998, Larry Page and Sergey Brin founded the search engine Google.
+  year: 1998
+- id: 341
+  name: Euro Introduced
+  description: In 1999, the euro was introduced as the official currency for many
+    EU nations.
+  year: 1999
+- id: 342
+  name: 9/11 Terrorist Attacks
+  description: In 2001, Al-Qaeda terrorists hijacked planes and attacked the U.S.
+  year: 2001
+- id: 343
+  name: U.S. Invades Afghanistan
+  description: In 2001, the U.S. launched military action against the Taliban after
+    9/11.
+  year: 2001
+- id: 344
+  name: Facebook Founded
+  description: In 2004, Mark Zuckerberg launched Facebook at Harvard University.
+  year: 2004
+- id: 345
+  name: Hurricane Katrina Strikes
+  description: In 2005, a major hurricane devastated New Orleans and the Gulf Coast.
+  year: 2005
+- id: 346
+  name: Global Financial Crisis
+  description: In 2008, financial markets crashed, leading to global recession.
+  year: 2008
+- id: 347
+  name: Barack Obama Elected
+  description: In 2008, Barack Obama became the first African American U.S. president.
+  year: 2008
+- id: 348
+  name: Arab Spring Begins
+  description: In 2010, uprisings against authoritarian regimes swept the Arab world.
+  year: 2010
+- id: 349
+  name: Death of Osama bin Laden
+  description: In 2011, U.S. forces killed Al-Qaeda leader Osama bin Laden in Pakistan.
+  year: 2011
+- id: 350
+  name: COVID-19 Pandemic Begins
+  description: In 2020, a novel coronavirus spread globally, causing a worldwide pandemic.
+  year: 2020
+- id: 351
+  name: Global Climate Accord Enforced
+  description: In 2026, world governments ratified and implemented strict climate
+    protocols.
+  year: 2026
+- id: 352
+  name: First Human on Mars
+  description: In 2028, a multinational mission successfully landed astronauts on
+    Mars.
+  year: 2028
+- id: 353
+  name: AI Becomes Legal Entity
+  description: In 2030, artificial intelligence was granted limited legal rights.
+  year: 2030
+- id: 354
+  name: First Fully Clean Energy Nation
+  description: In 2031, a small European country achieved 100% renewable energy usage.
+  year: 2031
+- id: 355
+  name: Neural Interface Smartphone Released
+  description: In 2033, a tech company released a commercial brain-connected communication
+    device.
+  year: 2033
+- id: 356
+  name: Global Internet Access Achieved
+  description: By 2034, satellite networks provided internet coverage to the entire
+    planet.
+  year: 2034
+- id: 357
+  name: Artificial Womb Technology Approved
+  description: In 2035, global health authorities approved lab-grown womb technology.
+  year: 2035
+- id: 358
+  name: Fusion Power Becomes Viable
+  description: In 2037, a working fusion power plant produced net-positive energy.
+  year: 2037
+- id: 359
+  name: Universal Basic Income Implemented
+  description: In 2039, several nations implemented UBI to combat job loss from automation.
+  year: 2039
+- id: 360
+  name: First Interstellar Probe Launched
+  description: In 2040, humanity launched a probe to a nearby star system.
+  year: 2040
+- id: 361
+  name: Ocean Cities Begin Operation
+  description: In 2042, floating ocean-based cities welcomed their first residents.
+  year: 2042
+- id: 362
+  name: AI Passes Global Leadership Exam
+  description: In 2044, AI outperformed humans in a global ethics and governance test.
+  year: 2044
+- id: 363
+  name: Global Plastic Ban Enforced
+  description: By 2045, single-use plastics were outlawed worldwide.
+  year: 2045
+- id: 364
+  name: Digital Memory Backup Launched
+  description: In 2047, the first commercial brain-memory backup service was introduced.
+  year: 2047
+- id: 365
+  name: New Ocean Discovered Beneath Ice
+  description: In 2048, explorers confirmed a vast ocean under Antarctica’s ice.
+  year: 2048
+- id: 366
+  name: First Martian Colony Founded
+  description: In 2050, a permanent human base was established on Mars.
+  year: 2050
+- id: 367
+  name: Antiviral Nanobots Cure All Flu
+  description: In 2052, a universal antiviral nanobot therapy was deployed.
+  year: 2052
+- id: 368
+  name: Virtual Nation Declared Sovereign
+  description: In 2055, a blockchain-based virtual country received recognition from
+    the UN.
+  year: 2055
+- id: 369
+  name: First Artificial Moon Deployed
+  description: In 2056, an artificial satellite provided nighttime light in cities.
+  year: 2056
+- id: 370
+  name: Robot Olympics Debuts
+  description: In 2058, autonomous robots competed in an international sports event.
+  year: 2058
+- id: 371
+  name: Animal Language Translation Achieved
+  description: In 2060, scientists successfully interpreted basic communication of
+    dolphins and primates.
+  year: 2060
+- id: 372
+  name: Terraforming Begins on Mars
+  description: In 2063, automated systems started terraforming efforts on Mars.
+  year: 2063
+- id: 373
+  name: Peace Treaty Ends Final War
+  description: In 2066, the last global military conflict ended with a universal peace
+    treaty.
+  year: 2066
+- id: 374
+  name: Cure for Most Cancers Found
+  description: In 2068, biotech breakthroughs cured over 90% of known cancers.
+  year: 2068
+- id: 375
+  name: Teleportation of Molecules Verified
+  description: In 2070, researchers successfully teleported complex molecules across
+    labs.
+  year: 2070
+- id: 376
+  name: Global Governance Framework Established
+  description: In 2072, nations agreed on unified planetary law and oversight.
+  year: 2072
+- id: 377
+  name: First Venus Probe Lands
+  description: In 2074, a reinforced drone landed and transmitted data from Venus’s
+    surface.
+  year: 2074
+- id: 378
+  name: Synthetic Planet Core Engine Tested
+  description: In 2076, a massive rotating fusion device mimicking Earth’s core was
+    tested.
+  year: 2076
+- id: 379
+  name: Human Cloning Legalized
+  description: In 2078, cloning of consenting individuals was permitted for medical
+    research.
+  year: 2078
+- id: 380
+  name: Cities Built in Orbit
+  description: In 2080, orbital cities began operating for permanent human habitation.
+  year: 2080
+- id: 381
+  name: Ocean Floor Colonies Established
+  description: In 2082, the first deep-sea colonies began hosting human residents.
+  year: 2082
+- id: 382
+  name: AI Judicial System Launched
+  description: In 2085, AI began operating as fair, impartial judges in civil courts.
+  year: 2085
+- id: 383
+  name: Neural Merging with AI Normalized
+  description: By 2088, human minds routinely integrated with AI for daily productivity.
+  year: 2088
+- id: 384
+  name: First Interstellar Signal Decoded
+  description: In 2090, scientists interpreted a signal thought to originate from
+    another star system.
+  year: 2090
+- id: 385
+  name: Post-Scarcity Economy Achieved
+  description: In 2093, AI-driven automation allowed abundance for all citizens globally.
+  year: 2093
+- id: 386
+  name: AI-Human Co-Governance Begins
+  description: In 2095, political systems began including AI in major decisions alongside
+    humans.
+  year: 2095
+- id: 387
+  name: Pluto Station Operational
+  description: In 2098, a space station began orbiting Pluto for scientific missions.
+  year: 2098
+- id: 388
+  name: Solar Shield Activated
+  description: In 2100, a satellite network was deployed to control Earth's climate.
+  year: 2100
+- id: 389
+  name: First Contact Confirmed
+  description: In 2105, humanity confirmed intelligent life in another star system.
+  year: 2105
+- id: 390
+  name: Universal Translator Perfected
+  description: In 2110, real-time translation across all known languages became possible.
+  year: 2110
+- id: 391
+  name: Synthetic Consciousness Achieved
+  description: In 2115, AI achieved independent self-awareness.
+  year: 2115
+- id: 392
+  name: Climate Reversal Technology Deployed
+  description: In 2120, active carbon capture systems began reversing environmental
+    damage.
+  year: 2120
+- id: 393
+  name: Dark Matter Particles Captured
+  description: In 2130, physicists successfully isolated dark matter for study.
+  year: 2130
+- id: 394
+  name: Exoplanet Colonization Begins
+  description: In 2140, the first humans left the solar system to colonize an exoplanet.
+  year: 2140
+- id: 395
+  name: Virtual Reality Governments Formed
+  description: By 2150, virtual states formed fully digital societies and legal systems.
+  year: 2150
+- id: 396
+  name: Time Perception Altered Technologically
+  description: In 2160, neural tech enabled subjective manipulation of time experience.
+  year: 2160
+- id: 397
+  name: Genetic Memory Inheritance Enabled
+  description: In 2170, offspring began receiving selective memories from parents.
+  year: 2170
+- id: 398
+  name: Solar System Peace Treaty
+  description: In 2180, colonies across planets signed a historic universal peace
+    accord.
+  year: 2180
+- id: 399
+  name: Quantum Network Unifies Data
+  description: In 2190, Earth’s and off-world systems were connected by instant quantum
+    communication.
+  year: 2190
+- id: 400
+  name: Galactic Mapping Project Complete
+  description: In 2200, scientists completed a detailed map of the Milky Way galaxy.
+  year: 2200
+- id: 551
+  name: Eiffel Tower
+  description: An iron lattice tower and global icon of France, rising above Paris.
+  year: 1889
+- id: 552
+  name: Statue of Liberty
+  description: A symbol of freedom and democracy gifted to the U.S. by France.
+  year: 1886
+- id: 553
+  name: Colosseum
+  description: An ancient Roman amphitheater known for gladiatorial games and massive
+    scale.
+  year: 80
+- id: 554
+  name: Great Wall of China
+  description: A vast defensive structure stretching across northern China.
+  year: -221
+- id: 555
+  name: Machu Picchu
+  description: An Incan citadel nestled in the Andes Mountains of Peru.
+  year: 1450
+- id: 556
+  name: Taj Mahal
+  description: A white marble mausoleum built in memory of an emperor's wife.
+  year: 1653
+- id: 557
+  name: Christ the Redeemer
+  description: A towering statue of Jesus overlooking Rio de Janeiro.
+  year: 1931
+- id: 558
+  name: Stonehenge
+  description: A prehistoric stone circle believed to have astronomical and ceremonial
+    purposes.
+  year: -2500
+- id: 559
+  name: Angkor Wat
+  description: A massive temple complex in Cambodia originally built as a Hindu shrine.
+  year: 1150
+- id: 560
+  name: Leaning Tower of Pisa
+  description: A freestanding bell tower famous for its unintended tilt.
+  year: 1372
+- id: 561
+  name: Big Ben (Elizabeth Tower)
+  description: A British landmark known for its clock and chimes.
+  year: 1859
+- id: 562
+  name: Acropolis of Athens
+  description: A historic hilltop complex featuring the Parthenon and other ancient
+    ruins.
+  year: -447
+- id: 563
+  name: Mount Rushmore
+  description: A monumental sculpture featuring the faces of four U.S. presidents.
+  year: 1941
+- id: 564
+  name: Neuschwanstein Castle
+  description: A romantic Bavarian castle said to have inspired Disney's designs.
+  year: 1886
+- id: 565
+  name: Sagrada Família
+  description: A monumental basilica in Barcelona designed by Antoni Gaudí.
+  year: 1882
+- id: 566
+  name: Petra
+  description: An ancient city in Jordan carved into rose-colored rock cliffs.
+  year: -312
+- id: 567
+  name: Hagia Sophia
+  description: A former church, mosque, and museum in Istanbul, blending Byzantine
+    and Islamic styles.
+  year: 537
+- id: 568
+  name: Chichen Itza
+  description: A major Mayan city with the iconic El Castillo pyramid.
+  year: 600
+- id: 569
+  name: Brandenburg Gate
+  description: An 18th-century neoclassical gate that symbolizes German unity.
+  year: 1791
+- id: 570
+  name: Moai of Easter Island
+  description: Monolithic human figures carved by the Rapa Nui people.
+  year: 1250
+- id: 571
+  name: Sydney Opera House
+  description: A modern architectural marvel and performing arts center.
+  year: 1973
+- id: 572
+  name: Notre-Dame Cathedral
+  description: A Gothic cathedral in Paris known for its architecture and stained
+    glass.
+  year: 1345
+- id: 573
+  name: Burj Khalifa
+  description: The tallest building in the world located in Dubai.
+  year: 2010
+- id: 574
+  name: Palace of Versailles
+  description: An extravagant royal residence symbolizing French monarchy.
+  year: 1682
+- id: 575
+  name: Blue Mosque
+  description: A grand mosque in Istanbul known for its blue tiles.
+  year: 1616
+- id: 576
+  name: CN Tower
+  description: A communications and observation tower once the world's tallest.
+  year: 1976
+- id: 577
+  name: Louvre Pyramid
+  description: A glass pyramid serving as the main entrance to the Louvre Museum.
+  year: 1989
+- id: 578
+  name: Tower Bridge
+  description: A Victorian-era combined bascule and suspension bridge in London.
+  year: 1894
+- id: 579
+  name: Alhambra
+  description: A Moorish palace and fortress complex in southern Spain.
+  year: 1333
+- id: 580
+  name: Golden Gate Bridge
+  description: An iconic red suspension bridge spanning San Francisco Bay.
+  year: 1937
+- id: 581
+  name: Trevi Fountain
+  description: A famous Baroque fountain in Rome, known for coin tossing traditions.
+  year: 1762
+- id: 582
+  name: Capitol Building
+  description: The seat of the U.S. Congress, located in Washington, D.C.
+  year: 1800
+- id: 583
+  name: Independence Hall
+  description: Where the U.S. Declaration of Independence and Constitution were debated.
+  year: 1753
+- id: 584
+  name: Mecca Clock Tower
+  description: One of the tallest buildings in the world near the Great Mosque.
+  year: 2012
+- id: 585
+  name: Himeji Castle
+  description: A well-preserved Japanese feudal castle with white plastered walls.
+  year: 1609
+- id: 586
+  name: St. Basil's Cathedral
+  description: A colorful church on Moscow's Red Square with onion-shaped domes.
+  year: 1561
+- id: 587
+  name: Basilica of Saint Peter
+  description: A major Catholic basilica in Vatican City.
+  year: 1626
+- id: 588
+  name: Kremlin
+  description: A historic fortified complex and seat of Russian power in Moscow.
+  year: 1495
+- id: 589
+  name: Giza Pyramids
+  description: Ancient Egyptian pyramids built as royal tombs.
+  year: -2560
+- id: 590
+  name: Lascaux Caves
+  description: Prehistoric cave paintings estimated to be over 17,000 years old.
+  year: -15000
+- id: 591
+  name: Bamiyan Buddhas
+  description: Ancient monumental statues carved into cliffs in Afghanistan.
+  year: 554
+- id: 592
+  name: Millau Viaduct
+  description: The tallest bridge in the world spanning a deep valley in France.
+  year: 2004
+- id: 593
+  name: Edinburgh Castle
+  description: A historic fortress dominating the skyline of Edinburgh.
+  year: 1103
+- id: 594
+  name: Pont du Gard
+  description: A Roman aqueduct bridge built in the 1st century.
+  year: 50
+- id: 595
+  name: Pantheon
+  description: An ancient Roman temple, now a church, with a massive dome.
+  year: 126
+- id: 596
+  name: Gateway Arch
+  description: A stainless steel monument in St. Louis symbolizing westward expansion.
+  year: 1965
+- id: 597
+  name: Lincoln Memorial
+  description: A U.S. national monument honoring President Abraham Lincoln.
+  year: 1922
+- id: 598
+  name: Moai Quarry
+  description: The volcanic site where Easter Island statues were carved.
+  year: 1400
+- id: 599
+  name: Temple of Heaven
+  description: An imperial complex of religious buildings in Beijing.
+  year: 1420
+- id: 600
+  name: Qutub Minar
+  description: A towering minaret in Delhi and a UNESCO World Heritage site.
+  year: 1220
