@@ -80,6 +80,7 @@ async def get_initial_events():
             "description": story["description"],
             "image": story["img"],  # No image links in the source data
             "date": story["date"],  # No dates in the source data
+            "music_file": story["music_file"],
             "options": []
         }
 
