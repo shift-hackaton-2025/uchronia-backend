@@ -76,6 +76,7 @@ async def get_initial_events():
         event = {
             "id": story["id"],
             "title": story["title"],
+            "description": story["description"],
             "image": story["img"],  # No image links in the source data
             "date": story["date"],  # No dates in the source data
             "options": []
