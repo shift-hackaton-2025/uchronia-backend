@@ -17,6 +17,7 @@ from services.generate_final_report import generate_final_report
 from services.create_rag.generate_image import generate_image
 from models.event import Event
 from services.music.choose_music import choose_music
+import aiofiles.os
 
 app = FastAPI()
 
@@ -39,6 +40,19 @@ app.add_middleware(
 
 # In-memory task status tracker
 image_task_status = {}
+
+# Initialize status tracker with existing images
+def initialize_image_status():
+    for filename in os.listdir(IMAGES_DIR):
+        if filename.endswith('.png'):
+            # Extract task_id from filename (remove .png extension)
+            task_id = filename.replace('.png', '')
+            # Mark the task as completed
+            image_task_status[task_id] = "completed"
+    print(f"Initialized image status tracker with {len(image_task_status)} completed images")
+
+# Run the initialization
+initialize_image_status()
 
 class UpdateEventsRequest(BaseModel):
     events: List[Event]
@@ -228,17 +242,22 @@ async def get_image_status(task_id: str, response: Response) -> ImageStatus:
     # Set cache control headers to prevent browser caching
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
     
-    # Check in-memory status first to avoid file system operations when possible
-    status = image_task_status.get(task_id, "unknown")
+    # Check in-memory status first to avoid file system operations
+    status = image_task_status.get(task_id)
     
+    # If task_id not in dictionary, return processing without file check
+    if status is None:
+        return ImageStatus(status="processing")
+    
+    # Only check file system if our in-memory status says it's completed
     if status == "completed":
-        # Only check file system if our in-memory status says it's completed
         image_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
-        if os.path.exists(image_path):
+        # Use async file existence check
+        if await aiofiles.os.path.exists(image_path):
             return ImageStatus(
                 status="completed",
                 image_url=f"data/generated_images/{task_id}.png"
             )
-        
-    # For processing, error, or unknown status
+    
+    # For processing, error, or any other status
     return ImageStatus(status=status)
