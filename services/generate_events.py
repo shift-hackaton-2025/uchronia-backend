@@ -70,16 +70,12 @@ async def generate_narrative_arc(events, option_chosen):
         "role": "user",
         "content": f"""
         We are working on uchronia, a game that displays a chronological timeline, with events and we allow our users to change the course of history.
-        Your mission is to imagine what the future could look like (The story must follow four phases — rise, peak, fall, and rebirth — but be told in a vivid and immersive tone suitable for a narrative game.)
-        - extract 3 events (one kind of immediately, one some time after (year-decades) and one way later (decades - century).
+        Your mission is to imagine what the future could look like (The story must follow four phases — rise, peak, fall, and rebirth — but be told in a vivid and immersive tone suitable for a narrative game. It should have a touch of **humor, drama, and a dash of magic**).
+        and extract 3 **discrete, salient events** (one immediately, one some time after (year-decades) and one way later (decades - century). For instance, a invent is the discovery of something, a birth, a battle, a natural phenomenon ...
 
         Option chosen: {option_chosen}
         Events:
         {events}
-
-        Notes: 
-        - Be funny sometimes
-        - choose impactful events
         """,
     }
     completion = await litellm.acompletion(
@@ -113,8 +109,10 @@ async def format_narrative_arc(narrative_arc):
                 }
             ]
         }
-        Don't output any text other than the JSON. Output should be in French
-        There should be exactly 3 events and 2 options for each event
+        Notes: 
+        - Don't output any text other than the JSON. Output should be in French
+        - There should be exactly 3 events and 2 options for each event
+        - The options should produce unexpected consequences with a twist
         """,
     }
     user_message = {
