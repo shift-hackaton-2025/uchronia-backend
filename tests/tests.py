@@ -23,17 +23,16 @@ def test_get_initial_events_structure():
         assert isinstance(event["options"], list)
         assert len(event["options"]) == 2
         for option in event["options"]:
-            assert all(field in option for field in ["text", "option_img_link"])
-            assert isinstance(option["text"], str)
-            assert isinstance(option["option_img_link"], str)
+            assert all(field in option for field in ["title", "img"])
+            assert isinstance(option["title"], str)
+            assert isinstance(option["img"], str)
 
         # Check consequences
         assert isinstance(event["consequences"], list)
         assert len(event["consequences"]) == 2
         for consequence in event["consequences"]:
-            assert all(field in consequence for field in ["text", "consequence_img_link"])
+            assert all(field in consequence for field in ["text"])
             assert isinstance(consequence["text"], str)
-            assert isinstance(consequence["consequence_img_link"], str)
 
 def test_event_content():
     response = client.get("/get_initial_events")

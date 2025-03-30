@@ -88,9 +88,8 @@ async def get_initial_events():
         for option in story["options"]:
             event["options"].append({
                 "title": option["title"],
-                "option_img_link": option["img"],
+                "img": option["img"],
                 "consequence": option["consequence"],
-                "consequence_img_link": ""
             })
 
         events.append(event)
@@ -102,12 +101,12 @@ async def get_initial_events():
 async def update_events(request: UpdateEventsRequest, background_tasks: BackgroundTasks):
     # option_chosen format: "{event_id}_{option_idx}"
     event_id, option_idx = map(str, request.option_chosen.split("_"))
-    
+
     # Find the event that was chosen
     event = next((event for event in request.events if event.id == event_id), None)
     if not event:
         raise HTTPException(status_code=404, detail=f"Event with id {event_id} not found")
-    
+
     chosen_option = {
         "title": event.options[int(option_idx)].title,
         "consequence": event.options[int(option_idx)].consequence
@@ -115,32 +114,51 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
 
     # filter events to remove future events and remove options for past events
     print("Original events:", [{"id": e.id, "date": e.date, "title": e.title} for e in request.events])
-    
+
     # Sort events by date first
     sorted_events = sorted(request.events, key=lambda x: x.date)
     print("Sorted events:", [{"id": e.id, "date": e.date, "title": e.title} for e in sorted_events])
-    
+
     chosen_event_index = next(i for i, e in enumerate(sorted_events) if e.id == event_id)
     print(f"Chosen event index: {chosen_event_index}")
-    
+
     # Keep all events up to and including the chosen event
     filtered_events = sorted_events[:chosen_event_index + 1]
     print("Filtered events:", [{"id": e.id, "date": e.date, "title": e.title} for e in filtered_events])
-    
+
     # Generate new events
     _, new_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
-    
+
     # Start image generation tasks for new events
     image_tasks = []
     for event in new_events:
+        # Main event image
         task_id = str(uuid.uuid4())
         background_tasks.add_task(generate_image_task, event["title"], task_id)
         image_tasks.append({
             "event_id": event["id"],
-            "task_id": task_id
+            "task_id": task_id,
+            "type": "event"
         })
+
+        # Options images
+        for idx, option in enumerate(event["options"]):
+            # Option image
+            option_task_id = str(uuid.uuid4())
+            background_tasks.add_task(generate_image_task, option["title"], option_task_id)
+            image_tasks.append({
+                "event_id": event["id"],
+                "option_id": idx,
+                "task_id": option_task_id,
+                "type": "option"
+            })
+
         # Choose music for the event
-        event["music_file"] = choose_music(event["title"])
+        event["music_file"] = choose_music(event["title"] + " " + event["description"])
+        # Choose music for options
+        for option in event["options"]:
+            option["music_file"] = choose_music(option["title"] + " " + event["title"])
+
     return UpdateEventsResponse(events=new_events, image_tasks=image_tasks)
 
 @app.post("/exit_game", response_model=Summary)
