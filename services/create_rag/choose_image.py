@@ -16,6 +16,7 @@ def load_events(yaml_path):
     with open(yaml_path, "r") as f:
         return yaml.safe_load(f)
 
+
 # Embed list of texts with OpenAI (batched)
 def get_embeddings(texts, model="text-embedding-3-small"):
     texts = [text.replace("\n", " ") for text in texts]
@@ -36,21 +37,24 @@ def generate_or_load_embeddings(events, cache_path):
             print("⚠️ Cache mismatch. Recomputing embeddings...")
 
     print("⏳ Generating new embeddings...")
-    
+
     def get_year(event):
         text = event.get("year", "")
         if text != "":
             text = "Year: " + str(text) + ". "
         return text
-    
+
     texts = [get_year(e) + f"{e['name']}: {e['description']}" for e in events]
     embeddings = get_embeddings(texts)
     ids = np.array([e["id"] for e in events])
     np.savez(cache_path, embeddings=embeddings, ids=ids)
     return embeddings, ids
 
+events = load_events(YAML_PATH)
+embeddings, ids = generate_or_load_embeddings(events, CACHE_PATH)
+
 # Find closest event by embedding
-def find_closest_event_id(description, embeddings, ids):
+def find_closest_event_id(description):
     query_vec = get_embeddings([description])[0]
     similarities = cosine_similarity([query_vec], embeddings)
     best_index = int(similarities.argmax())
@@ -58,10 +62,8 @@ def find_closest_event_id(description, embeddings, ids):
 
 # Main logic
 if __name__ == "__main__":
-    events = load_events(YAML_PATH)
-    embeddings, ids = generate_or_load_embeddings(events, CACHE_PATH)
 
     test_description = "A Christian army sets out to reclaim Jerusalem during the medieval period."
-    matched_id = find_closest_event_id(test_description, embeddings, ids)
+    matched_id = find_closest_event_id(test_description)
     closest_image_filepath = f"services/create_rag/rag/image_{matched_id}.png"
     print(f"🔍 Closest matching event ID: {matched_id}")

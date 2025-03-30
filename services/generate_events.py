@@ -65,25 +65,26 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
     return think, events
 
 
-def generate_narrative_arc(events):
+def generate_narrative_arc(events, option_chosen):
     user_message = {
         "role": "user",
         "content": f"""
         We are working on uchronia, a game that displays a chronological timeline, with events and we allow our users to change the course of history.
         Your mission is to imagine what the future could look like (The story must follow four phases — rise, peak, fall, and rebirth — but be told in a vivid and immersive tone suitable for a narrative game.)
-        There should be an alternative narrative arc, unrelated to the main topic, that runs in parallel starting from the same point / event.
-        - extract 3 events total from the two narrative arc (one kind of immediately, one some time after (year-decades) and one way later (decades - century).
+        - extract 3 events (one kind of immediately, one some time after (year-decades) and one way later (decades - century).
 
-        Context:
+        Option chosen: {option_chosen}
+        Events:
         {events}
 
         Notes: 
-        - at least one event should be related to the main story
-        - at least one event should be related to the alternative story
+        - Be funny sometimes
+        - choose impactful events
         """,
     }
     completion = litellm.completion(
-        model="groq/llama-3.3-70b-versatile",
+        # model="groq/llama-3.3-70b-versatile",
+        model="groq/deepseek-r1-distill-llama-70b",
         temperature=0.7,
         messages=[user_message],
         metadata={"tags": ["generate_narrative_arc"]},
@@ -96,25 +97,26 @@ def format_narrative_arc(narrative_arc):
     system_message = {
         "role": "system",
         "content": """
-        Your role is to transform the narrative arc into a JSON format with the following structure:
+        Your role is to transform the events into a JSON format with the following structure:
         {
             "events": [                           // Type: Array of event objects.
                 {
-                "title": "string",                // Type: String. Title of the event.
+                "title": "string",                // Type: String. Title of the event. Should be explicit and start with a noun.
                 "date": "YYYY-MM-DD",             // Type: String. Date of the event in ISO format.
-                "description": "string",          // Type: String. Detailed description of the event.
+                "description": "string",          // Type: String. Detailed description of the event (4-5 lines)
                 "options": [                      // Type: Array of option objects.
                     {
                     "title": "string",            // Type: String. Title of the option. Should start with a verb.
-                    "consequence": "string"       // Type: String. Outcome or consequence if this option is selected.
+                    "consequence": "string"       // Type: String. Outcome or consequence if this option is selected. (2-3 paragraphs of 2-3 lines)
                     }
                 ]
                 }
             ]
         }
+        The 
         Don't output any text other than the JSON. Output should be in French
         """,
-        }
+    }
     user_message = {
         "role": "user",
         "content": f"""
@@ -132,6 +134,19 @@ def format_narrative_arc(narrative_arc):
     return completion.choices[0].message.content
 
 
+def generate_narrative_arc_events(events, option_chosen):
+    narrative_arc = generate_narrative_arc(events, option_chosen)
+    formatted_narrative_arc = format_narrative_arc(narrative_arc)
+    narrative_arc_events = parse_json_markdown(formatted_narrative_arc)["events"]
+
+    # generate ids
+    max_id = max([int(event.id) for event in events])
+    for event in narrative_arc_events:
+        event["id"] = str(max_id + 1)
+        max_id += 1
+    return narrative_arc_events
+
+
 if __name__ == "__main__":
     option_chosen = {
         "title": "Unexpected Lunar Encounter",
@@ -141,22 +156,6 @@ if __name__ == "__main__":
     events = [
         {
             "id": "1",
-            "title": "Moon Landing: A Giant Leap",
-            "date": "1969-07-20",
-            "description": "The first steps on the moon marked a historic achievement for humanity. This event celebrated scientific brilliance and expanded our view of what is possible. In an alternate timeline, small changes during the mission lead to surprising outcomes for space exploration.",
-            "options": [
-                {
-                    "title": "Military Moon Base",
-                    "consequence": "Shortly after landing, strategic interests prompt governments to repurpose part of the lunar surface as a military outpost. The establishment of a military moon base ignites an intense international arms race in space. Tensions on Earth escalate as nations rush to secure their presence beyond our planet.\n\n The militarization of the moon triggers extensive debates in global politics, leading to the negotiation of new treaties and protocols. The shift transforms the lunar landscape into a symbol of both technological prowess and geopolitical rivalry, with lasting impacts on international security and space law.",
-                },
-                {
-                    "title": "Unexpected Lunar Encounter",
-                    "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon’s mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination.",
-                },
-            ],
-        },
-        {
-            "id": "2",
             "title": "The New World Unveiled",
             "date": "1492-08-25",
             "description": "The discovery of America is a watershed moment that forever alters global history. Explorers encounter vast, diverse lands and indigenous cultures, opening up countless paths for change. In this alternate timeline, every twist not only redefines who holds power but also forges new cultural identities that ripple throughout the world.",
@@ -172,23 +171,7 @@ if __name__ == "__main__":
             ],
         },
         {
-            "id": "3",
-            "title": "Pandemic's Dark New Dawn",
-            "date": "2020-03-11",
-            "description": "A devastating twist in the Covid crisis spawns a horrifying new threat. The virus mutates into a zombie contagion that reshapes society. In this altered reality, survival depends on adapting to a world where life and death blur. Humanity faces a brutal new normal that forces both fear and fierce resilience.",
-            "options": [
-                {
-                    "title": "Zombie Covid Outbreak",
-                    "consequence": "The virus takes an eerie turn as infected bodies reanimate, triggering a zombie outbreak. Traditional contagion now combines with necrotic spread, plunging cities into chaos. Panic and survival instincts replace routine life, as authorities struggle to contain this dual-threat disaster.\n\nCommunities and governments are forced to rethink public health and defense strategies. New alliances form amidst the terror, as people adapt to a reality where the undead walk among them.",
-                },
-                {
-                    "title": "New Normal, New Plague",
-                    "consequence": "As the zombie plague becomes a permanent feature of everyday life, society reluctantly embraces the macabre as its new norm. Health systems and militaries recalibrate their approaches to address a threat that is part virus, part reanimation.\n\nThe grim adaptation fosters a culture of gritty survival, where economic systems, public policies, and social behaviors are reshaped by the constant presence of a relentless, evolving menace.",
-                },
-            ],
-        },
-        {
-            "id": "5",
+            "id": "2",
             "title": "Empire Reborn: Revolutionary Shadows",
             "date": "1789-07-14",
             "description": "The historic revolution takes an unexpected turn, preserving the royal family and birthing a new empire. Ambitious leaders reminiscent of Napoleon rise to power, reshaping France’s destiny. A reimagined national identity emerges with a bold new anthem and emblem. History is rewritten in a clash of tradition and imperial ambition.",
@@ -203,17 +186,54 @@ if __name__ == "__main__":
                 },
             ],
         },
+        {
+            "id": "3",
+            "title": "Moon Landing: A Giant Leap",
+            "date": "1969-07-20",
+            "description": "The first steps on the moon marked a historic achievement for humanity. This event celebrated scientific brilliance and expanded our view of what is possible. In an alternate timeline, small changes during the mission lead to surprising outcomes for space exploration.",
+            "options": [
+                {
+                    "title": "Military Moon Base",
+                    "consequence": "Shortly after landing, strategic interests prompt governments to repurpose part of the lunar surface as a military outpost. The establishment of a military moon base ignites an intense international arms race in space. Tensions on Earth escalate as nations rush to secure their presence beyond our planet.\n\n The militarization of the moon triggers extensive debates in global politics, leading to the negotiation of new treaties and protocols. The shift transforms the lunar landscape into a symbol of both technological prowess and geopolitical rivalry, with lasting impacts on international security and space law.",
+                },
+                {
+                    "title": "Unexpected Lunar Encounter",
+                    "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon’s mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination.",
+                },
+            ],
+        },
+        {
+            "id": "4",
+            "title": "Pandemic's Dark New Dawn",
+            "date": "2020-03-11",
+            "description": "A devastating twist in the Covid crisis spawns a horrifying new threat. The virus mutates into a zombie contagion that reshapes society. In this altered reality, survival depends on adapting to a world where life and death blur. Humanity faces a brutal new normal that forces both fear and fierce resilience.",
+            "options": [
+                {
+                    "title": "Zombie Covid Outbreak",
+                    "consequence": "The virus takes an eerie turn as infected bodies reanimate, triggering a zombie outbreak. Traditional contagion now combines with necrotic spread, plunging cities into chaos. Panic and survival instincts replace routine life, as authorities struggle to contain this dual-threat disaster.\n\nCommunities and governments are forced to rethink public health and defense strategies. New alliances form amidst the terror, as people adapt to a reality where the undead walk among them.",
+                },
+                {
+                    "title": "New Normal, New Plague",
+                    "consequence": "As the zombie plague becomes a permanent feature of everyday life, society reluctantly embraces the macabre as its new norm. Health systems and militaries recalibrate their approaches to address a threat that is part virus, part reanimation.\n\nThe grim adaptation fosters a culture of gritty survival, where economic systems, public policies, and social behaviors are reshaped by the constant presence of a relentless, evolving menace.",
+                },
+            ],
+        }
     ]
 
     think, events = generate_future_events(events, option_chosen)
     print(think)
     print(events)
 
-
-    narrative_arc = generate_narrative_arc(events)
+    narrative_arc = generate_narrative_arc(events, option_chosen)
     print(narrative_arc)
 
     formatted_narrative_arc = format_narrative_arc(narrative_arc)
     print(formatted_narrative_arc)
 
     narrative_arc_events = parse_json_markdown(formatted_narrative_arc)
+
+    from time import time
+    start_time = time()
+    output = generate_narrative_arc_events(events, option_chosen)
+    end_time = time()
+    print(f"Time taken: {end_time - start_time} seconds")

@@ -8,7 +8,11 @@ import json
 import os
 from pydantic import BaseModel
 import uuid
-from services.generate_events import generate_future_events 
+from services.create_rag.choose_image import find_closest_event_id
+from services.generate_events import (
+    generate_future_events,
+    generate_narrative_arc_events,
+)
 from services.generate_final_report import generate_final_report
 from services.create_rag.generate_image import generate_image
 from models.event import Event
@@ -127,7 +131,8 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
     print("Filtered events:", [{"id": e.id, "date": e.date, "title": e.title} for e in filtered_events])
 
     # Generate new events
-    _, new_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
+    # _, new_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
+    new_events = generate_narrative_arc_events(filtered_events, chosen_option)
 
     # Start image generation tasks for new events
     image_tasks = []
@@ -140,6 +145,8 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
             "task_id": task_id,
             "type": "event"
         })
+        image_id = find_closest_event_id(event["title"] + " - Year : " + event["date"])
+        event["img"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
 
         # Options images
         for idx, option in enumerate(event["options"]):
@@ -152,6 +159,8 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
                 "task_id": option_task_id,
                 "type": "option"
             })
+            image_id = find_closest_event_id(option["title"] + "- Year :" + event["date"])
+            option["img"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
 
         # Choose music for the event
         event["music_file"] = choose_music(event["title"] + " " + event["description"])
