@@ -193,7 +193,7 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
         event_indices.append((event_idx, None))
         
         # Event music prompt
-        music_prompts.append(event["title"] + " " + event["description"])
+        music_prompts.append(event["title"] + " " + " ".join(event["description"]))
         music_indices.append((event_idx, None))
         
         # Option prompts

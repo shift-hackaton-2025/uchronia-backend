@@ -9,10 +9,10 @@ load_dotenv()
 
 # Load all API keys
 SEELAB_API_KEYS = [
+    os.getenv("SEELAB_API_KEY"),
     os.getenv("SEELAB_API_KEY_1"),
-    # os.getenv("SEELAB_API_KEY_2"),
-    # os.getenv("SEELAB_API_KEY_3"),
-    # os.getenv("SEELAB_API_KEY_4"),
+    os.getenv("SEELAB_API_KEY_2"),
+    os.getenv("SEELAB_API_KEY_3"),
 ]
 assert all(key is not None for key in SEELAB_API_KEYS), "One or more API keys are None"
 

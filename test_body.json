@@ -3,7 +3,7 @@
     {
       "id": "0",
       "title": "Début de la Guerre Froide",
-      "description": "",
+      "description": [""],
       "image": "",
       "date": "1947-03-12",
       "options": [
@@ -20,7 +20,7 @@
     {
       "id": "1",
       "title": "Atterrissage sur la Lune : Un Bond de Géant",
-      "description": "",
+      "description": [""],
       "image": "",
       "date": "1969-07-20",
       "options": [

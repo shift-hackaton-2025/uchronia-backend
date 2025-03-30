@@ -10,7 +10,7 @@ class Option(BaseModel):
 class Event(BaseModel):
     id: str
     title: str
-    description: Optional[str] = None
+    description: Optional[List[str]] = None
     image: Optional[str] = None
     date: str
     music_file: Optional[str] = None

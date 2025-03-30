@@ -4,7 +4,11 @@
       "id": "2",
       "title": "Atterrissage sur la Lune : Un Bond de Géant",
       "date": "1969-07-20",
-      "description": "Le 20 juillet 1969, l’humanité franchit une frontière jusque-là réservée aux rêves et aux récits de science-fiction. Lorsqu’Apollo 11 se posa sur la surface lunaire, et que Neil Armstrong prononça les mots désormais immortels – « C’est un petit pas pour l’homme, un bond de géant pour l’humanité » – le monde entier retint son souffle. Cet exploit monumental, fruit de la course à l’espace entre les États-Unis et l’Union soviétique, témoigne de la capacité humaine à surmonter des défis technologiques, scientifiques et psychologiques immenses.\n\n Il incarne une ère d’optimisme et de conquête pacifique, où l’ingéniosité et la détermination collective ouvraient la voie à un avenir interstellaire. L’atterrissage sur la Lune fut bien plus qu’un succès américain : il symbolisait une avancée pour toute l’humanité, élargissant notre horizon et notre compréhension de ce qui est possible.",
+      "description": [
+        "Le 20 juillet 1969, l’humanité franchit une frontière jusque-là réservée aux rêves et aux récits de science-fiction.",
+        "Lorsqu’Apollo 11 se posa sur la surface lunaire, et que Neil Armstrong prononça les mots désormais immortels – « C’est un petit pas pour l’homme, un bond de géant pour l’humanité » – le monde entier retint son souffle. Cet exploit monumental, fruit de la course à l’espace entre les États-Unis et l’Union soviétique, témoigne de la capacité humaine à surmonter des défis technologiques, scientifiques et psychologiques immenses.\n\n Il incarne une ère d’optimisme et de conquête pacifique, où l’ingéniosité et la détermination collective ouvraient la voie à un avenir interstellaire.",
+        "L’atterrissage sur la Lune fut bien plus qu’un succès américain : il symbolisait une avancée pour toute l’humanité, élargissant notre horizon et notre compréhension de ce qui est possible."
+      ],
       "img": "data/images/img_2.png",
       "music_file": "27.mp3",
       "options": [
@@ -36,7 +40,11 @@
       "date": "1492-10-12",
       "img": "data/images/img_3.png",
       "music_file": "3.mp3",
-      "description": "Le 12 octobre 1492, après des semaines de navigation à travers l'inconnu, les voiles de la Santa María apparaissent à l'horizon d’un monde que l’Europe ne connaissait pas encore. Christophe Colomb, croyant avoir atteint l’Asie, pose le pied sur une terre qui changera à jamais le cours de l’histoire : l’Amérique. \n\nCet événement marque le début d’une ère d’exploration transocéanique sans précédent, bouleversant les équilibres politiques, économiques et culturels à l’échelle planétaire. Les vastes étendues découvertes, riches en biodiversité et en civilisations autochtones, captivent l’imaginaire européen et attisent les convoitises. \n\nSi la découverte ouvre la voie à de nouvelles connaissances et échanges, elle amorce également des siècles de colonisation, de conflits et de bouleversements tragiques pour les peuples indigènes. Cette journée de 1492 résonne donc à la fois comme un prodigieux bond dans l’histoire mondiale, et comme le prélude d’un choc profond entre deux mondes.",
+      "description": [
+        "Le 12 octobre 1492, après des semaines de navigation à travers l'inconnu, les voiles de la Santa María apparaissent à l'horizon d’un monde que l’Europe ne connaissait pas encore. Christophe Colomb, croyant avoir atteint l’Asie, pose le pied sur une terre qui changera à jamais le cours de l’histoire : l’Amérique.",
+        "Cet événement marque le début d’une ère d’exploration transocéanique sans précédent, bouleversant les équilibres politiques, économiques et culturels à l’échelle planétaire. Les vastes étendues découvertes, riches en biodiversité et en civilisations autochtones, captivent l’imaginaire européen et attisent les convoitises.",
+        "Si la découverte ouvre la voie à de nouvelles connaissances et échanges, elle amorce également des siècles de colonisation, de conflits et de bouleversements tragiques pour les peuples indigènes. Cette journée de 1492 résonne donc à la fois comme un prodigieux bond dans l’histoire mondiale, et comme le prélude d’un choc profond entre deux mondes."
+      ],
       "options": [
         {
           "title": "Alliance Paisible avec les Autochtones",
@@ -67,7 +75,11 @@
       "date": "2020-03-11",
       "img": "data/images/img_4.png",
       "music_file": "17.mp3",
-      "description": "Le 11 mars 2020, l’Organisation mondiale de la santé déclare officiellement la pandémie de Covid-19. En quelques mois, un nouveau virus bouleverse tous les aspects de la vie quotidienne à l’échelle mondiale. Villes désertées, frontières fermées, hôpitaux débordés, et pour la première fois dans l’histoire moderne, une grande partie de l’humanité se retrouve confinée chez elle. \n\nLes rues tombent dans le silence, les écoles ferment, les économies ralentissent, et chacun apprend à vivre avec l’incertitude. C’est une époque marquée par la peur, la solidarité, l’adaptation rapide aux outils numériques… et par une prise de conscience collective de notre fragilité face aux forces invisibles de la nature. Le confinement devient un mot universel, symbole d’un moment suspendu où le monde entier semble s’être arrêté.",
+      "description": [
+          "Le 11 mars 2020, l’Organisation mondiale de la santé déclare officiellement la pandémie de Covid-19.",
+          "En quelques mois, un nouveau virus bouleverse tous les aspects de la vie quotidienne à l’échelle mondiale. Villes désertées, frontières fermées, hôpitaux débordés, et pour la première fois dans l’histoire moderne, une grande partie de l’humanité se retrouve confinée chez elle.",
+          "Les rues tombent dans le silence, les écoles ferment, les économies ralentissent, et chacun apprend à vivre avec l’incertitude. C’est une époque marquée par la peur, la solidarité, l’adaptation rapide aux outils numériques… et par une prise de conscience collective de notre fragilité face aux forces invisibles de la nature. Le confinement devient un mot universel, symbole d’un moment suspendu où le monde entier semble s’être arrêté."
+      ],
       "options": [
         {
           "img": "data/consequences/image4_1.png",
@@ -96,7 +108,10 @@
       "id": "6",
       "title": "Révolution française",
       "date": "1799-11-09",
-      "description": "La Révolution française, éclatant en 1789 et culminant avec le coup d’État du 9 novembre 1799 (18 brumaire), marque un tournant radical dans l’histoire de la France et du monde. Le peuple, lassé des privilèges de la monarchie absolue et accablé par les inégalités sociales, se soulève pour réclamer liberté, égalité et fraternité. La Bastille tombe, les têtes tombent aussi, et l’Ancien Régime vacille sous les cris de justice et de changement.\n\nCette période de bouleversements voit naître la Déclaration des Droits de l’Homme et du Citoyen, mais aussi la Terreur et les luttes intestines. Elle embrase l’Europe entière et laisse un héritage politique et philosophique durable. Le 18 brumaire marque la fin de la Révolution et l’ascension d’un certain Napoléon Bonaparte, qui s’apprête à redessiner l’ordre du continent. Plus qu’un événement français, la Révolution est un signal d’alarme universel : celui d’un peuple qui refuse de se taire. ",
+      "description": [
+        "La Révolution française, éclatant en 1789 et culminant avec le coup d’État du 9 novembre 1799 (18 brumaire), marque un tournant radical dans l’histoire de la France et du monde. Le peuple, lassé des privilèges de la monarchie absolue et accablé par les inégalités sociales, se soulève pour réclamer liberté, égalité et fraternité. La Bastille tombe, les têtes tombent aussi, et l’Ancien Régime vacille sous les cris de justice et de changement.",
+        "Cette période de bouleversements voit naître la Déclaration des Droits de l’Homme et du Citoyen, mais aussi la Terreur et les luttes intestines. Elle embrase l’Europe entière et laisse un héritage politique et philosophique durable. Le 18 brumaire marque la fin de la Révolution et l’ascension d’un certain Napoléon Bonaparte, qui s’apprête à redessiner l’ordre du continent. Plus qu’un événement français, la Révolution est un signal d’alarme universel : celui d’un peuple qui refuse de se taire. "
+      ],
       "img": "data/images/img_6.png",
       "music_file": "6.mp3",
       "options": [

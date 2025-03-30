@@ -99,7 +99,7 @@ async def format_narrative_arc(narrative_arc):
                 {
                 "title": "string",                // Type: String. Title of the event. Should be explicit and start with a noun.
                 "date": "YYYY-MM-DD",             // Type: String. Date of the event in ISO format.
-                "description": "string",          // Type: String. Detailed description of the event (4-5 lines)
+                "description": "list[str]",          // Type: List of strings. Detailed description of the event (2-3 paragraphs of 2-3 lines)
                 "options": [                      // Type: Array of option objects.
                     {
                     "title": "string",            // Type: String. Title of the option. Should start with a verb.
