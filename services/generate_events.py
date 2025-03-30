@@ -107,7 +107,7 @@ async def format_narrative_arc(narrative_arc):
                 "options": [                      // Type: Array of option objects.
                     {
                     "title": "string",            // Type: String. Title of the option. Should start with a verb.
-                    "consequence": "string"       // Type: String. Outcome or consequence if this option is selected. (2-3 paragraphs of 2-3 lines)
+                    "consequence": list[str]       // Type: List of strings. Outcome or consequence if this option is selected. (2-3 paragraphs of 2-3 lines)
                     }
                 ]
                 }

@@ -3,7 +3,7 @@ from typing import List, Optional
 
 class Option(BaseModel):
     title: str
-    consequence: str
+    consequence: List[str]
     img: Optional[str] = None
     music_file: Optional[str] = None
 

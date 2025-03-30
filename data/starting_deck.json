@@ -41,11 +41,9 @@
         {
           "title": "Alliance Paisible avec les Autochtones",
           "consequence": [
-            [
-                "Plutôt que de s’imposer par la force, les premiers explorateurs tendent la main aux peuples autochtones, curieux de leurs langues, de leurs coutumes et de leur savoir. Des échanges respectueux s’établissent, où le troc, la transmission orale et les cérémonies rituelles deviennent des ponts entre deux mondes autrefois étrangers.",
-                "Les alliances se renforcent par des mariages mixtes, donnant naissance à une génération aux identités multiples, à la fois européenne et indigène. Ce métissage engendre une société originale, où les villes naissantes intègrent architecture locale, cuisine fusionnée et traditions partagées, donnant un visage nouveau au continent.",
-                "Avec le temps, ce modèle de coexistence inspire les royaumes d’Europe et ébranle les fondements de la colonisation classique. La diplomatie s’enrichit de cette réussite interculturelle, et le Nouveau Monde devient un laboratoire vivant d’harmonie entre civilisations, prouvant qu’un autre destin était possible."
-            ]
+            "Plutôt que de s'imposer par la force, les premiers explorateurs tendent la main aux peuples autochtones, curieux de leurs langues, de leurs coutumes et de leur savoir. Des échanges respectueux s'établissent, où le troc, la transmission orale et les cérémonies rituelles deviennent des ponts entre deux mondes autrefois étrangers.",
+            "Les alliances se renforcent par des mariages mixtes, donnant naissance à une génération aux identités multiples, à la fois européenne et indigène. Ce métissage engendre une société originale, où les villes naissantes intègrent architecture locale, cuisine fusionnée et traditions partagées, donnant un visage nouveau au continent.",
+            "Avec le temps, ce modèle de coexistence inspire les royaumes d'Europe et ébranle les fondements de la colonisation classique. La diplomatie s'enrichit de cette réussite interculturelle, et le Nouveau Monde devient un laboratoire vivant d'harmonie entre civilisations, prouvant qu'un autre destin était possible."
           ],
           "img": "data/consequences/image3_1.png",
           "music_file": "3.mp3"
@@ -117,12 +115,11 @@
           "img": "data/consequences/image6_2.png",
           "title": "Reprise Napoléonienne",
           "consequence": [
-            [
-                "Alors que la Révolution s’enlise dans les conflits internes et l’instabilité, un général au charisme magnétique se lève : Napoléon Bonaparte. Par sa stratégie fulgurante et son talent politique, il éteint les flammes du chaos pour rallumer celles de la grandeur nationale. Sous son commandement, la France cesse de se chercher pour commencer à se projeter.",
-                "L’ordre remplace l’agitation. Un nouvel hymne résonne dans les rues, martial et solennel, tandis qu’un blason impérial s’impose comme le symbole d’un pays qui se réinvente. L’idéalisme révolutionnaire laisse place à une discipline organisée, fondée sur la fierté, la loyauté et l’efficacité militaire.",
-                "Ce virage impérial donne naissance à un régime puissant, admiré autant que redouté. La France devient le cœur d’un nouvel ordre européen, où l’héritage de la Révolution est intégré à une vision conquérante. L’histoire, désormais, ne s’écrit plus dans les rues enflammées, mais sur les champs de bataille et dans les palais d’État."
-            ]
-          ],
+            "Alors que la Révolution s’enlise dans les conflits internes et l’instabilité, un général au charisme magnétique se lève : Napoléon Bonaparte. Par sa stratégie fulgurante et son talent politique, il éteint les flammes du chaos pour rallumer celles de la grandeur nationale. Sous son commandement, la France cesse de se chercher pour commencer à se projeter.",
+            "L’ordre remplace l’agitation. Un nouvel hymne résonne dans les rues, martial et solennel, tandis qu’un blason impérial s’impose comme le symbole d’un pays qui se réinvente. L’idéalisme révolutionnaire laisse place à une discipline organisée, fondée sur la fierté, la loyauté et l’efficacité militaire.",
+            "Ce virage impérial donne naissance à un régime puissant, admiré autant que redouté. La France devient le cœur d’un nouvel ordre européen, où l’héritage de la Révolution est intégré à une vision conquérante. L’histoire, désormais, ne s’écrit plus dans les rues enflammées, mais sur les champs de bataille et dans les palais d’État."
+          ]
+          ,
           "music_file": "6.mp3"
         }
       ]
