@@ -11,12 +11,14 @@
         {
           "title": "Base Militaire sur la lune",
           "consequence": "Peu après l'atterrissage, des intérêts stratégiques poussent les gouvernements à convertir une partie de la surface lunaire en avant-poste militaire. L'établissement d'une base lunaire militaire déclenche une intense course aux armements internationale dans l'espace. Les tensions sur Terre s'intensifient alors que les nations se précipitent pour assurer leur présence au-delà de notre planète.\n\nLa militarisation de la Lune suscite de vastes débats en politique mondiale, menant à la négociation de nouveaux traités et protocoles. Ce changement transforme le paysage lunaire en un symbole à la fois de prouesse technologique et de rivalité géopolitique, avec des répercussions durables sur la sécurité internationale et le droit spatial.",
-          "img": "data/consequences/image2_1.png"
+          "img": "data/consequences/image2_1.png",
+          "music_file": "27.mp3"
         },
         {
           "title": "Rencontre Lunaire Inattendue",
           "consequence": "Pendant la mission, l'équipage rencontre de manière inattendue des phénomènes lunaires mystérieux qui semblent presque vivants. Cet événement étrange conduit à des études scientifiques intensives et à une couverture médiatique prudente. La rencontre déclenche des débats sur l'existence de forces lunaires inconnues.\n\nCette révélation oblige les gouvernements à reconsidérer la véritable nature de l'espace et les risques potentiels liés à l'exploration. Des protocoles de sécurité renforcés et des initiatives de recherche interplanétaires sont lancés, transformant la manière dont l'humanité perçoit sa place dans l'univers.",
-          "img": "data/consequences/image2_2.png"
+          "img": "data/consequences/image2_2.png",
+          "music_file": "27.mp3"
         }
       ]
     },
@@ -31,12 +33,14 @@
         {
           "title": "Alliance Paisible avec les Autochtones",
           "consequence": "Les premiers explorateurs entament un dialogue sincère avec les peuples autochtones, favorisant un respect mutuel et une compréhension réciproque. Au fil du temps, les mariages mixtes, le commerce et les échanges culturels créent une société unique – un mélange riche de traditions européennes et autochtones.\n\nCette nouvelle identité redéfinit le continent, stimulant des innovations artistiques, culinaires et linguistiques. L'union harmonieuse devient un phare de coexistence multiculturelle, influençant les réformes sociales et la diplomatie internationale pendant des générations.",
-          "img": "data/consequences/image3_1.png"
+          "img": "data/consequences/image3_1.png",
+          "music_file": "3.mp3"
         },
         {
           "title": "L'Empire Autochtone Émerge",
           "consequence": "Inspirée par des traditions ancestrales et des défis modernes, une coalition de tribus indigènes s'unit pour forger un empire puissant. Cet État autochtone, mêlant gouvernance traditionnelle et technologies européennes adaptées, s'impose comme puissance dominante dans la région.\n\nL'Empire Autochtone redéfinit le commerce, la guerre et les normes culturelles, obligeant les puissances européennes à négocier sur un pied d'égalité. Son influence déclenche une réévaluation mondiale de la colonisation, redéfinissant finalement les équilibres de pouvoir et inspirant des mouvements pour les droits des peuples autochtones dans le monde entier.",
-          "img": "data/consequences/image3_2.png"
+          "img": "data/consequences/image3_2.png",
+          "music_file": "3.mp3"
         }
       ]
     },
@@ -51,12 +55,14 @@
         {
           "img": "data/consequences/image4_1.png",
           "title": "Épidémie de Covid Zombie",
-          "consequence": "Le virus prend une tournure inquiétante lorsque les corps infectés se réaniment, déclenchant une épidémie de zombies. La contagion traditionnelle se mêle désormais à une propagation nécrotique, plongeant les villes dans le chaos. La panique et les instincts de survie remplacent la vie quotidienne, alors que les autorités peinent à contenir ce désastre à double menace.\n\nLes communautés et les gouvernements sont contraints de repenser les stratégies de santé publique et de défense. De nouvelles alliances se forment au cœur de la terreur, tandis que les gens s'adaptent à une réalité où les morts-vivants arpentent les rues."
+          "consequence": "Le virus prend une tournure inquiétante lorsque les corps infectés se réaniment, déclenchant une épidémie de zombies. La contagion traditionnelle se mêle désormais à une propagation nécrotique, plongeant les villes dans le chaos. La panique et les instincts de survie remplacent la vie quotidienne, alors que les autorités peinent à contenir ce désastre à double menace.\n\nLes communautés et les gouvernements sont contraints de repenser les stratégies de santé publique et de défense. De nouvelles alliances se forment au cœur de la terreur, tandis que les gens s'adaptent à une réalité où les morts-vivants arpentent les rues.",
+          "music_file": "17.mp3"
         },
         {
           "img": "data/consequences/image4_2.png",
           "title": "L'épidémie de Covid n'a jamais eu lieu",
-          "consequence": "La pandémie de Covid s'est terminée en 1 semaine, à la grande surprise des scientifiques."
+          "consequence": "La pandémie de Covid s'est terminée en 1 semaine, à la grande surprise des scientifiques.",
+          "music_file": "17.mp3"
         }
       ]
     },
@@ -71,12 +77,14 @@
         {
           "img": "data/consequences/image6_1.png",
           "title": "Résurgence Impériale",
-          "consequence": "La famille royale reste intacte, guidant la France vers un destin impérial. Un stratège visionnaire, faisant écho à l'éclat de Napoléon, unit des factions disparates sous une bannière impériale unique.\n\nLa nation adopte un nouvel hymne puissant et un emblème qui célèbrent la fierté martiale et la grandeur. Cette transformation audacieuse forge un héritage d'ambition et d'ordre qui redéfinit la société française."
+          "consequence": "La famille royale reste intacte, guidant la France vers un destin impérial. Un stratège visionnaire, faisant écho à l'éclat de Napoléon, unit des factions disparates sous une bannière impériale unique.\n\nLa nation adopte un nouvel hymne puissant et un emblème qui célèbrent la fierté martiale et la grandeur. Cette transformation audacieuse forge un héritage d'ambition et d'ordre qui redéfinit la société française.",
+          "music_file": "6.mp3"
         },
         {
           "img": "data/consequences/image6_2.png",
           "title": "Reprise Napoléonienne",
-          "consequence": "Dans un tournant dramatique, un général charismatique émerge pour reconquérir et redéfinir l'avenir de la France. Sa prouesse militaire et son leadership visionnaire catalysent la transition du chaos révolutionnaire vers une stabilité impériale.\n\nUn nouvel hymne percutant et un blason symbolique sont instaurés, reflétant à la fois la fierté historique et une ambition novatrice. La révolution se transforme en une célébration de l'ordre, de la force et d'un héritage impérial durable."
+          "consequence": "Dans un tournant dramatique, un général charismatique émerge pour reconquérir et redéfinir l'avenir de la France. Sa prouesse militaire et son leadership visionnaire catalysent la transition du chaos révolutionnaire vers une stabilité impériale.\n\nUn nouvel hymne percutant et un blason symbolique sont instaurés, reflétant à la fois la fierté historique et une ambition novatrice. La révolution se transforme en une célébration de l'ordre, de la force et d'un héritage impérial durable.",
+          "music_file": "6.mp3"
         }
       ]
     }
