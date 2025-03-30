@@ -140,7 +140,7 @@ async def get_initial_events():
 async def update_events(request: UpdateEventsRequest, background_tasks: BackgroundTasks):
     start_time = time.time()
     logger.info(f"=== Starting update_events with chosen option: {request.option_chosen} ===")
-
+    
     # option_chosen format: "{event_id}_{option_idx}"
     event_id, option_idx = map(str, request.option_chosen.split("_"))
 
@@ -178,111 +178,93 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
     # Prepare all prompts for image finding at once
     logger.info("Preparing batch processing for images and music...")
     batch_start = time.time()
-
+    
     event_image_prompts = []
     event_indices = []
     option_image_prompts = []
     option_indices = []
     music_prompts = []
     music_indices = []
-
+    
     # Collect all prompts first
     for event_idx, event in enumerate(new_events):
         # Event image prompt
         event_image_prompts.append(event["title"] + " - Year : " + event["date"])
         event_indices.append((event_idx, None))
-
+        
         # Event music prompt
-        music_prompts.append(event["title"] + " " + " ".join(event["description"]))
+        music_prompts.append(event["title"] + " " + event["description"])
         music_indices.append((event_idx, None))
-
+        
         # Option prompts
         for option_idx, option in enumerate(event["options"]):
             # Option image prompt
             option_image_prompts.append(option["title"] + "- Year :" + event["date"])
             option_indices.append((event_idx, option_idx))
-
+            
             # Option music prompt
             music_prompts.append(option["title"] + " " + event["title"])
             music_indices.append((event_idx, option_idx))
-
+    
     # Process all image IDs and music selections concurrently using async functions
     logger.info(f"Finding image IDs and music for all events and options...")
-
+    
     # Run the async operations concurrently to save time
     event_image_ids, option_image_ids, all_music_files = await asyncio.gather(
         find_closest_event_ids_async(event_image_prompts),
         find_closest_event_ids_async(option_image_prompts),
         choose_music_batch_async(music_prompts)
     )
-
+    
     # Now assign all the results back to the events and options
     logger.info("Assigning image IDs and music files...")
-
+    
     # Assign event images and music
     for i, (event_idx, _) in enumerate(event_indices):
         event = new_events[event_idx]
         image_id = event_image_ids[i]
         event["image"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
         event["music_file"] = all_music_files[music_indices.index((event_idx, None))]
-
+    
     # Assign option images and music
     for i, (event_idx, option_idx) in enumerate(option_indices):
         option = new_events[event_idx]["options"][option_idx]
         image_id = option_image_ids[i]
         option["img"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
         option["music_file"] = all_music_files[music_indices.index((event_idx, option_idx))]
-
+    
     logger.info(f"Batch processing completed in {time.time() - batch_start:.2f} seconds")
     # END OPTIMIZATION
-
+    
     # Start image generation tasks for new events
     logger.info("Starting background image generation tasks...")
     image_tasks = []
     task_start = time.time()
-
+    
     for event_idx, event in enumerate(new_events):
         # Main event image
         task_id = str(uuid.uuid4())
         logger.info(f"Adding background task for event image: {event['title'][:30]}...")
-        
-        # Handle both string and array for description
-        description = event['description']
-        if isinstance(description, list):
-            description_text = ' '.join(description)
-        else:
-            description_text = str(description)
-            
-        image_generation_prompt = f"You have to generate an image of a historical event. {event['title']}. Here is the description of the event: {description_text}."
-        background_tasks.add_task(generate_image_task, image_generation_prompt, task_id)
+        background_tasks.add_task(generate_image_task, event["title"], task_id)
         image_tasks.append({
             "event_id": event["id"],
             "task_id": task_id,
             "type": "event"
         })
-
+        
         # Options images
         for idx, option in enumerate(event["options"]):
             # Option image
             option_task_id = str(uuid.uuid4())
             logger.info(f"Adding background task for option image: {option['title'][:30]}...")
-            
-            # Handle both string and array for consequence
-            consequence = option['consequence']
-            if isinstance(consequence, list):
-                consequence_text = ' '.join(consequence)
-            else:
-                consequence_text = str(consequence)
-                
-            image_generation_prompt = f"You have to generate an image of a historical event. {option['title']}. Here is the description of the event: {consequence_text}."
-            background_tasks.add_task(generate_image_task, image_generation_prompt, option_task_id)
+            background_tasks.add_task(generate_image_task, option["title"], option_task_id)
             image_tasks.append({
                 "event_id": event["id"],
                 "option_id": idx,
                 "task_id": option_task_id,
                 "type": "option"
             })
-
+    
     logger.info(f"All background tasks added in {time.time() - task_start:.2f} seconds")
     logger.info(f"Added {len(image_tasks)} image generation tasks")
     logger.info(f"=== update_events completed in {time.time() - start_time:.2f} seconds ===")
