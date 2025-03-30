@@ -10,7 +10,7 @@ litellm.success_callback = ["langfuse"]
 litellm.failure_callback = ["langfuse"]
 
 
-def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.7):
+async def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.7):
     system_message = {
         "role": "system",
         "content": """
@@ -50,7 +50,7 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
         Events : {events}
         """,
     }
-    completion = litellm.completion(
+    completion = await litellm.acompletion(
         model=model,
         # model="groq/llama-3.3-70b-versatile",
         temperature=temperature,
@@ -65,7 +65,7 @@ def generate_future_events(events, option_chosen, model="gpt-4o", temperature=0.
     return think, events
 
 
-def generate_narrative_arc(events, option_chosen):
+async def generate_narrative_arc(events, option_chosen):
     user_message = {
         "role": "user",
         "content": f"""
@@ -82,7 +82,7 @@ def generate_narrative_arc(events, option_chosen):
         - choose impactful events
         """,
     }
-    completion = litellm.completion(
+    completion = await litellm.acompletion(
         # model="groq/llama-3.3-70b-versatile",
         model="groq/deepseek-r1-distill-llama-70b",
         temperature=0.7,
@@ -93,7 +93,7 @@ def generate_narrative_arc(events, option_chosen):
     return completion.choices[0].message.content
 
 
-def format_narrative_arc(narrative_arc):
+async def format_narrative_arc(narrative_arc):
     system_message = {
         "role": "system",
         "content": """
@@ -123,7 +123,7 @@ def format_narrative_arc(narrative_arc):
         Narrative Arc: {narrative_arc}
         """,
     }
-    completion = litellm.completion(
+    completion = await litellm.acompletion(
         model="groq/llama-3.3-70b-versatile",
         temperature=0.7,
         messages=[system_message, user_message],
@@ -134,9 +134,9 @@ def format_narrative_arc(narrative_arc):
     return completion.choices[0].message.content
 
 
-def generate_narrative_arc_events(events, option_chosen):
-    narrative_arc = generate_narrative_arc(events, option_chosen)
-    formatted_narrative_arc = format_narrative_arc(narrative_arc)
+async def generate_narrative_arc_events(events, option_chosen):
+    narrative_arc = await generate_narrative_arc(events, option_chosen)
+    formatted_narrative_arc = await format_narrative_arc(narrative_arc)
     narrative_arc_events = parse_json_markdown(formatted_narrative_arc)["events"]
 
     # generate ids
@@ -148,9 +148,11 @@ def generate_narrative_arc_events(events, option_chosen):
 
 
 if __name__ == "__main__":
+    import asyncio
+
     option_chosen = {
         "title": "Unexpected Lunar Encounter",
-        "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon’s mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination."
+        "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon's mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination."
     }
 
     events = [
@@ -174,66 +176,34 @@ if __name__ == "__main__":
             "id": "2",
             "title": "Empire Reborn: Revolutionary Shadows",
             "date": "1789-07-14",
-            "description": "The historic revolution takes an unexpected turn, preserving the royal family and birthing a new empire. Ambitious leaders reminiscent of Napoleon rise to power, reshaping France’s destiny. A reimagined national identity emerges with a bold new anthem and emblem. History is rewritten in a clash of tradition and imperial ambition.",
+            "description": "The historic revolution takes an unexpected turn, preserving the royal family and birthing a new empire. Ambitious leaders reminiscent of Napoleon rise to power, reshaping France's destiny. A reimagined national identity emerges with a bold new anthem and emblem. History is rewritten in a clash of tradition and imperial ambition.",
             "options": [
                 {
                     "title": "Imperial Resurgence",
-                    "consequence": "The royal family remains intact, steering France toward an imperial destiny. A strategic mastermind, echoing Napoleon’s brilliance, unites disparate factions under a singular, imperial banner.\n\nThe nation adopts a powerful new national anthem and emblem that celebrate martial pride and grandeur. This bold transformation forges a legacy of ambition and order that redefines French society.",
+                    "consequence": "The royal family remains intact, steering France toward an imperial destiny. A strategic mastermind, echoing Napoleon's brilliance, unites disparate factions under a singular, imperial banner.\n\nThe nation adopts a powerful new national anthem and emblem that celebrate martial pride and grandeur. This bold transformation forges a legacy of ambition and order that redefines French society.",
                 },
                 {
                     "title": "Napoleonic Reclamation",
-                    "consequence": "In a dramatic shift, a charismatic general emerges to reclaim and redefine France’s future. His military prowess and visionary leadership catalyze the transition from revolutionary chaos to imperial stability.\n\nA striking new anthem and symbolic crest are introduced, reflecting both historical pride and innovative ambition. The revolution morphs into a celebration of order, strength, and an enduring imperial legacy.",
+                    "consequence": "In a dramatic shift, a charismatic general emerges to reclaim and redefine France's future. His military prowess and visionary leadership catalyze the transition from revolutionary chaos to imperial stability.\n\nA striking new anthem and symbolic crest are introduced, reflecting",
                 },
             ],
         },
-        {
-            "id": "3",
-            "title": "Moon Landing: A Giant Leap",
-            "date": "1969-07-20",
-            "description": "The first steps on the moon marked a historic achievement for humanity. This event celebrated scientific brilliance and expanded our view of what is possible. In an alternate timeline, small changes during the mission lead to surprising outcomes for space exploration.",
-            "options": [
-                {
-                    "title": "Military Moon Base",
-                    "consequence": "Shortly after landing, strategic interests prompt governments to repurpose part of the lunar surface as a military outpost. The establishment of a military moon base ignites an intense international arms race in space. Tensions on Earth escalate as nations rush to secure their presence beyond our planet.\n\n The militarization of the moon triggers extensive debates in global politics, leading to the negotiation of new treaties and protocols. The shift transforms the lunar landscape into a symbol of both technological prowess and geopolitical rivalry, with lasting impacts on international security and space law.",
-                },
-                {
-                    "title": "Unexpected Lunar Encounter",
-                    "consequence": "During routine exploration, the crew detects mysterious signals and observes unexplained phenomena on the dark side of the moon. These anomalies—strange lights and unusual formations—hint at secrets long hidden beneath the lunar surface. The encounter turns the mission into a quest for answers.\n\n The discovery launches an international scientific expedition dedicated to uncovering the moon’s mysteries. This newfound focus on the unknown transforms space exploration from a race for technical achievement into a profound investigation of cosmic enigmas, stirring both scientific inquiry and popular imagination.",
-                },
-            ],
-        },
-        {
-            "id": "4",
-            "title": "Pandemic's Dark New Dawn",
-            "date": "2020-03-11",
-            "description": "A devastating twist in the Covid crisis spawns a horrifying new threat. The virus mutates into a zombie contagion that reshapes society. In this altered reality, survival depends on adapting to a world where life and death blur. Humanity faces a brutal new normal that forces both fear and fierce resilience.",
-            "options": [
-                {
-                    "title": "Zombie Covid Outbreak",
-                    "consequence": "The virus takes an eerie turn as infected bodies reanimate, triggering a zombie outbreak. Traditional contagion now combines with necrotic spread, plunging cities into chaos. Panic and survival instincts replace routine life, as authorities struggle to contain this dual-threat disaster.\n\nCommunities and governments are forced to rethink public health and defense strategies. New alliances form amidst the terror, as people adapt to a reality where the undead walk among them.",
-                },
-                {
-                    "title": "New Normal, New Plague",
-                    "consequence": "As the zombie plague becomes a permanent feature of everyday life, society reluctantly embraces the macabre as its new norm. Health systems and militaries recalibrate their approaches to address a threat that is part virus, part reanimation.\n\nThe grim adaptation fosters a culture of gritty survival, where economic systems, public policies, and social behaviors are reshaped by the constant presence of a relentless, evolving menace.",
-                },
-            ],
-        }
     ]
 
-    think, events = generate_future_events(events, option_chosen)
+    think, events = asyncio.run(generate_future_events(events, option_chosen))
     print(think)
     print(events)
 
-    narrative_arc = generate_narrative_arc(events, option_chosen)
+    narrative_arc = asyncio.run(generate_narrative_arc(events, option_chosen))
     print(narrative_arc)
 
-    formatted_narrative_arc = format_narrative_arc(narrative_arc)
+    formatted_narrative_arc = asyncio.run(format_narrative_arc(narrative_arc))
     print(formatted_narrative_arc)
 
     narrative_arc_events = parse_json_markdown(formatted_narrative_arc)
 
     from time import time
     start_time = time()
-    output = generate_narrative_arc_events(events, option_chosen)
+    output = asyncio.run(generate_narrative_arc_events(events, option_chosen))
     end_time = time()
     print(f"Time taken: {end_time - start_time} seconds")

@@ -10,7 +10,7 @@ litellm.success_callback = ["langfuse"]
 litellm.failure_callback = ["langfuse"]
 
 
-def generate_final_report(events, model="gpt-4o", temperature=0.9):
+async def generate_final_report(events, model="gpt-4o", temperature=0.9):
     system_message = {
         "role": "system",
         "content": """
@@ -42,7 +42,7 @@ def generate_final_report(events, model="gpt-4o", temperature=0.9):
         Events : {events}
         """,
     }
-    summary = litellm.completion(
+    summary = await litellm.acompletion(
         model=model, temperature=temperature, messages=[system_message, user_message]
     )
     summary_str = summary.choices[0].message.content

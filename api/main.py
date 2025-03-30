@@ -132,7 +132,7 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
 
     # Generate new events
     # _, new_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
-    new_events = generate_narrative_arc_events(filtered_events, chosen_option)
+    new_events = await generate_narrative_arc_events(filtered_events, chosen_option)
 
     # Start image generation tasks for new events
     image_tasks = []
@@ -171,7 +171,7 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
     return UpdateEventsResponse(events=new_events, image_tasks=image_tasks)
 
 @app.post("/exit_game", response_model=Summary)
-def exit_game(request: List[Event]):
+async def exit_game(request: List[Event]):
     # Use the provided list of events
     events = request
     print("events", events)
@@ -181,7 +181,7 @@ def exit_game(request: List[Event]):
     # Set default values for model and temperature as they are not provided in the input JSON
     model = "gpt-4o"
     temperature = 0.7
-    summary = generate_final_report(events, model, temperature)
+    summary = await generate_final_report(events, model, temperature)
     
     if summary:
         return summary
