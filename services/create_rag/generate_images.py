@@ -69,6 +69,6 @@ def generate_images_from_cycles(cycle):
 
 
 if __name__ == "__main__":
-    yaml_path = "services/create_rag/stories/story_1.yaml"  # Replace with the actual path to your YAML file
+    yaml_path = "services/create_rag/stories/story_3.yaml"  # Replace with the actual path to your YAML file
     cycles = load_cycles_from_yaml(yaml_path)
     generate_images_from_cycles(cycles)
