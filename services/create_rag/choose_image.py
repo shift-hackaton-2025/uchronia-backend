@@ -4,6 +4,8 @@ import numpy as np
 import os
 from sklearn.metrics.pairwise import cosine_similarity
 from dotenv import load_dotenv
+from starlette.concurrency import run_in_threadpool
+import asyncio
 
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -59,6 +61,43 @@ def find_closest_event_id(description):
     similarities = cosine_similarity([query_vec], embeddings)
     best_index = int(similarities.argmax())
     return int(ids[best_index])
+
+async def find_closest_event_id_async(description):
+    """
+    Async version of find_closest_event_id that doesn't block the event loop.
+    """
+    return await run_in_threadpool(find_closest_event_id, description)
+
+def find_closest_event_ids(descriptions):
+    """
+    Find the closest event IDs for multiple descriptions at once.
+    This is much more efficient than calling find_closest_event_id multiple times.
+    
+    Args:
+        descriptions: List of text descriptions
+        
+    Returns:
+        List of event IDs in the same order as the input descriptions
+    """
+    # Get embeddings for all descriptions at once
+    query_vecs = get_embeddings(descriptions)
+    
+    # Compute similarities with the database for all at once
+    similarities = cosine_similarity(query_vecs, embeddings)
+    
+    # Get the best index for each query
+    best_indices = similarities.argmax(axis=1)
+    
+    # Convert to event IDs
+    event_ids = [int(ids[idx]) for idx in best_indices]
+    
+    return event_ids
+
+async def find_closest_event_ids_async(descriptions):
+    """
+    Async version of find_closest_event_ids that doesn't block the event loop.
+    """
+    return await run_in_threadpool(find_closest_event_ids, descriptions)
 
 # Main logic
 if __name__ == "__main__":

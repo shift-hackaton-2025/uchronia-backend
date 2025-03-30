@@ -30,7 +30,7 @@ def initiate_image_generation(api_key, prompt):
     session = response.json()
     return session['id']
 
-  
+
 def poll_image_status(api_key, session_id):
     while True:
         response = requests.get(
@@ -55,12 +55,12 @@ def generate_image(prompt, output_path):
         try:
             session_id = initiate_image_generation(api_key, prompt)
             image_url = poll_image_status(api_key, session_id)
-            
+
             output_dir = os.path.dirname(output_path)
             if output_dir and not os.path.exists(output_dir):
                 os.makedirs(output_dir)
                 print(f"Created directory: {output_dir}")
-            
+
             response = requests.get(image_url)
             response.raise_for_status()
             with open(output_path, "wb") as file:
@@ -73,6 +73,34 @@ def generate_image(prompt, output_path):
         except Exception as err:
             print(f"An unexpected error occurred with API key {api_key}: {err}")
     sys.exit(1)  # Exit if all API keys fail
+
+
+async def generate_image_async(prompt: str, output_path: str):
+    for api_key in SEELAB_API_KEYS:
+        try:
+            session_id = await initiate_image_generation_async(api_key, prompt)
+            image_url = await poll_image_status_async(api_key, session_id)
+
+            output_dir = os.path.dirname(output_path)
+            # Offload directory creation if necessary
+            if output_dir and not await run_in_threadpool(os.path.exists, output_dir):
+                await run_in_threadpool(os.makedirs, output_dir)
+                print(f"Created directory: {output_dir}")
+
+            async with httpx.AsyncClient() as client:
+                response = await client.get(image_url)
+                response.raise_for_status()
+                async with aiofiles.open(output_path, "wb") as file:
+                    await file.write(response.content)
+            return
+        except httpx.HTTPError as http_err:
+            print(f"HTTP error occurred with API key {api_key}: {http_err}")
+        except RuntimeError as runtime_err:
+            print(f"Runtime error with API key {api_key}: {runtime_err}")
+        except Exception as err:
+            print(f"An unexpected error occurred with API key {api_key}: {err}")
+    # Optionally, raise an error if all API keys fail
+    raise Exception("All API keys failed")
 
 
 if __name__ == "__main__":

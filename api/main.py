@@ -2,13 +2,15 @@ from fastapi import FastAPI, HTTPException, BackgroundTasks, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
-
+from starlette.concurrency import run_in_threadpool
+import logging
+import time
 from typing import List, Optional
 import json
 import os
 from pydantic import BaseModel
 import uuid
-from services.create_rag.choose_image import find_closest_event_id
+from services.create_rag.choose_image import find_closest_event_id, find_closest_event_ids, find_closest_event_ids_async
 from services.generate_events import (
     generate_future_events,
     generate_narrative_arc_events,
@@ -16,10 +18,14 @@ from services.generate_events import (
 from services.generate_final_report import generate_final_report
 from services.create_rag.generate_image import generate_image
 from models.event import Event
-from services.music.choose_music import choose_music
-import aiofiles.os
+from services.music.choose_music import choose_music, choose_music_batch, choose_music_batch_async
+import asyncio
 
 app = FastAPI()
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # Create images directory if it doesn't exist
 IMAGES_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "generated_images")
@@ -132,6 +138,9 @@ async def get_initial_events():
 
 @app.post("/update_events", response_model=UpdateEventsResponse)
 async def update_events(request: UpdateEventsRequest, background_tasks: BackgroundTasks):
+    start_time = time.time()
+    logger.info(f"=== Starting update_events with chosen option: {request.option_chosen} ===")
+    
     # option_chosen format: "{event_id}_{option_idx}"
     event_id, option_idx = map(str, request.option_chosen.split("_"))
 
@@ -144,43 +153,110 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
         "title": event.options[int(option_idx)].title,
         "consequence": event.options[int(option_idx)].consequence
     }
+    logger.info(f"Processing chosen option: {chosen_option['title']}")
 
     # filter events to remove future events and remove options for past events
-    print("Original events:", [{"id": e.id, "date": e.date, "title": e.title} for e in request.events])
+    logger.info(f"Original events count: {len(request.events)}")
 
     # Sort events by date first
     sorted_events = sorted(request.events, key=lambda x: x.date)
-    print("Sorted events:", [{"id": e.id, "date": e.date, "title": e.title} for e in sorted_events])
-
     chosen_event_index = next(i for i, e in enumerate(sorted_events) if e.id == event_id)
-    print(f"Chosen event index: {chosen_event_index}")
+    logger.info(f"Chosen event index: {chosen_event_index}")
 
     # Keep all events up to and including the chosen event
     filtered_events = sorted_events[:chosen_event_index + 1]
-    print("Filtered events:", [{"id": e.id, "date": e.date, "title": e.title} for e in filtered_events])
+    logger.info(f"Filtered events count: {len(filtered_events)}")
 
     # Generate new events
-    # _, new_events = generate_future_events(filtered_events, chosen_option, request.model, request.temperature)
+    logger.info("Starting narrative arc events generation...")
+    generation_start = time.time()
     new_events = await generate_narrative_arc_events(filtered_events, chosen_option)
+    logger.info(f"Events generation completed in {time.time() - generation_start:.2f} seconds")
+    logger.info(f"Generated {len(new_events)} new events")
 
+    # START OPTIMIZATION: Batch image and music processing
+    # Prepare all prompts for image finding at once
+    logger.info("Preparing batch processing for images and music...")
+    batch_start = time.time()
+    
+    event_image_prompts = []
+    event_indices = []
+    option_image_prompts = []
+    option_indices = []
+    music_prompts = []
+    music_indices = []
+    
+    # Collect all prompts first
+    for event_idx, event in enumerate(new_events):
+        # Event image prompt
+        event_image_prompts.append(event["title"] + " - Year : " + event["date"])
+        event_indices.append((event_idx, None))
+        
+        # Event music prompt
+        music_prompts.append(event["title"] + " " + event["description"])
+        music_indices.append((event_idx, None))
+        
+        # Option prompts
+        for option_idx, option in enumerate(event["options"]):
+            # Option image prompt
+            option_image_prompts.append(option["title"] + "- Year :" + event["date"])
+            option_indices.append((event_idx, option_idx))
+            
+            # Option music prompt
+            music_prompts.append(option["title"] + " " + event["title"])
+            music_indices.append((event_idx, option_idx))
+    
+    # Process all image IDs and music selections concurrently using async functions
+    logger.info(f"Finding image IDs and music for all events and options...")
+    
+    # Run the async operations concurrently to save time
+    event_image_ids, option_image_ids, all_music_files = await asyncio.gather(
+        find_closest_event_ids_async(event_image_prompts),
+        find_closest_event_ids_async(option_image_prompts),
+        choose_music_batch_async(music_prompts)
+    )
+    
+    # Now assign all the results back to the events and options
+    logger.info("Assigning image IDs and music files...")
+    
+    # Assign event images and music
+    for i, (event_idx, _) in enumerate(event_indices):
+        event = new_events[event_idx]
+        image_id = event_image_ids[i]
+        event["image"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
+        event["music_file"] = all_music_files[music_indices.index((event_idx, None))]
+    
+    # Assign option images and music
+    for i, (event_idx, option_idx) in enumerate(option_indices):
+        option = new_events[event_idx]["options"][option_idx]
+        image_id = option_image_ids[i]
+        option["img"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
+        option["music_file"] = all_music_files[music_indices.index((event_idx, option_idx))]
+    
+    logger.info(f"Batch processing completed in {time.time() - batch_start:.2f} seconds")
+    # END OPTIMIZATION
+    
     # Start image generation tasks for new events
+    logger.info("Starting background image generation tasks...")
     image_tasks = []
-    for event in new_events:
+    task_start = time.time()
+    
+    for event_idx, event in enumerate(new_events):
         # Main event image
         task_id = str(uuid.uuid4())
+        logger.info(f"Adding background task for event image: {event['title'][:30]}...")
         background_tasks.add_task(generate_image_task, event["title"], task_id)
         image_tasks.append({
             "event_id": event["id"],
             "task_id": task_id,
             "type": "event"
         })
-        image_id = find_closest_event_id(event["title"] + " - Year : " + event["date"])
-        event["image"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
-
+        
         # Options images
         for idx, option in enumerate(event["options"]):
             # Option image
             option_task_id = str(uuid.uuid4())
+            logger.info(f"Adding background task for option image: {option['title'][:30]}...")
             background_tasks.add_task(generate_image_task, option["title"], option_task_id)
             image_tasks.append({
                 "event_id": event["id"],
@@ -188,14 +264,10 @@ async def update_events(request: UpdateEventsRequest, background_tasks: Backgrou
                 "task_id": option_task_id,
                 "type": "option"
             })
-            image_id = find_closest_event_id(option["title"] + "- Year :" + event["date"])
-            option["img"] = f"https://uchronia.s3.eu-west-3.amazonaws.com/image_{image_id}.png"
-
-        # Choose music for the event
-        event["music_file"] = choose_music(event["title"] + " " + event["description"])
-        # Choose music for options
-        for option in event["options"]:
-            option["music_file"] = choose_music(option["title"] + " " + event["title"])
+    
+    logger.info(f"All background tasks added in {time.time() - task_start:.2f} seconds")
+    logger.info(f"Added {len(image_tasks)} image generation tasks")
+    logger.info(f"=== update_events completed in {time.time() - start_time:.2f} seconds ===")
 
     return UpdateEventsResponse(events=new_events, image_tasks=image_tasks)
 
@@ -222,7 +294,7 @@ async def generate_image_task(prompt: str, task_id: str):
     try:
         # Set task as processing in our in-memory tracker
         image_task_status[task_id] = "processing"
-        generate_image(prompt, output_path)
+        await run_in_threadpool(generate_image, prompt, output_path)
         # Update status when completed
         image_task_status[task_id] = "completed"
     except Exception as e:
@@ -238,35 +310,25 @@ async def request_image_generation(prompt: str, background_tasks: BackgroundTask
     background_tasks.add_task(generate_image_task, prompt, task_id)
     return ImageGenerationResponse(task_id=task_id, status="processing")
 
+
 @app.get("/image-status/{task_id}")
 async def get_image_status(task_id: str, response: Response) -> ImageStatus:
-    """
-    Check the status of an image generation task without waiting for completion.
-    Returns immediately with the current status.
-    Optimized for parallel requests.
-    """
-    # Set cache control headers to prevent browser caching
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    
-    # Check in-memory status first to avoid file system operations
+
     status = image_task_status.get(task_id)
-    
-    # If task_id not in dictionary, return processing without file check
     if status is None:
         return ImageStatus(status="processing")
-    
-    # Only check file system if our in-memory status says it's completed
+
     if status == "completed":
         image_path = os.path.join(IMAGES_DIR, f"{task_id}.png")
-        # Use async file existence check
-        if await aiofiles.os.path.exists(image_path):
+        exists = await run_in_threadpool(os.path.exists, image_path)
+        if exists:
             return ImageStatus(
-                status="completed",
-                image_url=f"data/generated_images/{task_id}.png"
+                status="completed", image_url=f"data/generated_images/{task_id}.png"
             )
-    
-    # For processing, error, or any other status
+
     return ImageStatus(status=status)
+
 
 @app.post("/batch-image-status")
 async def batch_get_image_status(request: ImageBatchStatusRequest) -> ImageBatchStatusResponse:

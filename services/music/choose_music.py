@@ -3,12 +3,11 @@ import pandas as pd
 import numpy as np
 import os
 from sklearn.metrics.pairwise import cosine_similarity
-
-
 from dotenv import load_dotenv
+from starlette.concurrency import run_in_threadpool
+import asyncio
 
 load_dotenv()
-
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -35,6 +34,46 @@ def choose_music(prompt: str) -> str:
     similarities = cosine_similarity([prompt_embedding], embeddings)
     best_idx = similarities.argmax()
     return df.iloc[best_idx]["File"]
+
+
+async def choose_music_async(prompt: str) -> str:
+    """
+    Async version of choose_music that doesn't block the event loop.
+    """
+    return await run_in_threadpool(choose_music, prompt)
+
+
+def choose_music_batch(prompts: list) -> list:
+    """
+    Choose music for multiple prompts at once.
+    This is much more efficient than calling choose_music multiple times.
+    
+    Args:
+        prompts: List of text prompts
+        
+    Returns:
+        List of music file paths in the same order as the input prompts
+    """
+    # Get embeddings for all prompts at once
+    prompt_embeddings = [get_embedding(prompt) for prompt in prompts]
+    
+    # Compute similarities with the database for all at once
+    similarities = cosine_similarity(prompt_embeddings, embeddings)
+    
+    # Get the best index for each query
+    best_indices = similarities.argmax(axis=1)
+    
+    # Convert to music file paths
+    music_files = [df.iloc[idx]["File"] for idx in best_indices]
+    
+    return music_files
+
+
+async def choose_music_batch_async(prompts: list) -> list:
+    """
+    Async version of choose_music_batch that doesn't block the event loop.
+    """
+    return await run_in_threadpool(choose_music_batch, prompts)
 
 
 if __name__ == "__main__":
