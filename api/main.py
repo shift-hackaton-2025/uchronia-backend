@@ -99,6 +99,7 @@ async def get_initial_events():
                 "title": option["title"],
                 "img": option["img"],
                 "consequence": option["consequence"],
+                "music_file": option["music_file"]
             })
 
         events.append(event)
