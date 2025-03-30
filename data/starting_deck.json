@@ -4,19 +4,27 @@
       "id": "2",
       "title": "Atterrissage sur la Lune : Un Bond de Géant",
       "date": "1969-07-20",
-      "description": "Les premiers pas sur la Lune ont marqué une avancée historique pour l'humanité. Cet événement célébrait l'éclat scientifique et élargissait notre vision du possible.",
+      "description": "Le 20 juillet 1969, l’humanité franchit une frontière jusque-là réservée aux rêves et aux récits de science-fiction. Lorsqu’Apollo 11 se posa sur la surface lunaire, et que Neil Armstrong prononça les mots désormais immortels – « C’est un petit pas pour l’homme, un bond de géant pour l’humanité » – le monde entier retint son souffle. Cet exploit monumental, fruit de la course à l’espace entre les États-Unis et l’Union soviétique, témoigne de la capacité humaine à surmonter des défis technologiques, scientifiques et psychologiques immenses.\n\n Il incarne une ère d’optimisme et de conquête pacifique, où l’ingéniosité et la détermination collective ouvraient la voie à un avenir interstellaire. L’atterrissage sur la Lune fut bien plus qu’un succès américain : il symbolisait une avancée pour toute l’humanité, élargissant notre horizon et notre compréhension de ce qui est possible.",
       "img": "data/images/img_2.png",
       "music_file": "27.mp3",
       "options": [
         {
           "title": "Base Militaire sur la lune",
-          "consequence": "Peu après l'atterrissage, des intérêts stratégiques poussent les gouvernements à convertir une partie de la surface lunaire en avant-poste militaire. L'établissement d'une base lunaire militaire déclenche une intense course aux armements internationale dans l'espace. Les tensions sur Terre s'intensifient alors que les nations se précipitent pour assurer leur présence au-delà de notre planète.\n\nLa militarisation de la Lune suscite de vastes débats en politique mondiale, menant à la négociation de nouveaux traités et protocoles. Ce changement transforme le paysage lunaire en un symbole à la fois de prouesse technologique et de rivalité géopolitique, avec des répercussions durables sur la sécurité internationale et le droit spatial.",
+          "consequence": [
+            "À peine les premiers pas imprimés dans la poussière lunaire, la Lune devient un enjeu stratégique majeur. Les gouvernements détournent rapidement leurs ambitions scientifiques vers des objectifs militaires, érigeant des structures fortifiées sur le sol lunaire. Ce geste marque le début d’une ère où l’espace cesse d’être un simple terrain d’exploration pour devenir un nouveau front de défense.",
+            "La course à l’armement s’élève au-delà de l’atmosphère terrestre. Satellites d’observation, systèmes de défense orbitale et bases lunaires se multiplient alors que les grandes puissances rivalisent pour dominer ce nouveau territoire. Les tensions géopolitiques se durcissent, et la coopération internationale laisse place à une méfiance croissante entre blocs rivaux.",
+            "Face à cette militarisation galopante, la communauté internationale tente de réguler les ambitions lunaires par de nouveaux traités spatiaux. Mais malgré les efforts diplomatiques, le paysage lunaire reste marqué par les antennes, les radars et les drapeaux. L’humanité, au lieu d’unir ses forces pour explorer les étoiles, projette ses conflits jusque dans le vide intersidéral."
+          ],
           "img": "data/consequences/image2_1.png",
           "music_file": "27.mp3"
         },
         {
           "title": "Rencontre Lunaire Inattendue",
-          "consequence": "Pendant la mission, l'équipage rencontre de manière inattendue des phénomènes lunaires mystérieux qui semblent presque vivants. Cet événement étrange conduit à des études scientifiques intensives et à une couverture médiatique prudente. La rencontre déclenche des débats sur l'existence de forces lunaires inconnues.\n\nCette révélation oblige les gouvernements à reconsidérer la véritable nature de l'espace et les risques potentiels liés à l'exploration. Des protocoles de sécurité renforcés et des initiatives de recherche interplanétaires sont lancés, transformant la manière dont l'humanité perçoit sa place dans l'univers.",
+          "consequence": [
+            "Alors que les astronautes d’Apollo 11 explorent la surface lunaire, leurs instruments captent des anomalies étranges : structures géométriques enfouies, mouvements subtils dans la poussière, et des signaux acoustiques inexplicables. Ce qui devait être une mission de prestige devient un moment de stupeur scientifique, remettant en question la stérilité supposée du satellite.",
+            "La NASA garde d’abord le silence, mais les fuites et les indices éveillent l’imagination du public. Face à l’ampleur de l’inconnu, les gouvernements mettent en place des centres d’analyse interdisciplinaire. Astrophysiciens, biologistes et experts en intelligence artificielle unissent leurs forces pour percer le mystère d’une possible forme de vie lunaire — ou d’un phénomène naturel encore inconnu.",
+            "Cette découverte bouleverse les priorités de l’exploration spatiale. De simples expéditions scientifiques, les missions deviennent des opérations de contact et d’étude sous haute surveillance. L’humanité, fascinée et inquiète, comprend qu’elle n’est peut-être pas seule à observer l’univers… et que la Lune n’est pas simplement un rocher désertique, mais un monde avec ses propres secrets."
+          ],
           "img": "data/consequences/image2_2.png",
           "music_file": "27.mp3"
         }
@@ -28,17 +36,28 @@
       "date": "1492-10-12",
       "img": "data/images/img_3.png",
       "music_file": "3.mp3",
-      "description": "La découverte de l'Amérique est un tournant décisif qui change à jamais l'histoire mondiale. Les explorateurs découvrent des terres vastes et diversifiées ainsi que des cultures indigènes, ouvrant d'innombrables voies vers le changement. ",
+      "description": "Le 12 octobre 1492, après des semaines de navigation à travers l'inconnu, les voiles de la Santa María apparaissent à l'horizon d’un monde que l’Europe ne connaissait pas encore. Christophe Colomb, croyant avoir atteint l’Asie, pose le pied sur une terre qui changera à jamais le cours de l’histoire : l’Amérique. \n\nCet événement marque le début d’une ère d’exploration transocéanique sans précédent, bouleversant les équilibres politiques, économiques et culturels à l’échelle planétaire. Les vastes étendues découvertes, riches en biodiversité et en civilisations autochtones, captivent l’imaginaire européen et attisent les convoitises. \n\nSi la découverte ouvre la voie à de nouvelles connaissances et échanges, elle amorce également des siècles de colonisation, de conflits et de bouleversements tragiques pour les peuples indigènes. Cette journée de 1492 résonne donc à la fois comme un prodigieux bond dans l’histoire mondiale, et comme le prélude d’un choc profond entre deux mondes.",
       "options": [
         {
           "title": "Alliance Paisible avec les Autochtones",
-          "consequence": "Les premiers explorateurs entament un dialogue sincère avec les peuples autochtones, favorisant un respect mutuel et une compréhension réciproque. Au fil du temps, les mariages mixtes, le commerce et les échanges culturels créent une société unique – un mélange riche de traditions européennes et autochtones.\n\nCette nouvelle identité redéfinit le continent, stimulant des innovations artistiques, culinaires et linguistiques. L'union harmonieuse devient un phare de coexistence multiculturelle, influençant les réformes sociales et la diplomatie internationale pendant des générations.",
+          "consequence": [
+            [
+                "Plutôt que de s’imposer par la force, les premiers explorateurs tendent la main aux peuples autochtones, curieux de leurs langues, de leurs coutumes et de leur savoir. Des échanges respectueux s’établissent, où le troc, la transmission orale et les cérémonies rituelles deviennent des ponts entre deux mondes autrefois étrangers.",
+                "Les alliances se renforcent par des mariages mixtes, donnant naissance à une génération aux identités multiples, à la fois européenne et indigène. Ce métissage engendre une société originale, où les villes naissantes intègrent architecture locale, cuisine fusionnée et traditions partagées, donnant un visage nouveau au continent.",
+                "Avec le temps, ce modèle de coexistence inspire les royaumes d’Europe et ébranle les fondements de la colonisation classique. La diplomatie s’enrichit de cette réussite interculturelle, et le Nouveau Monde devient un laboratoire vivant d’harmonie entre civilisations, prouvant qu’un autre destin était possible."
+            ]
+          ],
           "img": "data/consequences/image3_1.png",
           "music_file": "3.mp3"
         },
         {
           "title": "L'Empire Autochtone Émerge",
-          "consequence": "Inspirée par des traditions ancestrales et des défis modernes, une coalition de tribus indigènes s'unit pour forger un empire puissant. Cet État autochtone, mêlant gouvernance traditionnelle et technologies européennes adaptées, s'impose comme puissance dominante dans la région.\n\nL'Empire Autochtone redéfinit le commerce, la guerre et les normes culturelles, obligeant les puissances européennes à négocier sur un pied d'égalité. Son influence déclenche une réévaluation mondiale de la colonisation, redéfinissant finalement les équilibres de pouvoir et inspirant des mouvements pour les droits des peuples autochtones dans le monde entier.",
+          "consequence": [
+            "Face à l’arrivée des Européens, les grandes civilisations autochtones choisissent l’union plutôt que la division. Portées par une vision commune, des nations autrefois rivales tissent des alliances stratégiques, fusionnant leurs savoirs, croyances et forces militaires pour former un empire solide, enraciné dans les valeurs ancestrales mais ouvert à l’innovation.",
+            "Utilisant intelligemment certaines technologies introduites par les colons, l’Empire Autochtone développe des structures politiques avancées, renforce ses frontières et établit des routes commerciales prospères. Sa puissance croissante contraint les puissances européennes à abandonner la conquête brute au profit de la diplomatie et du dialogue.",
+            "Cette alternative historique transforme profondément les dynamiques coloniales. Le modèle autochtone devient une référence mondiale, nourrissant des courants de pensée anti-impérialistes et influençant les luttes pour l'autodétermination. L’Amérique, au lieu d’être façonnée par l’Europe, devient le berceau d’un nouvel équilibre entre traditions indigènes et modernité mondiale."
+          ]
+          ,
           "img": "data/consequences/image3_2.png",
           "music_file": "3.mp3"
         }
@@ -50,18 +69,27 @@
       "date": "2020-03-11",
       "img": "data/images/img_4.png",
       "music_file": "17.mp3",
-      "description": "Le Coronavirus apparaît et le monde entier se retrouve à l'arrêt. C'est le confinement !",
+      "description": "Le 11 mars 2020, l’Organisation mondiale de la santé déclare officiellement la pandémie de Covid-19. En quelques mois, un nouveau virus bouleverse tous les aspects de la vie quotidienne à l’échelle mondiale. Villes désertées, frontières fermées, hôpitaux débordés, et pour la première fois dans l’histoire moderne, une grande partie de l’humanité se retrouve confinée chez elle. \n\nLes rues tombent dans le silence, les écoles ferment, les économies ralentissent, et chacun apprend à vivre avec l’incertitude. C’est une époque marquée par la peur, la solidarité, l’adaptation rapide aux outils numériques… et par une prise de conscience collective de notre fragilité face aux forces invisibles de la nature. Le confinement devient un mot universel, symbole d’un moment suspendu où le monde entier semble s’être arrêté.",
       "options": [
         {
           "img": "data/consequences/image4_1.png",
           "title": "Épidémie de Covid Zombie",
-          "consequence": "Le virus prend une tournure inquiétante lorsque les corps infectés se réaniment, déclenchant une épidémie de zombies. La contagion traditionnelle se mêle désormais à une propagation nécrotique, plongeant les villes dans le chaos. La panique et les instincts de survie remplacent la vie quotidienne, alors que les autorités peinent à contenir ce désastre à double menace.\n\nLes communautés et les gouvernements sont contraints de repenser les stratégies de santé publique et de défense. De nouvelles alliances se forment au cœur de la terreur, tandis que les gens s'adaptent à une réalité où les morts-vivants arpentent les rues.",
+          "consequence": [
+            "Lorsque les premiers cas de réanimation post-mortem sont signalés, l'incrédulité laisse rapidement place à l'effroi. Le virus Covid-19, déjà redouté pour sa propagation rapide, mute en une forme nécrotique qui transforme les infectés en créatures hostiles. Les hôpitaux deviennent des foyers de l’horreur, et les villes s’effondrent sous le poids de cette double menace.",
+            "Les gouvernements instaurent des zones de quarantaine armées, tandis que la population se regroupe en enclaves sécurisées. La science et la stratégie militaire fusionnent pour tenter de comprendre ce phénomène inédit et protéger les survivants. Le monde bascule dans une ère de résistance où chaque jour est une lutte pour la survie.",
+            "Malgré la peur omniprésente, de nouvelles formes de solidarité émergent. Des réseaux de survivants, des milices citoyennes et des alliances intercontinentales se forment pour repousser les vagues de morts-vivants. L’humanité, confrontée à l’effondrement de ses repères, puise dans ses instincts les plus profonds pour imaginer un avenir au-delà de l’apocalypse."
+          ]
+          ,
           "music_file": "17.mp3"
         },
         {
           "img": "data/consequences/image4_2.png",
           "title": "L'épidémie de Covid n'a jamais eu lieu",
-          "consequence": "La pandémie de Covid s'est terminée en 1 semaine, à la grande surprise des scientifiques.",
+          "consequence": [
+            "Contre toute attente, le virus disparaît mystérieusement une semaine après les premiers cas recensés. Les symptômes s'estompent, les hôpitaux se vident, et les scientifiques, déconcertés, peinent à expliquer ce phénomène sans précédent. Le monde, figé dans l’attente d’une catastrophe, se réveille dans un étrange soulagement mêlé d’incrédulité.",
+            "Les gouvernements lèvent précipitamment les mesures d'urgence tandis que les médias spéculent sur les raisons de cette disparition fulgurante. Théories naturelles, hypothèses immunologiques, ou simples miracles — chacun tente de donner un sens à ce non-événement historique qui aurait pu bouleverser l’humanité.",
+            "Privée de cette épreuve collective, la planète poursuit sa course sans le choc global du confinement. Mais certains regrettent l’occasion manquée de repenser nos systèmes de santé, notre rapport à la nature et à la solidarité. Le monde reprend son souffle… sans jamais vraiment comprendre à quel point il a frôlé l’invisible."
+          ],
           "music_file": "17.mp3"
         }
       ]
@@ -70,20 +98,31 @@
       "id": "6",
       "title": "Révolution française",
       "date": "1799-11-09",
-      "description": "La révolution française est un évènement marquant de l'histoire française. ",
+      "description": "La Révolution française, éclatant en 1789 et culminant avec le coup d’État du 9 novembre 1799 (18 brumaire), marque un tournant radical dans l’histoire de la France et du monde. Le peuple, lassé des privilèges de la monarchie absolue et accablé par les inégalités sociales, se soulève pour réclamer liberté, égalité et fraternité. La Bastille tombe, les têtes tombent aussi, et l’Ancien Régime vacille sous les cris de justice et de changement.\n\nCette période de bouleversements voit naître la Déclaration des Droits de l’Homme et du Citoyen, mais aussi la Terreur et les luttes intestines. Elle embrase l’Europe entière et laisse un héritage politique et philosophique durable. Le 18 brumaire marque la fin de la Révolution et l’ascension d’un certain Napoléon Bonaparte, qui s’apprête à redessiner l’ordre du continent. Plus qu’un événement français, la Révolution est un signal d’alarme universel : celui d’un peuple qui refuse de se taire. ",
       "img": "data/images/img_6.png",
       "music_file": "6.mp3",
       "options": [
         {
           "img": "data/consequences/image6_1.png",
           "title": "Résurgence Impériale",
-          "consequence": "La famille royale reste intacte, guidant la France vers un destin impérial. Un stratège visionnaire, faisant écho à l'éclat de Napoléon, unit des factions disparates sous une bannière impériale unique.\n\nLa nation adopte un nouvel hymne puissant et un emblème qui célèbrent la fierté martiale et la grandeur. Cette transformation audacieuse forge un héritage d'ambition et d'ordre qui redéfinit la société française.",
+          "consequence": [
+            "Alors que la Révolution gronde, la monarchie parvient miraculeusement à survivre. Plutôt que de sombrer, elle se transforme : unificateur charismatique et stratège redoutable émerge, fusionnant le prestige royal avec les aspirations populaires. Sous sa direction, la France se réinvente en un empire puissant, discipliné, et tourné vers la grandeur.",
+            "Le nouveau régime s'appuie sur un symbolisme fort : un hymne martial entonné sur toutes les places publiques, un emblème impérial gravé dans le marbre et la mémoire collective. L’ordre et la fierté nationale deviennent les piliers d’un système qui valorise la discipline, l’expansion, et une identité unifiée au-delà des classes sociales.",
+            "Cette résurgence impériale modifie profondément le destin européen. Plutôt qu’une république agitée, la France devient un modèle de centralisation autoritaire et de puissance ordonnée. Les idéaux révolutionnaires sont recadrés dans une logique d’ambition contrôlée, laissant un héritage paradoxal fait de stabilité, d’unité… et de conquêtes."
+          ]
+          ,
           "music_file": "6.mp3"
         },
         {
           "img": "data/consequences/image6_2.png",
           "title": "Reprise Napoléonienne",
-          "consequence": "Dans un tournant dramatique, un général charismatique émerge pour reconquérir et redéfinir l'avenir de la France. Sa prouesse militaire et son leadership visionnaire catalysent la transition du chaos révolutionnaire vers une stabilité impériale.\n\nUn nouvel hymne percutant et un blason symbolique sont instaurés, reflétant à la fois la fierté historique et une ambition novatrice. La révolution se transforme en une célébration de l'ordre, de la force et d'un héritage impérial durable.",
+          "consequence": [
+            [
+                "Alors que la Révolution s’enlise dans les conflits internes et l’instabilité, un général au charisme magnétique se lève : Napoléon Bonaparte. Par sa stratégie fulgurante et son talent politique, il éteint les flammes du chaos pour rallumer celles de la grandeur nationale. Sous son commandement, la France cesse de se chercher pour commencer à se projeter.",
+                "L’ordre remplace l’agitation. Un nouvel hymne résonne dans les rues, martial et solennel, tandis qu’un blason impérial s’impose comme le symbole d’un pays qui se réinvente. L’idéalisme révolutionnaire laisse place à une discipline organisée, fondée sur la fierté, la loyauté et l’efficacité militaire.",
+                "Ce virage impérial donne naissance à un régime puissant, admiré autant que redouté. La France devient le cœur d’un nouvel ordre européen, où l’héritage de la Révolution est intégré à une vision conquérante. L’histoire, désormais, ne s’écrit plus dans les rues enflammées, mais sur les champs de bataille et dans les palais d’État."
+            ]
+          ],
           "music_file": "6.mp3"
         }
       ]
